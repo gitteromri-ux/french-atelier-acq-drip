@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>French Atelier &middot; ACQ Drip Series, Stage 3</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png" />
+<link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy:        #0B1340;
+    --navy-deep:   #080E33;
+    --gold:        #C8A560;
+    --gold-soft:   #D4B16A;
+    --gold-muted:  #AA8C55;
+    --burgundy:    #6B1E2C;
+    --ivory:       #F5EFE5;
+    --cream:       #E4DAC4;
+    --paper:       #FAF6EE;
+    --ink:         #1F2138;
+    --ink-soft:    #4A4D6A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+  .site-header { background: var(--navy); padding: 40px 28px 56px; text-align: center; border-bottom: 3px solid var(--gold); }
+  .site-header h1 { font-family: 'Cormorant Garamond', serif; color: var(--gold); font-size: 40px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; margin-bottom: 6px; }
+  .site-header .by { color: var(--ivory); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; letter-spacing: 0.08em; opacity: 0.85; }
+  .site-header .flourish { margin: 20px auto 22px; display: block; }
+  .site-header .tagline { color: var(--ivory); font-family: 'Cormorant Garamond', serif; font-size: 20px; font-style: italic; max-width: 640px; margin: 0 auto; opacity: 0.92; }
+  .site-header .meta { margin-top: 16px; color: var(--gold-soft); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-family: 'Inter', sans-serif; opacity: 0.75; }
+
+  .nav { background: var(--navy); padding: 16px 28px; position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 12px rgba(11,19,64,0.18); }
+  .nav-inner { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; }
+  .nav a { color: var(--ivory); text-decoration: none; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; font-family: 'Inter', sans-serif; }
+  .nav a:hover { color: var(--gold); }
+
+  .section { max-width: 1180px; margin: 0 auto; padding: 70px 28px 30px; }
+  .section-header { text-align: center; margin-bottom: 44px; }
+  .section-header .eyebrow { color: var(--gold); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; letter-spacing: 0.1em; margin-bottom: 8px; }
+  .section-header h2 { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 36px; font-weight: 500; letter-spacing: 0.01em; }
+  .section-header .sub { margin-top: 10px; color: var(--ink-soft); font-size: 14.5px; max-width: 640px; margin-left: auto; margin-right: auto; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; }
+  .card { background: #fff; border: 1px solid var(--cream); border-radius: 6px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 14px 36px -16px rgba(11,19,64,0.22); }
+  .card .thumb { position: relative; background: var(--ivory); overflow: hidden; aspect-ratio: 12 / 7; border-bottom: 1px solid var(--cream); }
+  .card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card .thumb .overlay { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 65%, rgba(11,19,64,0.5) 100%); pointer-events: none; }
+  .card .body { padding: 20px 20px 22px; flex: 1; display: flex; flex-direction: column; }
+  .card .eyebrow { color: var(--gold); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 6px; font-weight: 600; }
+  .card h3 { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 22px; line-height: 1.25; font-weight: 500; margin-bottom: 12px; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 14px; padding: 9px 16px; border-radius: 3px; letter-spacing: 0.05em; text-transform: uppercase; transition: all 0.18s; border: 1px solid var(--navy); cursor: pointer; flex: 1; min-width: 110px; text-align: center; }
+  .btn-primary { background: var(--navy); color: var(--ivory); border-color: var(--gold); }
+  .btn-primary:hover { background: var(--gold); color: var(--navy); }
+  .btn-secondary { background: transparent; color: var(--navy); border-color: var(--navy); }
+  .btn-secondary:hover { background: var(--navy); color: var(--ivory); }
+
+  .img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+  .img-tile { background: #fff; border: 1px solid var(--cream); border-radius: 4px; overflow: hidden; text-align: center; }
+  .img-tile img { width: 100%; height: 130px; object-fit: cover; display: block; }
+  .img-tile .caption { padding: 10px 12px 12px; }
+  .img-tile .caption strong { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 13.5px; display: block; margin-bottom: 6px; }
+  .img-tile .caption span.dim { display: block; color: var(--ink-soft); font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 6px; }
+  .img-tile .caption a { font-size: 10.5px; color: var(--gold); text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; }
+  .img-tile .caption a:hover { color: var(--navy); }
+
+  .doc-card { background: #fff; border: 1px solid var(--cream); border-radius: 6px; padding: 30px; margin-bottom: 22px; }
+  .doc-card h3 { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 26px; margin-bottom: 10px; }
+  .doc-card p { color: var(--ink-soft); margin-bottom: 16px; }
+
+  .footer { background: var(--navy); color: var(--ivory); padding: 50px 28px 36px; text-align: center; margin-top: 50px; }
+  .footer .brand { font-family: 'Cormorant Garamond', serif; color: var(--gold); font-size: 22px; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 8px; }
+  .footer .tag { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; color: var(--ivory); opacity: 0.86; margin-bottom: 22px; }
+  .footer .links { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.72; }
+  .footer .links a { color: var(--ivory); text-decoration: none; margin: 0 10px; }
+  .footer .legal { margin-top: 16px; font-size: 11px; opacity: 0.55; max-width: 640px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+
+  @media (max-width: 720px) {
+    .site-header h1 { font-size: 30px; }
+    .section { padding: 54px 18px 26px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>French Atelier</h1>
+  <div class="by">by Acadomia</div>
+  <svg class="flourish" width="200" height="20" viewBox="0 0 220 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 11 C 50 2, 90 20, 110 11 S 170 2, 218 11" stroke="#C8A560" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <circle cx="110" cy="11" r="2" fill="#C8A560"/>
+  </svg>
+  <div class="tagline">French Atelier &middot; ACQ Drip Series, Stage 3</div>
+  <div class="meta">12 emails &middot; 12 landing pages &middot; 36 images &middot; 1 quiz &middot; 1 claim page</div>
+</header>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#content-emails">Content Emails</a>
+    <a href="#promo-emails">Promo Emails</a>
+    <a href="#product-emails">Product Emails</a>
+    <a href="#landing-pages">Landing Pages</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#claim">Promo Claim</a>
+    <a href="#imagery">Imagery</a>
+  </div>
+</nav>
+
+<section id="content-emails" class="section">
+  <div class="section-header">
+    <div class="eyebrow">&middot; Content &middot;</div>
+    <h2>Content Emails</h2>
+    <div class="sub">4 emails introducing French culture: today's icons, historical figures, Edith Piaf, and the Three Musketeers. Zero selling, zero product info.</div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="thumb"><a href="emails/01-celebs-today.html" target="_blank"><img src="assets/images/01-celebs-today_banner_1200x700.jpg" alt="The French names the whole world knows email banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Email 01</div>
+        <h3>The French names the whole world knows</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="emails/01-celebs-today.html" target="_blank">Open Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="emails/02-celebs-history.html" target="_blank"><img src="assets/images/02-celebs-history_banner_1200x700.jpg" alt="Six French lives that changed the world email banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Email 02</div>
+        <h3>Six French lives that changed the world</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="emails/02-celebs-history.html" target="_blank">Open Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="emails/03-edith-piaf.html" target="_blank"><img src="assets/images/03-edith-piaf_banner_1200x700.jpg" alt="Who was Édith Piaf? email banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Email 03</div>
+        <h3>Who was Édith Piaf?</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="emails/03-edith-piaf.html" target="_blank">Open Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="emails/04-musketeers.html" target="_blank"><img src="assets/images/04-musketeers_banner_1200x700.jpg" alt="The musketeers were real email banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Email 04</div>
+        <h3>The musketeers were real</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="emails/04-musketeers.html" target="_blank">Open Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="promo-emails" class="section">
+  <div class="section-header">
+    <div class="eyebrow">&middot;</div>
+    <h2>Promo Emails</h2>
+    <div class="sub">4 emails carrying the gamified quiz reward and the 20% welcome scholarship offer, code MERCI20, urgency without shouting.</div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="thumb"><a href="emails/05-promo-quiz.html" target="_blank"><img src="assets/images/05-promo-quiz_banner_1200x700.jpg" alt="A short quiz, a reward at the end email banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Email 05</div>
+        <h3>A short quiz, a reward at the end</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="emails/05-promo-quiz.html" target="_blank">Open Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="emails/06-promo-seat.html" target="_blank"><img src="assets/images/06-promo-seat_banner_1200x700.jpg" alt="Your welcome scholarship is ready email banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Email 06</div>
+        <h3>Your welcome scholarship is ready</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="emails/06-promo-seat.html" target="_blank">Open Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="emails/07-promo-seat-2.html" target="_blank"><img src="assets/images/07-promo-seat-2_banner_1200x700.jpg" alt="The next class is filling email banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Email 07</div>
+        <h3>The next class is filling</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="emails/07-promo-seat-2.html" target="_blank">Open Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="emails/08-promo-final.html" target="_blank"><img src="assets/images/08-promo-final_banner_1200x700.jpg" alt="Final call for your seat email banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Email 08</div>
+        <h3>Final call for your seat</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="emails/08-promo-final.html" target="_blank">Open Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="product-emails" class="section">
+  <div class="section-header">
+    <div class="eyebrow">&middot;</div>
+    <h2>Product Emails</h2>
+    <div class="sub">4 emails covering real teachers, region-by-region immersion, cultural enrichment, and what makes French Atelier different.</div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="thumb"><a href="emails/09-product-teachers.html" target="_blank"><img src="assets/images/09-product-teachers_banner_1200x700.jpg" alt="Real teachers, live from France email banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Email 09</div>
+        <h3>Real teachers, live from France</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="emails/09-product-teachers.html" target="_blank">Open Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="emails/10-product-journeys.html" target="_blank"><img src="assets/images/10-product-journeys_banner_1200x700.jpg" alt="Learn French, region by region email banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Email 10</div>
+        <h3>Learn French, region by region</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="emails/10-product-journeys.html" target="_blank">Open Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="emails/11-product-culture.html" target="_blank"><img src="assets/images/11-product-culture_banner_1200x700.jpg" alt="Learn France, not just French email banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Email 11</div>
+        <h3>Learn France, not just French</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="emails/11-product-culture.html" target="_blank">Open Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="emails/12-product-difference.html" target="_blank"><img src="assets/images/12-product-difference_banner_1200x700.jpg" alt="What language apps cannot do email banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Email 12</div>
+        <h3>What language apps cannot do</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="emails/12-product-difference.html" target="_blank">Open Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="landing-pages" class="section">
+  <div class="section-header">
+    <div class="eyebrow">&middot;</div>
+    <h2>Landing Pages</h2>
+    <div class="sub">12 companion pages, one per email, same design system, longer form depth. 06 to 08 render as promo-claim style pages with the discount code box.</div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="thumb"><a href="landing-pages/01-celebs-today.html" target="_blank"><img src="assets/images/01-celebs-today_banner_1200x700.jpg" alt="The French names the whole world knows landing page banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Landing Page 01</div>
+        <h3>The French names the whole world knows</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="landing-pages/01-celebs-today.html" target="_blank">Open Landing Page</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="landing-pages/02-celebs-history.html" target="_blank"><img src="assets/images/02-celebs-history_banner_1200x700.jpg" alt="Six French lives that changed the world landing page banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Landing Page 02</div>
+        <h3>Six French lives that changed the world</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="landing-pages/02-celebs-history.html" target="_blank">Open Landing Page</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="landing-pages/03-edith-piaf.html" target="_blank"><img src="assets/images/03-edith-piaf_banner_1200x700.jpg" alt="Who was Édith Piaf? landing page banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Landing Page 03</div>
+        <h3>Who was Édith Piaf?</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="landing-pages/03-edith-piaf.html" target="_blank">Open Landing Page</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="landing-pages/04-musketeers.html" target="_blank"><img src="assets/images/04-musketeers_banner_1200x700.jpg" alt="The musketeers were real landing page banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Landing Page 04</div>
+        <h3>The musketeers were real</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="landing-pages/04-musketeers.html" target="_blank">Open Landing Page</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="landing-pages/05-promo-quiz.html" target="_blank"><img src="assets/images/05-promo-quiz_banner_1200x700.jpg" alt="A short quiz, a reward at the end landing page banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Landing Page 05</div>
+        <h3>A short quiz, a reward at the end</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="landing-pages/05-promo-quiz.html" target="_blank">Open Landing Page</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="landing-pages/06-promo-seat.html" target="_blank"><img src="assets/images/06-promo-seat_banner_1200x700.jpg" alt="Your welcome scholarship is ready landing page banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Landing Page 06</div>
+        <h3>Your welcome scholarship is ready</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="landing-pages/06-promo-seat.html" target="_blank">Open Landing Page</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="landing-pages/07-promo-seat-2.html" target="_blank"><img src="assets/images/07-promo-seat-2_banner_1200x700.jpg" alt="The next class is filling landing page banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Landing Page 07</div>
+        <h3>The next class is filling</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="landing-pages/07-promo-seat-2.html" target="_blank">Open Landing Page</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="landing-pages/08-promo-final.html" target="_blank"><img src="assets/images/08-promo-final_banner_1200x700.jpg" alt="Final call for your seat landing page banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Landing Page 08</div>
+        <h3>Final call for your seat</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="landing-pages/08-promo-final.html" target="_blank">Open Landing Page</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="landing-pages/09-product-teachers.html" target="_blank"><img src="assets/images/09-product-teachers_banner_1200x700.jpg" alt="Real teachers, live from France landing page banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Landing Page 09</div>
+        <h3>Real teachers, live from France</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="landing-pages/09-product-teachers.html" target="_blank">Open Landing Page</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="landing-pages/10-product-journeys.html" target="_blank"><img src="assets/images/10-product-journeys_banner_1200x700.jpg" alt="Learn French, region by region landing page banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Landing Page 10</div>
+        <h3>Learn French, region by region</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="landing-pages/10-product-journeys.html" target="_blank">Open Landing Page</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="landing-pages/11-product-culture.html" target="_blank"><img src="assets/images/11-product-culture_banner_1200x700.jpg" alt="Learn France, not just French landing page banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Landing Page 11</div>
+        <h3>Learn France, not just French</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="landing-pages/11-product-culture.html" target="_blank">Open Landing Page</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb"><a href="landing-pages/12-product-difference.html" target="_blank"><img src="assets/images/12-product-difference_banner_1200x700.jpg" alt="What language apps cannot do landing page banner" loading="lazy"><div class="overlay"></div></a></div>
+      <div class="body">
+        <div class="eyebrow">Landing Page 12</div>
+        <h3>What language apps cannot do</h3>
+        <div class="actions">
+          <a class="btn btn-primary" href="landing-pages/12-product-difference.html" target="_blank">Open Landing Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz" class="section">
+  <div class="section-header">
+    <div class="eyebrow">&middot;</div>
+    <h2>Quiz</h2>
+    <div class="sub">Interactive gamified quiz, IIBS Typeform style. Five questions, per-question correct and wrong feedback, ends by linking to the promo claim page.</div>
+  </div>
+  <div class="doc-card">
+    <h3>Take the quiz</h3>
+    <p>Full-viewport sections, navy photo overlay, gold uppercase CTAs, gentle feedback either way.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="quiz/quiz.html" target="_blank">Open Quiz</a>
+    </div>
+  </div>
+</section>
+
+<section id="claim" class="section">
+  <div class="section-header">
+    <div class="eyebrow">&middot;</div>
+    <h2>Promo Claim Page</h2>
+    <div class="sub">Big centered promo code box, code MERCI20, 20% off, CTA to the live pricing page.</div>
+  </div>
+  <div class="doc-card">
+    <h3>Claim the offer</h3>
+    <p>Landing page variant with a gold-bordered navy code box and a direct CTA to https://www.frenchatelierlive.com/pricing.html.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="promo/claim.html" target="_blank">Open Claim Page</a>
+    </div>
+  </div>
+</section>
+
+<section id="imagery" class="section">
+  <div class="section-header">
+    <div class="eyebrow">&middot;</div>
+    <h2>Imagery</h2>
+    <div class="sub">36 exact-size files: 12 topics &times; banner (1200&times;700), LP desktop (1920&times;502), LP mobile (758&times;556).</div>
+  </div>
+  <div class="img-grid">
+    <div class="img-tile">
+      <img src="assets/images/01-celebs-today_banner_1200x700.jpg" alt="01-celebs-today banner image" loading="lazy">
+      <div class="caption"><span class="dim">1200 x 700</span><strong>01-celebs-today</strong><a href="assets/images/01-celebs-today_banner_1200x700.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/01-celebs-today_lp_desktop_1920x502.jpg" alt="01-celebs-today desktop image" loading="lazy">
+      <div class="caption"><span class="dim">1920 x 502</span><strong>01-celebs-today</strong><a href="assets/images/01-celebs-today_lp_desktop_1920x502.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/01-celebs-today_lp_mobile_758x556.jpg" alt="01-celebs-today mobile image" loading="lazy">
+      <div class="caption"><span class="dim">758 x 556</span><strong>01-celebs-today</strong><a href="assets/images/01-celebs-today_lp_mobile_758x556.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/02-celebs-history_banner_1200x700.jpg" alt="02-celebs-history banner image" loading="lazy">
+      <div class="caption"><span class="dim">1200 x 700</span><strong>02-celebs-history</strong><a href="assets/images/02-celebs-history_banner_1200x700.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/02-celebs-history_lp_desktop_1920x502.jpg" alt="02-celebs-history desktop image" loading="lazy">
+      <div class="caption"><span class="dim">1920 x 502</span><strong>02-celebs-history</strong><a href="assets/images/02-celebs-history_lp_desktop_1920x502.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/02-celebs-history_lp_mobile_758x556.jpg" alt="02-celebs-history mobile image" loading="lazy">
+      <div class="caption"><span class="dim">758 x 556</span><strong>02-celebs-history</strong><a href="assets/images/02-celebs-history_lp_mobile_758x556.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/03-edith-piaf_banner_1200x700.jpg" alt="03-edith-piaf banner image" loading="lazy">
+      <div class="caption"><span class="dim">1200 x 700</span><strong>03-edith-piaf</strong><a href="assets/images/03-edith-piaf_banner_1200x700.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/03-edith-piaf_lp_desktop_1920x502.jpg" alt="03-edith-piaf desktop image" loading="lazy">
+      <div class="caption"><span class="dim">1920 x 502</span><strong>03-edith-piaf</strong><a href="assets/images/03-edith-piaf_lp_desktop_1920x502.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/03-edith-piaf_lp_mobile_758x556.jpg" alt="03-edith-piaf mobile image" loading="lazy">
+      <div class="caption"><span class="dim">758 x 556</span><strong>03-edith-piaf</strong><a href="assets/images/03-edith-piaf_lp_mobile_758x556.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/04-musketeers_banner_1200x700.jpg" alt="04-musketeers banner image" loading="lazy">
+      <div class="caption"><span class="dim">1200 x 700</span><strong>04-musketeers</strong><a href="assets/images/04-musketeers_banner_1200x700.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/04-musketeers_lp_desktop_1920x502.jpg" alt="04-musketeers desktop image" loading="lazy">
+      <div class="caption"><span class="dim">1920 x 502</span><strong>04-musketeers</strong><a href="assets/images/04-musketeers_lp_desktop_1920x502.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/04-musketeers_lp_mobile_758x556.jpg" alt="04-musketeers mobile image" loading="lazy">
+      <div class="caption"><span class="dim">758 x 556</span><strong>04-musketeers</strong><a href="assets/images/04-musketeers_lp_mobile_758x556.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/05-promo-quiz_banner_1200x700.jpg" alt="05-promo-quiz banner image" loading="lazy">
+      <div class="caption"><span class="dim">1200 x 700</span><strong>05-promo-quiz</strong><a href="assets/images/05-promo-quiz_banner_1200x700.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/05-promo-quiz_lp_desktop_1920x502.jpg" alt="05-promo-quiz desktop image" loading="lazy">
+      <div class="caption"><span class="dim">1920 x 502</span><strong>05-promo-quiz</strong><a href="assets/images/05-promo-quiz_lp_desktop_1920x502.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/05-promo-quiz_lp_mobile_758x556.jpg" alt="05-promo-quiz mobile image" loading="lazy">
+      <div class="caption"><span class="dim">758 x 556</span><strong>05-promo-quiz</strong><a href="assets/images/05-promo-quiz_lp_mobile_758x556.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/06-promo-seat_banner_1200x700.jpg" alt="06-promo-seat banner image" loading="lazy">
+      <div class="caption"><span class="dim">1200 x 700</span><strong>06-promo-seat</strong><a href="assets/images/06-promo-seat_banner_1200x700.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/06-promo-seat_lp_desktop_1920x502.jpg" alt="06-promo-seat desktop image" loading="lazy">
+      <div class="caption"><span class="dim">1920 x 502</span><strong>06-promo-seat</strong><a href="assets/images/06-promo-seat_lp_desktop_1920x502.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/06-promo-seat_lp_mobile_758x556.jpg" alt="06-promo-seat mobile image" loading="lazy">
+      <div class="caption"><span class="dim">758 x 556</span><strong>06-promo-seat</strong><a href="assets/images/06-promo-seat_lp_mobile_758x556.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/07-promo-seat-2_banner_1200x700.jpg" alt="07-promo-seat-2 banner image" loading="lazy">
+      <div class="caption"><span class="dim">1200 x 700</span><strong>07-promo-seat-2</strong><a href="assets/images/07-promo-seat-2_banner_1200x700.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/07-promo-seat-2_lp_desktop_1920x502.jpg" alt="07-promo-seat-2 desktop image" loading="lazy">
+      <div class="caption"><span class="dim">1920 x 502</span><strong>07-promo-seat-2</strong><a href="assets/images/07-promo-seat-2_lp_desktop_1920x502.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/07-promo-seat-2_lp_mobile_758x556.jpg" alt="07-promo-seat-2 mobile image" loading="lazy">
+      <div class="caption"><span class="dim">758 x 556</span><strong>07-promo-seat-2</strong><a href="assets/images/07-promo-seat-2_lp_mobile_758x556.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/08-promo-final_banner_1200x700.jpg" alt="08-promo-final banner image" loading="lazy">
+      <div class="caption"><span class="dim">1200 x 700</span><strong>08-promo-final</strong><a href="assets/images/08-promo-final_banner_1200x700.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/08-promo-final_lp_desktop_1920x502.jpg" alt="08-promo-final desktop image" loading="lazy">
+      <div class="caption"><span class="dim">1920 x 502</span><strong>08-promo-final</strong><a href="assets/images/08-promo-final_lp_desktop_1920x502.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/08-promo-final_lp_mobile_758x556.jpg" alt="08-promo-final mobile image" loading="lazy">
+      <div class="caption"><span class="dim">758 x 556</span><strong>08-promo-final</strong><a href="assets/images/08-promo-final_lp_mobile_758x556.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/09-product-teachers_banner_1200x700.jpg" alt="09-product-teachers banner image" loading="lazy">
+      <div class="caption"><span class="dim">1200 x 700</span><strong>09-product-teachers</strong><a href="assets/images/09-product-teachers_banner_1200x700.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/09-product-teachers_lp_desktop_1920x502.jpg" alt="09-product-teachers desktop image" loading="lazy">
+      <div class="caption"><span class="dim">1920 x 502</span><strong>09-product-teachers</strong><a href="assets/images/09-product-teachers_lp_desktop_1920x502.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/09-product-teachers_lp_mobile_758x556.jpg" alt="09-product-teachers mobile image" loading="lazy">
+      <div class="caption"><span class="dim">758 x 556</span><strong>09-product-teachers</strong><a href="assets/images/09-product-teachers_lp_mobile_758x556.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/10-product-journeys_banner_1200x700.jpg" alt="10-product-journeys banner image" loading="lazy">
+      <div class="caption"><span class="dim">1200 x 700</span><strong>10-product-journeys</strong><a href="assets/images/10-product-journeys_banner_1200x700.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/10-product-journeys_lp_desktop_1920x502.jpg" alt="10-product-journeys desktop image" loading="lazy">
+      <div class="caption"><span class="dim">1920 x 502</span><strong>10-product-journeys</strong><a href="assets/images/10-product-journeys_lp_desktop_1920x502.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/10-product-journeys_lp_mobile_758x556.jpg" alt="10-product-journeys mobile image" loading="lazy">
+      <div class="caption"><span class="dim">758 x 556</span><strong>10-product-journeys</strong><a href="assets/images/10-product-journeys_lp_mobile_758x556.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/11-product-culture_banner_1200x700.jpg" alt="11-product-culture banner image" loading="lazy">
+      <div class="caption"><span class="dim">1200 x 700</span><strong>11-product-culture</strong><a href="assets/images/11-product-culture_banner_1200x700.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/11-product-culture_lp_desktop_1920x502.jpg" alt="11-product-culture desktop image" loading="lazy">
+      <div class="caption"><span class="dim">1920 x 502</span><strong>11-product-culture</strong><a href="assets/images/11-product-culture_lp_desktop_1920x502.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/11-product-culture_lp_mobile_758x556.jpg" alt="11-product-culture mobile image" loading="lazy">
+      <div class="caption"><span class="dim">758 x 556</span><strong>11-product-culture</strong><a href="assets/images/11-product-culture_lp_mobile_758x556.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/12-product-difference_banner_1200x700.jpg" alt="12-product-difference banner image" loading="lazy">
+      <div class="caption"><span class="dim">1200 x 700</span><strong>12-product-difference</strong><a href="assets/images/12-product-difference_banner_1200x700.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/12-product-difference_lp_desktop_1920x502.jpg" alt="12-product-difference desktop image" loading="lazy">
+      <div class="caption"><span class="dim">1920 x 502</span><strong>12-product-difference</strong><a href="assets/images/12-product-difference_lp_desktop_1920x502.jpg" download>Download</a></div>
+    </div><div class="img-tile">
+      <img src="assets/images/12-product-difference_lp_mobile_758x556.jpg" alt="12-product-difference mobile image" loading="lazy">
+      <div class="caption"><span class="dim">758 x 556</span><strong>12-product-difference</strong><a href="assets/images/12-product-difference_lp_mobile_758x556.jpg" download>Download</a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="brand">French Atelier</div>
+  <div class="tag">Culture speaks French. What about you?</div>
+  <div class="links">
+    <a href="mailto:hello@frenchatelierlive.com">hello@frenchatelierlive.com</a> &middot;
+    <a href="https://www.frenchatelierlive.com">frenchatelierlive.com</a>
+  </div>
+  <div class="legal">Discount value 20% and code MERCI20 are single find-replace tokens for the CRM team. Update both in this footer note and across copy JSON if the offer terms change.</div>
+</footer>
+
+</body>
+</html>

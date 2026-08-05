@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>A short quiz, a reward at the end</title>
+<meta name="description" content="Five friendly questions. Do well and earn something special." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16.png" />
+<link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy:        #0B1340;
+    --navy-deep:   #080E33;
+    --gold:        #C8A560;
+    --gold-soft:   #D4B16A;
+    --gold-muted:  #AA8C55;
+    --burgundy:    #6B1E2C;
+    --ivory:       #F5EFE5;
+    --cream:       #E4DAC4;
+    --paper:       #FAF6EE;
+    --ink:         #1F2138;
+    --ink-soft:    #4A4D6A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.65;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+  .preheader { display: none; max-height: 0; overflow: hidden; color: transparent; height: 0; width: 0; opacity: 0; }
+
+  /* email table shell, 600px */
+  .email-shell { width: 100%; background: var(--paper); }
+  .email-table { width: 600px; max-width: 600px; margin: 0 auto; background: var(--paper); }
+
+  .site-header {
+    background: var(--navy);
+    padding: 28px 24px;
+    text-align: center;
+    border-bottom: 1px solid rgba(200, 165, 96, 0.2);
+  }
+  .site-header .brand {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .site-header .brand-sub {
+    color: var(--ivory);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 4px;
+    letter-spacing: 0.04em;
+  }
+  .flourish { width: 120px; height: 14px; margin: 6px auto 0; color: var(--gold); display: block; }
+
+  /* HERO */
+  .hero { position: relative; width: 100%; overflow: hidden; background: var(--cream); }
+  .hero-img { display: block; width: 100%; height: auto; object-fit: cover; }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+      rgba(11, 19, 64, 0.62) 0%,
+      rgba(11, 19, 64, 0.40) 38%,
+      rgba(11, 19, 64, 0.12) 70%,
+      rgba(11, 19, 64, 0.00) 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 8% 0 6%;
+  }
+  .hero-text { color: var(--ivory); max-width: 600px; }
+  .hero-eyebrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--gold-soft);
+    letter-spacing: 0.04em;
+    margin-bottom: 14px;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 3.4vw, 52px);
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: -0.005em;
+  }
+  .hero-title em { font-style: italic; color: var(--gold-soft); }
+
+  /* BODY */
+  main { max-width: 600px; margin: 0 auto; padding: 56px 28px 80px; }
+
+  .lead {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--ink);
+    margin-bottom: 22px;
+    font-weight: 500;
+  }
+  .lead em { font-style: italic; color: var(--navy); }
+
+  .prose { margin: 0 0 28px; color: var(--ink); font-family: 'Inter', sans-serif; font-size: 16.5px; line-height: 1.78; font-weight: 400; }
+  .prose p strong { font-weight: 600; color: var(--navy); }
+  .prose p { margin: 0 0 18px; }
+  .prose p em { font-style: italic; color: var(--navy); }
+
+  /* BRAND LINE (quote) */
+  .brand-line {
+    margin: 36px 0 32px;
+    padding: 26px 32px;
+    background: var(--ivory);
+    border-left: 3px solid var(--gold);
+    border-radius: 2px;
+  }
+  .brand-line p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    line-height: 1.5;
+    color: var(--navy);
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  /* DETAILS BOX (promo emails) */
+  .details-box {
+    margin: 32px 0;
+    padding: 28px 30px;
+    background: var(--cream);
+    border-radius: 6px;
+    border: 1px solid rgba(200, 165, 96, 0.35);
+  }
+  .details-box .details-header {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold-muted);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .details-box .details-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 9px 0;
+    border-top: 1px solid rgba(11, 19, 64, 0.08);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+  }
+  .details-box .details-row:first-of-type { border-top: none; }
+  .details-box .details-label {
+    color: var(--ink-soft);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .details-box .details-value { color: var(--navy); font-weight: 600; text-align: right; }
+
+  /* CLOSING */
+  .closing { text-align: center; padding-top: 28px; border-top: 1px solid rgba(11, 19, 64, 0.08); }
+  .closing p { font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1.5; color: var(--ink); margin-bottom: 12px; font-weight: 500; }
+  .closing p em { font-style: italic; color: var(--navy); }
+  .closing .small { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--ink-soft); margin-bottom: 38px; line-height: 1.7; font-weight: 400; }
+
+  /* CTA - navy bg, ivory text, gold border, Cormorant serif */
+  .cta-wrap { text-align: center; margin: 28px 0; }
+  .cta {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--ivory) !important;
+    text-decoration: none;
+    padding: 18px 46px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border: 1px solid var(--gold);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 12px rgba(11, 19, 64, 0.12);
+  }
+  .cta:hover {
+    background: var(--gold);
+    color: var(--navy) !important;
+    border-color: var(--navy);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(200, 165, 96, 0.3);
+  }
+  .cta-meta {
+    margin-top: 18px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-soft);
+    letter-spacing: 0.02em;
+  }
+
+  .site-footer { background: var(--navy); color: var(--ivory); padding: 40px 24px 36px; text-align: center; }
+  .site-footer .footer-brand { font-family: 'Cormorant Garamond', serif; color: var(--gold); font-size: 22px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+  .site-footer .footer-tag { font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--ivory); font-size: 15px; margin-top: 8px; opacity: 0.8; }
+  .site-footer .footer-links { margin-top: 22px; font-size: 13px; color: rgba(245, 239, 229, 0.6); letter-spacing: 0.04em; }
+  .site-footer .footer-links a { color: rgba(245, 239, 229, 0.7); text-decoration: none; margin: 0 12px; }
+  .site-footer .footer-links a:hover { color: var(--gold-soft); }
+  .site-footer .footer-legal { margin-top: 18px; font-size: 11.5px; color: rgba(245, 239, 229, 0.45); letter-spacing: 0.04em; line-height: 1.7; }
+  .site-footer .footer-legal a { color: rgba(245, 239, 229, 0.55); text-decoration: underline; margin: 0 6px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 640px) {
+    .email-table { width: 100% !important; }
+    .site-header { padding: 22px 16px; }
+    .site-header .brand { font-size: 22px; }
+    main { padding: 40px 20px 64px; }
+    .lead { font-size: 21px; }
+    .prose { font-size: 16px; }
+    .hero-title { font-size: 26px; line-height: 1.2; }
+    .hero-eyebrow { font-size: 15px; margin-bottom: 10px; }
+    .brand-line { padding: 22px 22px; margin: 32px 0 28px; }
+    .brand-line p { font-size: 18px; }
+    .details-box { padding: 22px 20px; }
+    .closing p { font-size: 19px; }
+    .cta { padding: 16px 32px; font-size: 16px; width: 100%; max-width: 320px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Preheader -->
+<div class="preheader">Five friendly questions. Do well and earn something special.</div>
+
+<table role="presentation" class="email-table" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr><td>
+
+<header class="site-header">
+  <div class="brand">French Atelier</div>
+  <div class="brand-sub">by Acadomia</div>
+  <svg class="flourish" viewBox="0 0 120 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="3" cy="8" r="1.5" fill="currentColor"/>
+    <path d="M 8 8 C 28 14, 50 2, 70 6 S 100 12, 116 5" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+    <path d="M 116 5 q 4 -4 -1 -7" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+  </svg>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-img" src="../assets/images/05-promo-quiz_banner_1200x700.jpg" alt="Five questions, one reward hero image" width="600" />
+  <div class="hero-overlay">
+    <div class="hero-text">
+      <div class="hero-eyebrow">A Game For You</div>
+      <h1 class="hero-title">Five questions, one <em>reward</em></h1>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN -->
+<main>
+  <p class="lead">Bonjour {{first_name}}, we made something small for you. A quiz. Five questions about France, and a reward waiting if you do well. ✨</p>
+
+  <div class="prose">
+      <p>It takes about two minutes, wherever you are, with no preparation needed. The questions are friendly, the kind you could answer over coffee.</p>
+      <p>They come from stories we love to tell: French icons, a certain little sparrow, and three famous musketeers. If you have been paying attention to France lately, you are more ready than you think.</p>
+      <p>Do well and you earn something special from us. We think you will do very well.</p>
+      <p>There is nothing to lose here. A wrong answer simply teaches you something new about France, and the reward is still close.</p>
+      <p>French Atelier is a real school with live teachers in France, so even a small quiz comes with care.</p>
+  </div>
+
+  
+
+  <div class="cta-wrap">
+    <a class="cta" href="../quiz/quiz.html">Take My Quiz</a>
+  </div>
+  
+
+  <div class="details-box">
+    <div class="details-header">Your Quiz Reward</div>
+    <div class="details-row"><span class="details-label">Challenge</span><span class="details-value">5 friendly questions</span></div>
+    <div class="details-row"><span class="details-label">Time</span><span class="details-value">about two minutes</span></div>
+    <div class="details-row"><span class="details-label">Reward</span><span class="details-value">revealed at the end 🎁</span></div>
+    <div class="details-row"><span class="details-label">Reserved for</span><span class="details-value">{{first_name}}</span></div>
+    <div class="details-row"><span class="details-label">Status</span><span class="details-value">waiting for you</span></div>
+  </div>
+
+  <div class="cta-wrap">
+    <a class="cta" href="../quiz/quiz.html">Take My Quiz</a>
+  </div>
+  <div class="cta-meta">Five questions. A reward at the end.</div>
+
+  <div class="closing" style="margin-top: 48px;">
+    <p><em>&Agrave; bient&ocirc;t,</em><br/>The French Atelier team</p>
+    
+  </div>
+</main>
+
+</td></tr>
+</table>
+
+<footer class="site-footer">
+  <div class="footer-brand">French Atelier</div>
+  <div class="footer-tag">Culture speaks French. What about you?</div>
+  <div class="footer-links">
+    <a href="https://www.frenchatelierlive.com">frenchatelierlive.com</a>
+    <span style="opacity:0.4;">&middot;</span>
+    <a href="mailto:hello@frenchatelierlive.com">hello@frenchatelierlive.com</a>
+  </div>
+  <div class="footer-legal">
+    You're receiving this because you enrolled in French Atelier by Acadomia.<br/>
+    <a href="{{unsubscribe_url}}">Unsubscribe</a> &middot; <a href="{{preferences_url}}">Email preferences</a> &middot; <a href="https://www.frenchatelierlive.com/privacy">Privacy</a>
+  </div>
+</footer>
+
+</body>
+</html>

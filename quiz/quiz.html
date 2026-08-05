@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>A Small Recap | French Atelier by Acadomia</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16.png" />
+<link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy:        #0B1340;
+    --navy-deep:   #080E33;
+    --gold:        #C8A560;
+    --gold-soft:   #D4B16A;
+    --gold-muted:  #AA8C55;
+    --burgundy:    #6B1E2C;
+    --ivory:       #F5EFE5;
+    --cream:       #E4DAC4;
+    --paper:       #FAF6EE;
+    --ink:         #1F2138;
+    --ink-soft:    #4A4D6A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--navy-deep);
+    color: var(--ivory);
+    -webkit-font-smoothing: antialiased;
+  }
+  .screen {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: none;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--navy);
+  }
+  .screen.active { display: flex; }
+  .screen::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(11,19,64,0.88) 0%, rgba(11,19,64,0.72) 45%, rgba(11,19,64,0.55) 100%);
+  }
+  .logo {
+    position: absolute; top: 28px; left: 32px; z-index: 2;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .logo small { display: block; font-size: 11px; color: var(--ivory); font-style: italic; font-weight: 400; margin-top: 2px; letter-spacing: 0.06em; text-transform: none; }
+  .qcount {
+    position: absolute; top: 32px; right: 32px; z-index: 2;
+    font-family: 'Inter', sans-serif; font-size: 12px; color: var(--gold-soft);
+    letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600;
+  }
+  .content {
+    position: relative; z-index: 2;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 100px 32px 60px;
+    text-align: center;
+  }
+  .eyebrow { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: var(--gold-soft); margin-bottom: 14px; }
+  .title { font-family: 'Cormorant Garamond', serif; font-size: clamp(30px, 5vw, 48px); font-weight: 600; color: #fff; line-height: 1.15; margin-bottom: 20px; }
+  .title em { font-style: italic; color: var(--gold-soft); }
+  .subtitle { font-size: 16.5px; line-height: 1.7; color: var(--ivory); opacity: 0.92; max-width: 520px; margin: 0 auto 34px; }
+
+  .qtitle { font-family: 'Cormorant Garamond', serif; font-size: clamp(24px, 3.6vw, 34px); line-height: 1.3; color: #fff; font-weight: 600; margin-bottom: 28px; }
+
+  .answers { display: flex; flex-direction: column; gap: 12px; max-width: 480px; margin: 0 auto 30px; }
+  .answer {
+    display: flex; align-items: center; gap: 14px;
+    background: rgba(245, 239, 229, 0.06);
+    border: 1px solid rgba(245, 239, 229, 0.22);
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+  }
+  .answer:hover { background: rgba(200, 165, 96, 0.16); border-color: var(--gold-soft); }
+  .answer.selected-correct { background: rgba(120, 170, 110, 0.22); border-color: #8FBF7A; }
+  .answer.selected-wrong { background: rgba(200, 165, 96, 0.20); border-color: var(--gold-soft); }
+  .answer .letter { width: 24px; height: 24px; border-radius: 50%; background: rgba(245, 239, 229, 0.15); display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; }
+
+  .feedback-card {
+    display: none;
+    max-width: 480px;
+    margin: 0 auto 26px;
+    padding: 22px 26px;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .feedback-card.show { display: block; }
+  .feedback-card.correct { background: rgba(120, 170, 110, 0.16); border: 1px solid rgba(143, 191, 122, 0.55); color: #E8F3E2; }
+  .feedback-card.wrong { background: rgba(200, 165, 96, 0.16); border: 1px solid rgba(212, 177, 106, 0.55); color: var(--ivory); }
+  .feedback-card strong { color: #fff; }
+
+  .cta-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    padding: 15px 38px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 13.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  .cta-btn:hover { background: var(--gold-soft); transform: translateY(-1px); }
+  .cta-btn[disabled] { opacity: 0.4; cursor: not-allowed; }
+
+  .progress-dots { display: flex; gap: 8px; justify-content: center; margin-top: 36px; }
+  .progress-dots .dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(245,239,229,0.25); }
+  .progress-dots .dot.active { background: var(--gold); }
+
+  .code-box {
+    margin: 30px auto 34px;
+    max-width: 340px;
+    text-align: center;
+    background: rgba(11,19,64,0.55);
+    border: 2px solid var(--gold);
+    border-radius: 8px;
+    padding: 28px 24px;
+  }
+  .code-box .code-label { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-soft); margin-bottom: 12px; }
+  .code-box .code-value { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 700; letter-spacing: 0.1em; color: #fff; }
+
+  @media (max-width: 640px) {
+    .content { padding: 84px 22px 50px; }
+    .qtitle { font-size: 24px; }
+    .answer { font-size: 15px; padding: 13px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div id="quiz-root">
+<section class="screen active" id="screen-welcome" style="background-image: url('../assets/images/05-promo-quiz_lp_desktop_1920x502.jpg');">
+  <div class="logo">French Atelier<small>by Acadomia</small></div>
+  <div class="content">
+    <div class="eyebrow">French Atelier &middot; by Acadomia</div>
+    <h1 class="title">A small recap</h1>
+    <p class="subtitle">Five light questions about the people and stories we have shared with you. About two minutes, no grades, and a small reward waiting for you at the end.</p>
+    <button class="cta-btn" onclick="showScreen('q0')">Start</button>
+  </div>
+</section>
+<section class="screen" id="q0" style="background-image: url('../assets/images/05-promo-quiz_lp_desktop_1920x502.jpg');">
+  <div class="logo">French Atelier<small>by Acadomia</small></div>
+  <div class="qcount">Question 1 of 5</div>
+  <div class="content" style="text-align:left; max-width: 560px;">
+    <h2 class="qtitle">Which French basketball player has become one of the most talked-about young athletes in the world?</h2>
+    <div class="answers" id="answers-0">
+      <div class="answer" data-idx="0" onclick="answer(0,0)"><span class="letter">A</span><span>Kylian Mbappe</span></div>
+      <div class="answer" data-idx="1" onclick="answer(0,1)"><span class="letter">B</span><span>Victor Wembanyama</span></div>
+      <div class="answer" data-idx="2" onclick="answer(0,2)"><span class="letter">C</span><span>Omar Sy</span></div>
+    </div>
+    <div class="feedback-card correct" id="feedback-correct-0">
+      <strong>Correct.</strong> Magnifique, Victor Wembanyama is exactly right, a French basketball player who has become one of the most watched young athletes anywhere.
+    </div>
+    <div class="feedback-card wrong" id="feedback-wrong-0">
+      <strong>Not quite.</strong> Almost. The answer is Victor Wembanyama, a French basketball player who has become one of the most watched young athletes anywhere.
+    </div>
+    <button class="cta-btn" id="next-0" disabled onclick="showScreen('q1')">Continue</button>
+    <div class="progress-dots">
+      <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+  </div>
+</section>
+<section class="screen" id="q1" style="background-image: url('../assets/images/05-promo-quiz_lp_desktop_1920x502.jpg');">
+  <div class="logo">French Atelier<small>by Acadomia</small></div>
+  <div class="qcount">Question 2 of 5</div>
+  <div class="content" style="text-align:left; max-width: 560px;">
+    <h2 class="qtitle">Which French actress won an Academy Award for playing Édith Piaf on screen?</h2>
+    <div class="answers" id="answers-1">
+      <div class="answer" data-idx="0" onclick="answer(1,0)"><span class="letter">A</span><span>Léa Seydoux</span></div>
+      <div class="answer" data-idx="1" onclick="answer(1,1)"><span class="letter">B</span><span>Marion Cotillard</span></div>
+      <div class="answer" data-idx="2" onclick="answer(1,2)"><span class="letter">C</span><span>Eva Green</span></div>
+    </div>
+    <div class="feedback-card correct" id="feedback-correct-1">
+      <strong>Correct.</strong> Exactement, Marion Cotillard won the Academy Award for her portrayal of Édith Piaf, bringing the singer's story to audiences worldwide.
+    </div>
+    <div class="feedback-card wrong" id="feedback-wrong-1">
+      <strong>Not quite.</strong> A small correction, it was Marion Cotillard. Her performance as Édith Piaf earned her the Academy Award for Best Actress.
+    </div>
+    <button class="cta-btn" id="next-1" disabled onclick="showScreen('q2')">Continue</button>
+    <div class="progress-dots">
+      <span class="dot"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+  </div>
+</section>
+<section class="screen" id="q2" style="background-image: url('../assets/images/05-promo-quiz_lp_desktop_1920x502.jpg');">
+  <div class="logo">French Atelier<small>by Acadomia</small></div>
+  <div class="qcount">Question 3 of 5</div>
+  <div class="content" style="text-align:left; max-width: 560px;">
+    <h2 class="qtitle">What nickname was Édith Piaf given early in her career, meaning little sparrow?</h2>
+    <div class="answers" id="answers-2">
+      <div class="answer" data-idx="0" onclick="answer(2,0)"><span class="letter">A</span><span>La Môme Piaf</span></div>
+      <div class="answer" data-idx="1" onclick="answer(2,1)"><span class="letter">B</span><span>La Vie en Rose</span></div>
+      <div class="answer" data-idx="2" onclick="answer(2,2)"><span class="letter">C</span><span>Mon Légionnaire</span></div>
+    </div>
+    <div class="feedback-card correct" id="feedback-correct-2">
+      <strong>Correct.</strong> Parfait, La Môme Piaf, the little sparrow, was the nickname a nightclub owner gave her before she became one of France's best loved singers.
+    </div>
+    <div class="feedback-card wrong" id="feedback-wrong-2">
+      <strong>Not quite.</strong> Close, but the nickname was La Môme Piaf, meaning little sparrow. La Vie en Rose is actually one of her most famous songs.
+    </div>
+    <button class="cta-btn" id="next-2" disabled onclick="showScreen('q3')">Continue</button>
+    <div class="progress-dots">
+      <span class="dot"></span><span class="dot"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+  </div>
+</section>
+<section class="screen" id="q3" style="background-image: url('../assets/images/05-promo-quiz_lp_desktop_1920x502.jpg');">
+  <div class="logo">French Atelier<small>by Acadomia</small></div>
+  <div class="qcount">Question 4 of 5</div>
+  <div class="content" style="text-align:left; max-width: 560px;">
+    <h2 class="qtitle">In Alexandre Dumas' novel, who was the real historical figure behind d'Artagnan?</h2>
+    <div class="answers" id="answers-3">
+      <div class="answer" data-idx="0" onclick="answer(3,0)"><span class="letter">A</span><span>Henri d'Aramitz</span></div>
+      <div class="answer" data-idx="1" onclick="answer(3,1)"><span class="letter">B</span><span>Isaac de Porteau</span></div>
+      <div class="answer" data-idx="2" onclick="answer(3,2)"><span class="letter">C</span><span>Charles de Batz de Castelmore</span></div>
+    </div>
+    <div class="feedback-card correct" id="feedback-correct-3">
+      <strong>Correct.</strong> Bravo, Charles de Batz de Castelmore was the real man behind d'Artagnan, a Gascon who served in the King's Musketeers.
+    </div>
+    <div class="feedback-card wrong" id="feedback-wrong-3">
+      <strong>Not quite.</strong> A small detail, the real d'Artagnan was Charles de Batz de Castelmore. He served in the King's Musketeers long before Dumas told his story.
+    </div>
+    <button class="cta-btn" id="next-3" disabled onclick="showScreen('q4')">Continue</button>
+    <div class="progress-dots">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot active"></span><span class="dot"></span>
+    </div>
+  </div>
+</section>
+<section class="screen" id="q4" style="background-image: url('../assets/images/05-promo-quiz_lp_desktop_1920x502.jpg');">
+  <div class="logo">French Atelier<small>by Acadomia</small></div>
+  <div class="qcount">Question 5 of 5</div>
+  <div class="content" style="text-align:left; max-width: 560px;">
+    <h2 class="qtitle">The historical figures behind Athos and Aramis were both from which French region?</h2>
+    <div class="answers" id="answers-4">
+      <div class="answer" data-idx="0" onclick="answer(4,0)"><span class="letter">A</span><span>Béarn</span></div>
+      <div class="answer" data-idx="1" onclick="answer(4,1)"><span class="letter">B</span><span>Alsace</span></div>
+      <div class="answer" data-idx="2" onclick="answer(4,2)"><span class="letter">C</span><span>Provence</span></div>
+    </div>
+    <div class="feedback-card correct" id="feedback-correct-4">
+      <strong>Correct.</strong> Très bien, Béarn is correct. Armand de Sillègue d'Athos and Henri d'Aramitz both came from that region in southwestern France.
+    </div>
+    <div class="feedback-card wrong" id="feedback-wrong-4">
+      <strong>Not quite.</strong> A small note, the answer is Béarn. Both Armand de Sillègue d'Athos and Henri d'Aramitz, the real men behind Athos and Aramis, came from that region.
+    </div>
+    <button class="cta-btn" id="next-4" disabled onclick="showScreen('screen-end')">Continue</button>
+    <div class="progress-dots">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot active"></span>
+    </div>
+  </div>
+</section>
+<section class="screen" id="screen-end" style="background-image: url('../assets/images/05-promo-quiz_lp_desktop_1920x502.jpg');">
+  <div class="logo">French Atelier<small>by Acadomia</small></div>
+  <div class="content">
+    <div class="eyebrow">Beautifully done.</div>
+    <h1 class="title">Magnifique. You did it.</h1>
+    <p class="subtitle">Congratulations, {{first_name}}. Whatever you knew, whatever you just learned, both belong to you now.</p>
+    <div class="code-box">
+      <div class="code-label">Your code</div>
+      <div class="code-value">MERCI20</div>
+    </div>
+    <a class="cta-btn" href="../promo/claim.html">Claim My 20% Off</a>
+  </div>
+</section>
+</div>
+
+<script>
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(function(s) { s.classList.remove('active'); });
+  var el = document.getElementById(id);
+  if (el) { el.classList.add('active'); window.scrollTo(0,0); }
+}
+
+function answer(qIndex, choiceIndex) {
+  var correctIdx = QUIZ_DATA[qIndex].correct_index;
+  var answers = document.getElementById('answers-' + qIndex).querySelectorAll('.answer');
+  answers.forEach(function(a) { a.style.pointerEvents = 'none'; });
+  var chosen = answers[choiceIndex];
+  if (choiceIndex === correctIdx) {
+    chosen.classList.add('selected-correct');
+    document.getElementById('feedback-correct-' + qIndex).classList.add('show');
+  } else {
+    chosen.classList.add('selected-wrong');
+    answers[correctIdx].classList.add('selected-correct');
+    document.getElementById('feedback-wrong-' + qIndex).classList.add('show');
+  }
+  document.getElementById('next-' + qIndex).disabled = false;
+}
+
+var QUIZ_DATA = [{"correct_index": 1}, {"correct_index": 1}, {"correct_index": 0}, {"correct_index": 2}, {"correct_index": 0}];
+
+</script>
+
+</body>
+</html>
