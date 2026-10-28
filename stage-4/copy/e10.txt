@@ -1,0 +1,23 @@
+Subject Line: Which French Atelier course fits your level?
+Subject characters: 44
+Email Preview Line: Two collections, seven courses and a practical way to choose where to begin.
+Preview characters: 76
+Header Text: Find the French course for your level
+CTA Button: Explore my courses
+CTA URL: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/landing-pages/10-choose-your-course.html
+Body word count: 144
+
+Bonjour {{first_name}}, 📚
+
+Choosing a French course starts with two questions: what can you already do, and how would you like to practise?
+
+French Atelier by Acadomia offers two collections. The French Atelier collection combines structured language learning with cultural settings across France. Its four courses run from Foundation through Intermediate, with 20 live lessons in each.
+
+Let's Speak French puts the emphasis on spoken practice. It offers Foundation, Beginner and Elementary courses, with 10 live lessons in each. Sessions in both collections last 85 minutes.
+
+You do not need to judge your level from a course title. The programme offers a level assessment and an advisor conversation to help you choose a starting point.
+
+Compare the starting levels, lesson counts and kinds of practice in each collection. The right choice should fit the French you have now, not the French you think you ought to have.
+
+À bientôt,
+The French Atelier team

@@ -1,0 +1,44 @@
+# marketing_content_lapero_en
+French Atelier by Acadomia - WhatsApp Message
+
+Category: Marketing drip (weekly, content)
+Code: wa-7
+Trigger: Weekly content drip, message 7
+Header Text: L’apéro: France’s pre-dinner gathering
+CTA Button: See the full story
+CTA URL/Action: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/stories/lapero.html
+Word count: 150 excluding editorial headline; 154 in transmitted body
+Body characters: 834/1024 including headline and line breaks
+Header characters: 38/60
+Button characters: 18/25
+Image header: assets/images/w07.jpg (1792×897)
+
+## Message body
+
+```
+L’apéro: France’s pre-dinner gathering
+
+Bonjour {{BODY_1}} 🫒
+
+A terrace table, a bowl of olives, some bread and cheese. A friend pulls up a chair, and dinner can wait a while.
+
+This is l’apéro, a relaxed gathering before dinner. The point is not just what is in the glass. It is the chat, the shared bites, and the chance to ask how someone’s day went.
+
+On prend un verre ? means Shall we have a drink? It is a simple way to suggest meeting up. When glasses rise, Santé means Cheers. Sparkling water or juice can be part of the moment, too.
+
+A fun fact: apéro is the short form of apéritif. The short name suits a casual invitation.
+
+Habits vary, of course. Not every evening or every home looks like this.
+
+One chair at the table is free. Who would you like to sit beside?
+
+There is no need to rush.
+
+From French Atelier by Acadomia.
+```
+
+## Notes
+
+Personalization uses the established {{BODY_1}} convention. This is an IMAGE-header template: the editorial headline is already included in the transmitted body above, not configured as a separate TEXT header. Unicode codepoints are counted; personalized name substitution must remain within the limit.
+
+- French Atelier by Acadomia · hello@frenchatelierlive.com

@@ -1,0 +1,23 @@
+Subject Line: Brittany has another word for goodbye
+Subject characters: 37
+Email Preview Line: Meet the Celtic language behind kenavo, Breizh and a very buttery cake.
+Preview characters: 71
+Header Text: The Breton language, in three words
+CTA Button: Explore Brittany
+CTA URL: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/landing-pages/01-breton-language.html
+Body word count: 168
+
+Bonjour {{first_name}}, 🌊
+
+In Brittany, a goodbye might sound a little different: kenavo. It is Breton, not a regional way of speaking French. And that small word introduces a part of France with a Celtic language of its own.
+
+Bretagne is the French name for Brittany. In Breton, it is Breizh. The language belongs to the same family as Welsh and Cornish, which helps explain why some local names look unlike the French you already know.
+
+Then there is kouign-amann. You may recognise the pastry before the word: folded dough, plenty of butter and a caramelised edge. Its Breton name means butter cake, and it has travelled well beyond its home region.
+
+Try this simple question in French: Vous connaissez la Bretagne ? Do you know Brittany? You can follow it with J'aimerais y aller, meaning I would like to go there.
+
+A pastry name, a greeting, a place on a sign: each offers a small introduction to Breton culture. French gives you a way to ask about the stories behind them.
+
+À bientôt,
+The French Atelier team

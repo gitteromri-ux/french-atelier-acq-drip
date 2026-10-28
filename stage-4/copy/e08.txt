@@ -1,0 +1,30 @@
+Subject Line: Final chance to claim X% off your French course
+Subject characters: 47
+Email Preview Line: Only a few places remain in the next class. Claim your discount and start French.
+Preview characters: 81
+Header Text: Claim X% off before places fill
+CTA Button: Claim my discount
+CTA URL: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/landing-pages/08-french-class-invitation.html
+Body word count: 126
+
+Bonjour {{first_name}}, ✉️
+
+This is your final chance to claim X% off your French Atelier course. Only a few places remain in the next class, so take the next step before they fill.
+
+Learn with real teachers, live from France. French Atelier by Acadomia's native, certified teachers help you practise the language through everyday situations and cultural settings, not just isolated words.
+
+From a first introduction to a conversation about France, the aim is French you can put to use. Small groups of 10 to 12 learners make the classroom a place to speak and listen.
+
+Your interest in French can become a class you actually attend. Claim your discount now and get started with French Atelier.
+
+Hurry before the remaining places are taken. Your French class is waiting.
+
+Your French class
+Offer: X% off
+Applies to: French language classes
+Class size: 10 to 12
+Reserved for: {{first_name}}
+Status: Few places in next class
+
+À bientôt,
+The French Atelier team

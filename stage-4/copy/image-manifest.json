@@ -1,0 +1,460 @@
+[
+  {
+    "id": "e01",
+    "file": "assets/masters/e01-4k-working.jpg",
+    "width": 4096,
+    "height": 2388,
+    "sourceWidth": 1360,
+    "sourceHeight": 793,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "e02",
+    "file": "assets/masters/e02-4k-working.jpg",
+    "width": 4096,
+    "height": 2390,
+    "sourceWidth": 1611,
+    "sourceHeight": 940,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "e03",
+    "file": "assets/masters/e03-4k-working.jpg",
+    "width": 4096,
+    "height": 2391,
+    "sourceWidth": 1405,
+    "sourceHeight": 820,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "e04",
+    "file": "assets/masters/e04-4k-working.jpg",
+    "width": 4096,
+    "height": 2389,
+    "sourceWidth": 1521,
+    "sourceHeight": 887,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "e05",
+    "file": "assets/masters/e05-4k-working.jpg",
+    "width": 4096,
+    "height": 2390,
+    "sourceWidth": 1613,
+    "sourceHeight": 941,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "e06",
+    "file": "assets/masters/e06-4k-working.jpg",
+    "width": 4096,
+    "height": 2389,
+    "sourceWidth": 1344,
+    "sourceHeight": 784,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "e07",
+    "file": "assets/masters/e07-4k-working.jpg",
+    "width": 4096,
+    "height": 1446,
+    "sourceWidth": 2111,
+    "sourceHeight": 745,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "e08",
+    "file": "assets/masters/e08-4k-working.jpg",
+    "width": 4096,
+    "height": 2048,
+    "sourceWidth": 1774,
+    "sourceHeight": 887,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "e09",
+    "file": "assets/masters/e09-4k-working.jpg",
+    "width": 4096,
+    "height": 2731,
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "e10",
+    "file": "assets/masters/e10-4k-working.jpg",
+    "width": 4096,
+    "height": 2048,
+    "sourceWidth": 1774,
+    "sourceHeight": 887,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "e11",
+    "file": "assets/masters/e11-4k-working.jpg",
+    "width": 4096,
+    "height": 1638,
+    "sourceWidth": 1983,
+    "sourceHeight": 793,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "w01",
+    "file": "assets/masters/w01-4k-working.jpg",
+    "width": 4096,
+    "height": 2048,
+    "sourceWidth": 1774,
+    "sourceHeight": 887,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "w02",
+    "file": "assets/masters/w02-4k-working.jpg",
+    "width": 4096,
+    "height": 2048,
+    "sourceWidth": 1774,
+    "sourceHeight": 887,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "w03",
+    "file": "assets/masters/w03-4k-working.jpg",
+    "width": 4096,
+    "height": 2048,
+    "sourceWidth": 1774,
+    "sourceHeight": 887,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "w04",
+    "file": "assets/masters/w04-4k-working.jpg",
+    "width": 4096,
+    "height": 2048,
+    "sourceWidth": 1774,
+    "sourceHeight": 887,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "w05",
+    "file": "assets/masters/w05-4k-working.jpg",
+    "width": 4096,
+    "height": 2048,
+    "sourceWidth": 1774,
+    "sourceHeight": 887,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "w06",
+    "file": "assets/masters/w06-4k-working.jpg",
+    "width": 4096,
+    "height": 2048,
+    "sourceWidth": 1774,
+    "sourceHeight": 887,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "w07",
+    "file": "assets/masters/w07-4k-working.jpg",
+    "width": 4096,
+    "height": 2048,
+    "sourceWidth": 1774,
+    "sourceHeight": 887,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "id": "w08",
+    "file": "assets/masters/w08-4k-working.jpg",
+    "width": 4096,
+    "height": 2048,
+    "sourceWidth": 1774,
+    "sourceHeight": 887,
+    "method": "Resized 4096px-wide working file from generated/composited source; not native-resolution photography."
+  },
+  {
+    "file": "assets/images/e01-desktop.jpg",
+    "width": 1920,
+    "height": 502,
+    "bytes": 447759,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e01-email.jpg",
+    "width": 1200,
+    "height": 700,
+    "bytes": 378079,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e01-mobile.jpg",
+    "width": 758,
+    "height": 556,
+    "bytes": 228347,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e02-desktop.jpg",
+    "width": 1920,
+    "height": 502,
+    "bytes": 294975,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e02-email.jpg",
+    "width": 1200,
+    "height": 700,
+    "bytes": 346379,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e02-mobile.jpg",
+    "width": 758,
+    "height": 556,
+    "bytes": 194332,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e03-desktop.jpg",
+    "width": 1920,
+    "height": 502,
+    "bytes": 368274,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e03-email.jpg",
+    "width": 1200,
+    "height": 700,
+    "bytes": 302778,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e03-mobile.jpg",
+    "width": 758,
+    "height": 556,
+    "bytes": 149562,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e04-desktop.jpg",
+    "width": 1920,
+    "height": 502,
+    "bytes": 524720,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e04-email.jpg",
+    "width": 1200,
+    "height": 700,
+    "bytes": 467112,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e04-mobile.jpg",
+    "width": 758,
+    "height": 556,
+    "bytes": 257196,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e05-desktop.jpg",
+    "width": 1920,
+    "height": 502,
+    "bytes": 376247,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e05-email.jpg",
+    "width": 1200,
+    "height": 700,
+    "bytes": 363502,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e05-mobile.jpg",
+    "width": 758,
+    "height": 556,
+    "bytes": 165089,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e06-desktop.jpg",
+    "width": 1920,
+    "height": 502,
+    "bytes": 546461,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e06-email.jpg",
+    "width": 1200,
+    "height": 700,
+    "bytes": 448539,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e06-mobile.jpg",
+    "width": 758,
+    "height": 556,
+    "bytes": 232000,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e07-desktop.jpg",
+    "width": 1920,
+    "height": 502,
+    "bytes": 437501,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e07-email.jpg",
+    "width": 1200,
+    "height": 700,
+    "bytes": 370266,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e07-mobile.jpg",
+    "width": 758,
+    "height": 556,
+    "bytes": 214239,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e08-desktop.jpg",
+    "width": 1920,
+    "height": 502,
+    "bytes": 151892,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e08-email.jpg",
+    "width": 1200,
+    "height": 700,
+    "bytes": 135231,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e08-mobile.jpg",
+    "width": 758,
+    "height": 556,
+    "bytes": 75890,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e09-desktop.jpg",
+    "width": 1920,
+    "height": 502,
+    "bytes": 244624,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e09-email.jpg",
+    "width": 1200,
+    "height": 700,
+    "bytes": 267125,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e09-mobile.jpg",
+    "width": 758,
+    "height": 556,
+    "bytes": 158165,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e10-desktop.jpg",
+    "width": 1920,
+    "height": 502,
+    "bytes": 278787,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e10-email.jpg",
+    "width": 1200,
+    "height": 700,
+    "bytes": 243337,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e10-mobile.jpg",
+    "width": 758,
+    "height": 556,
+    "bytes": 124165,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e11-desktop.jpg",
+    "width": 1920,
+    "height": 502,
+    "bytes": 125644,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e11-email.jpg",
+    "width": 1200,
+    "height": 700,
+    "bytes": 120244,
+    "verified": true
+  },
+  {
+    "file": "assets/images/e11-mobile.jpg",
+    "width": 758,
+    "height": 556,
+    "bytes": 70835,
+    "verified": true
+  },
+  {
+    "file": "assets/images/w01.jpg",
+    "width": 1792,
+    "height": 897,
+    "bytes": 799717,
+    "verified": true
+  },
+  {
+    "file": "assets/images/w02.jpg",
+    "width": 1792,
+    "height": 897,
+    "bytes": 684729,
+    "verified": true
+  },
+  {
+    "file": "assets/images/w03.jpg",
+    "width": 1792,
+    "height": 897,
+    "bytes": 725253,
+    "verified": true
+  },
+  {
+    "file": "assets/images/w04.jpg",
+    "width": 1792,
+    "height": 897,
+    "bytes": 868891,
+    "verified": true
+  },
+  {
+    "file": "assets/images/w05.jpg",
+    "width": 1792,
+    "height": 897,
+    "bytes": 643486,
+    "verified": true
+  },
+  {
+    "file": "assets/images/w06.jpg",
+    "width": 1792,
+    "height": 897,
+    "bytes": 771587,
+    "verified": true
+  },
+  {
+    "file": "assets/images/w07.jpg",
+    "width": 1792,
+    "height": 897,
+    "bytes": 693424,
+    "verified": true
+  },
+  {
+    "file": "assets/images/w08.jpg",
+    "width": 1792,
+    "height": 897,
+    "bytes": 795176,
+    "verified": true
+  }
+]

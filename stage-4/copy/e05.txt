@@ -1,0 +1,23 @@
+Subject Line: Charlemagne's story includes more than an empire
+Subject characters: 48
+Email Preview Line: Schools, manuscripts and the language behind a medieval revival of learning.
+Preview characters: 76
+Header Text: Charlemagne and the history of learning
+CTA Button: Explore the history
+CTA URL: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/landing-pages/05-charlemagne.html
+Body word count: 184
+
+Bonjour {{first_name}}, 📚
+
+A crown is the obvious place to begin with Charlemagne. A book is a more revealing one. Alongside his rule, he supported an effort to improve learning, train clergy and make written texts more reliable.
+
+People across a large realm needed to read, teach and interpret religious texts. Better Latin and carefully corrected books were part of the answer. Across a fragmented medieval landscape, shared texts and teaching helped connect the regions of his realm. Learning was connected to both faith and authority.
+
+Scholars came to his court from different regions, bringing knowledge that did not begin with him. The cultural revival associated with his reign built on older traditions rather than creating education from nothing.
+
+A few French words bring the setting into focus: un manuscrit is a handwritten document, un monastère is a monastery, and un empereur is an emperor.
+
+Charlemagne is not simply the founder of France. He belongs to a wider medieval history, where language, religion and power meet. Learning French offers another way to approach that history, from a manuscript's description to the questions you ask in a museum.
+
+À bientôt,
+The French Atelier team

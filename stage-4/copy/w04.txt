@@ -1,0 +1,42 @@
+# marketing_content_les_treize_desserts_en
+French Atelier by Acadomia - WhatsApp Message
+
+Category: Marketing drip (weekly, content)
+Code: wa-4
+Trigger: Weekly content drip, message 4
+Header Text: Why Provence serves thirteen desserts
+CTA Button: See the full story
+CTA URL/Action: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/stories/les-treize-desserts.html
+Word count: 150 excluding editorial headline; 155 in transmitted body
+Body characters: 924/1024 including headline and line breaks
+Header characters: 37/60
+Button characters: 18/25
+Image header: assets/images/w04.jpg (1792×897)
+
+## Message body
+
+```
+Why Provence serves thirteen desserts
+
+Bonjour {{BODY_1}} 🍊
+
+Thirteen desserts sounds like a lot of cake. In Provence, the Christmas custom is a little different: think bowls of nuts, dried fruit, fresh fruit and pieces of nougat to share.
+
+Les desserts means desserts. Les fruits secs covers dried fruits and nuts here. Le nougat is nougat, ready to take its place beside the fruit and sweet olive oil bread called pompe à l’huile.
+
+Why thirteen? The traditional number represents Christ and the twelve apostles. The choice of treats varies by family and place, so there is no single table that speaks for every home.
+
+Here is the lovely detail: the desserts are displayed together, rather than served as thirteen separate courses.
+
+Someone reaches for a fig, then passes the bowl across the table. A small taste is part of a much larger spread.
+
+A little nougat might be your next choice.
+
+From French Atelier by Acadomia.
+```
+
+## Notes
+
+Personalization uses the established {{BODY_1}} convention. This is an IMAGE-header template: the editorial headline is already included in the transmitted body above, not configured as a separate TEXT header. Unicode codepoints are counted; personalized name substitution must remain within the limit.
+
+- French Atelier by Acadomia · hello@frenchatelierlive.com

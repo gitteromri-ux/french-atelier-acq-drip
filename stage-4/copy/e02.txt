@@ -1,0 +1,23 @@
+Subject Line: What Coco Chanel changed about getting dressed
+Subject characters: 46
+Email Preview Line: Comfort, jersey and the little black dress, with a few French words to keep.
+Preview characters: 76
+Header Text: Coco Chanel and the little black dress
+CTA Button: Explore Chanel's style
+CTA URL: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/landing-pages/02-coco-chanel.html
+Body word count: 166
+
+Bonjour {{first_name}}, 👗
+
+What makes a dress memorable: how it looks, or how it lets you move? Gabrielle Chanel made comfort central to her approach, using soft fabrics and practical shapes rather than treating elegance as something stiff.
+
+One important choice was jersey, a knitted fabric associated with underwear and sportswear. She used its suppleness for clothes that could feel relaxed while still looking carefully considered.
+
+Her little black dress offered another useful idea: one simple garment, changed by the way you wear it. Chanel was not the only designer working with black, but her versions helped make it a lasting part of the modern wardrobe.
+
+Three French words make this easier to describe: une robe is a dress, le tissu is fabric, and confortable means comfortable. Try: Cette robe est confortable. This dress is comfortable.
+
+Her design influence is one part of a more complicated life. Looking closely at the clothes gives you something specific to explore: how fabric, cut and movement changed the experience of getting dressed.
+
+À bientôt,
+The French Atelier team

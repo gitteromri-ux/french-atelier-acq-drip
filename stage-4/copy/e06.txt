@@ -1,0 +1,23 @@
+Subject Line: Christmas in Strasbourg, one French word at a time
+Subject characters: 50
+Email Preview Line: Wooden chalets, spiced biscuits and a few words for an Alsatian winter walk.
+Preview characters: 76
+Header Text: Christmas markets in Strasbourg
+CTA Button: Explore Strasbourg
+CTA URL: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/landing-pages/06-strasbourg-christmas.html
+Body word count: 167
+
+Bonjour {{first_name}}, 🎄
+
+In Strasbourg, lights hang above winter streets and timber-framed buildings, with the cathedral rising beyond the market stalls. Wooden chalets and the scent of cinnamon give Christmas here a distinctly Alsatian setting.
+
+Pause at the food rather than rushing to the next square. Bredele are small Christmas biscuits; pain d'épices is spiced gingerbread. You might choose a bretzel, the local pretzel, when you want something savoury instead.
+
+The French words fit easily into the scene. Les lumières are the lights, un marché de Noël is a Christmas market, and les épices are spices. You can practise simply by naming what catches your attention.
+
+If you want to ask about a biscuit, try: Qu'est-ce que c'est ? What is it? To order one, say: Un, s'il vous plaît. One, please.
+
+A greeting at a stall, a question about a pastry, a thank you before you leave: small exchanges let you experience Christmas in French. Keep walking towards the cathedral, with a few new words to recognise along the way.
+
+À bientôt,
+The French Atelier team

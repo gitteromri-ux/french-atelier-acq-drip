@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>French Atelier &middot; ACQ Drip Series, Stage 4</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png" />
+<link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+<style>
+  :root {
+    --navy:        #0B1340;
+    --navy-deep:   #080E33;
+    --gold:        #C8A560;
+    --gold-soft:   #D4B16A;
+    --gold-muted:  #AA8C55;
+    --burgundy:    #6B1E2C;
+    --ivory:       #F5EFE5;
+    --cream:       #E4DAC4;
+    --paper:       #FAF6EE;
+    --ink:         #1F2138;
+    --ink-soft:    #4A4D6A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+  .site-header { background: var(--navy); padding: 40px 28px 56px; text-align: center; border-bottom: 3px solid var(--gold); }
+  .site-header h1 { font-family: 'Cormorant Garamond', serif; color: var(--gold); font-size: 40px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; margin-bottom: 6px; }
+  .site-header .by { color: var(--ivory); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; letter-spacing: 0.08em; opacity: 0.85; }
+  .site-header .flourish { margin: 20px auto 22px; display: block; }
+  .site-header .tagline { color: var(--ivory); font-family: 'Cormorant Garamond', serif; font-size: 20px; font-style: italic; max-width: 640px; margin: 0 auto; opacity: 0.92; }
+  .site-header .meta { margin-top: 16px; color: var(--gold-soft); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-family: 'Inter', sans-serif; opacity: 0.75; }
+
+  .nav { background: var(--navy); padding: 16px 28px; position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 12px rgba(11,19,64,0.18); }
+  .nav-inner { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; }
+  .nav a { color: var(--ivory); text-decoration: none; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; font-family: 'Inter', sans-serif; }
+  .nav a:hover { color: var(--gold); }
+
+  .section { max-width: 1180px; margin: 0 auto; padding: 70px 28px 30px; }
+  .section-header { text-align: center; margin-bottom: 44px; }
+  .section-header .eyebrow { color: var(--gold); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; letter-spacing: 0.1em; margin-bottom: 8px; }
+  .section-header h2 { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 36px; font-weight: 500; letter-spacing: 0.01em; }
+  .section-header .sub { margin-top: 10px; color: var(--ink-soft); font-size: 14.5px; max-width: 640px; margin-left: auto; margin-right: auto; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; }
+  .card { background: #fff; border: 1px solid var(--cream); border-radius: 6px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 14px 36px -16px rgba(11,19,64,0.22); }
+  .card .thumb { position: relative; background: var(--ivory); overflow: hidden; aspect-ratio: 12 / 7; border-bottom: 1px solid var(--cream); }
+  .card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card .thumb .overlay { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 65%, rgba(11,19,64,0.5) 100%); pointer-events: none; }
+  .card .body { padding: 20px 20px 22px; flex: 1; display: flex; flex-direction: column; }
+  .card .eyebrow { color: var(--gold); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 6px; font-weight: 600; }
+  .card h3 { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 22px; line-height: 1.25; font-weight: 500; margin-bottom: 12px; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 14px; padding: 9px 16px; border-radius: 3px; letter-spacing: 0.05em; text-transform: uppercase; transition: all 0.18s; border: 1px solid var(--navy); cursor: pointer; flex: 1; min-width: 110px; text-align: center; }
+  .btn-primary { background: var(--navy); color: var(--ivory); border-color: var(--gold); }
+  .btn-primary:hover { background: var(--gold); color: var(--navy); }
+  .btn-secondary { background: transparent; color: var(--navy); border-color: var(--navy); }
+  .btn-secondary:hover { background: var(--navy); color: var(--ivory); }
+
+  .img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+  .img-tile { background: #fff; border: 1px solid var(--cream); border-radius: 4px; overflow: hidden; text-align: center; }
+  .img-tile img { width: 100%; height: 130px; object-fit: cover; display: block; }
+  .img-tile .caption { padding: 10px 12px 12px; }
+  .img-tile .caption strong { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 13.5px; display: block; margin-bottom: 6px; }
+  .img-tile .caption span.dim { display: block; color: var(--ink-soft); font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 6px; }
+  .img-tile .caption a { font-size: 10.5px; color: var(--gold); text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; }
+  .img-tile .caption a:hover { color: var(--navy); }
+
+  .doc-card { background: #fff; border: 1px solid var(--cream); border-radius: 6px; padding: 30px; margin-bottom: 22px; }
+  .doc-card h3 { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 26px; margin-bottom: 10px; }
+  .doc-card p { color: var(--ink-soft); margin-bottom: 16px; }
+
+  .footer { background: var(--navy); color: var(--ivory); padding: 50px 28px 36px; text-align: center; margin-top: 50px; }
+  .footer .brand { font-family: 'Cormorant Garamond', serif; color: var(--gold); font-size: 22px; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 8px; }
+  .footer .tag { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; color: var(--ivory); opacity: 0.86; margin-bottom: 22px; }
+  .footer .links { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.72; }
+  .footer .links a { color: var(--ivory); text-decoration: none; margin: 0 10px; }
+  .footer .legal { margin-top: 16px; font-size: 11px; opacity: 0.55; max-width: 640px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+
+  @media (max-width: 720px) {
+    .site-header h1 { font-size: 30px; }
+    .section { padding: 54px 18px 26px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+<style>
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300 700;font-display:swap;src:url('assets/fonts/cormorant-normal.woff2') format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:300 700;font-display:swap;src:url('assets/fonts/cormorant-italic.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/fonts/inter.woff2') format('woff2')}
+</style></head>
+<body>
+<header class="site-header">
+  <h1>French Atelier</h1>
+  <div class="by">by Acadomia</div>
+  <svg class="flourish" width="200" height="20" viewBox="0 0 220 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 11 C 50 2, 90 20, 110 11 S 170 2, 218 11" stroke="#C8A560" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <circle cx="110" cy="11" r="2" fill="#C8A560"/>
+  </svg>
+  <div class="tagline">French Atelier &middot; ACQ Drip Series, Stage 4</div>
+  <div class="meta">11 emails &middot; 11 landing pages &middot; 33 images</div>
+</header>
+<nav class="nav"><div class="nav-inner">
+<a href="#content-emails">Content Emails</a>
+<a href="#promo-emails">Promo Emails</a>
+<a href="#product-emails">Product Emails</a>
+<a href="#landing-pages">Landing Pages</a>
+<a href="#imagery">Imagery</a>
+<a href="#copy">Copy Downloads</a>
+<a href="whatsapp.html">8 WhatsApps</a>
+</div></nav>
+<section id="content-emails" class="section"><div class="section-header"><div class="eyebrow">&middot; Content &middot;</div><h2>Content Emails</h2><div class="sub">6 emails exploring Breton language, Coco Chanel, arriving at Charles de Gaulle, French dishes, Charlemagne and Christmas in Strasbourg.</div></div><div class="grid"><div class="card">
+<div class="thumb"><a href="emails/01-breton-language.html"><img src="assets/images/e01-email.jpg" alt="The Breton language, in three words" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Email 01</div>
+<h3>The Breton language, in three words</h3><div class="actions"><a class="btn btn-primary" href="emails/01-breton-language.html" >Open Email</a><a class="btn btn-secondary" href="landing-pages/01-breton-language.html" >Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e01.txt">Copy fields</button><a class="btn btn-secondary" href="copy/e01.txt" download>Download Text</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="emails/02-coco-chanel.html"><img src="assets/images/e02-email.jpg" alt="Coco Chanel and the little black dress" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Email 02</div>
+<h3>Coco Chanel and the little black dress</h3><div class="actions"><a class="btn btn-primary" href="emails/02-coco-chanel.html" >Open Email</a><a class="btn btn-secondary" href="landing-pages/02-coco-chanel.html" >Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e02.txt">Copy fields</button><a class="btn btn-secondary" href="copy/e02.txt" download>Download Text</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="emails/03-arriving-at-cdg.html"><img src="assets/images/e03-email.jpg" alt="French phrases for Charles de Gaulle Airport" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Email 03</div>
+<h3>French phrases for Charles de Gaulle Airport</h3><div class="actions"><a class="btn btn-primary" href="emails/03-arriving-at-cdg.html" >Open Email</a><a class="btn btn-secondary" href="landing-pages/03-arriving-at-cdg.html" >Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e03.txt">Copy fields</button><a class="btn btn-secondary" href="copy/e03.txt" download>Download Text</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="emails/04-seven-french-dishes.html"><img src="assets/images/e04-email.jpg" alt="Seven French dishes worth trying" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Email 04</div>
+<h3>Seven French dishes worth trying</h3><div class="actions"><a class="btn btn-primary" href="emails/04-seven-french-dishes.html" >Open Email</a><a class="btn btn-secondary" href="landing-pages/04-seven-french-dishes.html" >Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e04.txt">Copy fields</button><a class="btn btn-secondary" href="copy/e04.txt" download>Download Text</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="emails/05-charlemagne.html"><img src="assets/images/e05-email.jpg" alt="Charlemagne and the history of learning" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Email 05</div>
+<h3>Charlemagne and the history of learning</h3><div class="actions"><a class="btn btn-primary" href="emails/05-charlemagne.html" >Open Email</a><a class="btn btn-secondary" href="landing-pages/05-charlemagne.html" >Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e05.txt">Copy fields</button><a class="btn btn-secondary" href="copy/e05.txt" download>Download Text</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="emails/06-strasbourg-christmas.html"><img src="assets/images/e06-email.jpg" alt="Christmas markets in Strasbourg" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Email 06</div>
+<h3>Christmas markets in Strasbourg</h3><div class="actions"><a class="btn btn-primary" href="emails/06-strasbourg-christmas.html" >Open Email</a><a class="btn btn-secondary" href="landing-pages/06-strasbourg-christmas.html" >Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e06.txt">Copy fields</button><a class="btn btn-secondary" href="copy/e06.txt" download>Download Text</a></div></div></div></div></section>
+<section id="promo-emails" class="section"><div class="section-header"><div class="eyebrow">&middot; Promo &middot;</div><h2>Promo Emails</h2><div class="sub">2 offers: the French café challenge and the final invitation to a French class.</div></div><div class="grid"><div class="card">
+<div class="thumb"><a href="emails/07-french-cafe-challenge.html"><img src="assets/images/e07-email.jpg" alt="Learn French with X% off" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Email 07</div>
+<h3>Learn French with X% off</h3><div class="actions"><a class="btn btn-primary" href="emails/07-french-cafe-challenge.html" >Open Email</a><a class="btn btn-secondary" href="landing-pages/07-french-cafe-challenge.html" >Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e07.txt">Copy fields</button><a class="btn btn-secondary" href="copy/e07.txt" download>Download Text</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="emails/08-french-class-invitation.html"><img src="assets/images/e08-email.jpg" alt="Claim X% off before places fill" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Email 08</div>
+<h3>Claim X% off before places fill</h3><div class="actions"><a class="btn btn-primary" href="emails/08-french-class-invitation.html" >Open Email</a><a class="btn btn-secondary" href="landing-pages/08-french-class-invitation.html" >Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e08.txt">Copy fields</button><a class="btn btn-secondary" href="copy/e08.txt" download>Download Text</a></div></div></div></div></section>
+<section id="product-emails" class="section"><div class="section-header"><div class="eyebrow">&middot; Product &middot;</div><h2>Product Emails</h2><div class="sub">3 emails introducing Julien AI, the French course collections and the Acadomia course certificate.</div></div><div class="grid"><div class="card">
+<div class="thumb"><a href="emails/09-julien-ai.html"><img src="assets/images/e09-email.jpg" alt="Practise French with Julien AI" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Email 09</div>
+<h3>Practise French with Julien AI</h3><div class="actions"><a class="btn btn-primary" href="emails/09-julien-ai.html" >Open Email</a><a class="btn btn-secondary" href="landing-pages/09-julien-ai.html" >Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e09.txt">Copy fields</button><a class="btn btn-secondary" href="copy/e09.txt" download>Download Text</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="emails/10-choose-your-course.html"><img src="assets/images/e10-email.jpg" alt="Find the French course for your level" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Email 10</div>
+<h3>Find the French course for your level</h3><div class="actions"><a class="btn btn-primary" href="emails/10-choose-your-course.html" >Open Email</a><a class="btn btn-secondary" href="landing-pages/10-choose-your-course.html" >Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e10.txt">Copy fields</button><a class="btn btn-secondary" href="copy/e10.txt" download>Download Text</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="emails/11-cefr-certificate.html"><img src="assets/images/e11-email.jpg" alt="Earn your Acadomia course certificate" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Email 11</div>
+<h3>Earn your Acadomia course certificate</h3><div class="actions"><a class="btn btn-primary" href="emails/11-cefr-certificate.html" >Open Email</a><a class="btn btn-secondary" href="landing-pages/11-cefr-certificate.html" >Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e11.txt">Copy fields</button><a class="btn btn-secondary" href="copy/e11.txt" download>Download Text</a></div></div></div></div></section>
+<section id="landing-pages" class="section"><div class="section-header"><div class="eyebrow">&middot; Landing Pages &middot;</div><h2>Landing Pages</h2><div class="sub">11 dedicated pages, each building on its matching email.</div></div><div class="grid"><div class="card">
+<div class="thumb"><a href="landing-pages/01-breton-language.html"><img src="assets/images/e01-desktop.jpg" alt="A small introduction to Brittany&#39;s Celtic language" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Landing Page 01</div>
+<h3>A small introduction to Brittany&#39;s Celtic language</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/01-breton-language.html" >Open Landing Page</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="landing-pages/02-coco-chanel.html"><img src="assets/images/e02-desktop.jpg" alt="Chanel&#39;s design choices, beyond the famous name" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Landing Page 02</div>
+<h3>Chanel&#39;s design choices, beyond the famous name</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/02-coco-chanel.html" >Open Landing Page</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="landing-pages/03-arriving-at-cdg.html"><img src="assets/images/e03-desktop.jpg" alt="A simple French guide for arriving at CDG" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Landing Page 03</div>
+<h3>A simple French guide for arriving at CDG</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/03-arriving-at-cdg.html" >Open Landing Page</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="landing-pages/04-seven-french-dishes.html"><img src="assets/images/e04-desktop.jpg" alt="Our seven French dishes, ranked for a first taste" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Landing Page 04</div>
+<h3>Our seven French dishes, ranked for a first taste</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/04-seven-french-dishes.html" >Open Landing Page</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="landing-pages/05-charlemagne.html"><img src="assets/images/e05-desktop.jpg" alt="Charlemagne, manuscripts and a medieval renewal" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Landing Page 05</div>
+<h3>Charlemagne, manuscripts and a medieval renewal</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/05-charlemagne.html" >Open Landing Page</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="landing-pages/06-strasbourg-christmas.html"><img src="assets/images/e06-desktop.jpg" alt="A Christmas walk through Strasbourg" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Landing Page 06</div>
+<h3>A Christmas walk through Strasbourg</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/06-strasbourg-christmas.html" >Open Landing Page</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="landing-pages/07-french-cafe-challenge.html"><img src="assets/images/e07-desktop.jpg" alt="Take the café challenge and claim your discount" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Landing Page 07</div>
+<h3>Take the café challenge and claim your discount</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/07-french-cafe-challenge.html" >Open Landing Page</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="landing-pages/08-french-class-invitation.html"><img src="assets/images/e08-desktop.jpg" alt="Final chance: claim X% off your French course" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Landing Page 08</div>
+<h3>Final chance: claim X% off your French course</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/08-french-class-invitation.html" >Open Landing Page</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="landing-pages/09-julien-ai.html"><img src="assets/images/e09-desktop.jpg" alt="Practise French between classes with Julien AI" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Landing Page 09</div>
+<h3>Practise French between classes with Julien AI</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/09-julien-ai.html" >Open Landing Page</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="landing-pages/10-choose-your-course.html"><img src="assets/images/e10-desktop.jpg" alt="Compare the two French Atelier course collections" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Landing Page 10</div>
+<h3>Compare the two French Atelier course collections</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/10-choose-your-course.html" >Open Landing Page</a></div></div></div>
+<div class="card">
+<div class="thumb"><a href="landing-pages/11-cefr-certificate.html"><img src="assets/images/e11-desktop.jpg" alt="Recognise your progress with a CEFR-aligned certificate" loading="lazy"><div class="overlay"></div></a></div>
+<div class="body"><div class="eyebrow">Landing Page 11</div>
+<h3>Recognise your progress with a CEFR-aligned certificate</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/11-cefr-certificate.html" >Open Landing Page</a></div></div></div></div></section>
+<section id="imagery" class="section"><div class="section-header"><div class="eyebrow">&middot; Imagery &middot;</div><h2>Image Downloads</h2><div class="sub">33 JPEG images: one email banner, one desktop image and one mobile image for each topic.</div></div><div class="img-grid"><div class="img-tile"><img src="assets/images/e01-email.jpg" alt="The Breton language, in three words: Email banner" loading="lazy"><div class="caption"><span class="dim">1200 x 700</span><strong>The Breton language, in three words<br>Email banner</strong><a href="assets/images/e01-email.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e01-desktop.jpg" alt="The Breton language, in three words: Landing page desktop" loading="lazy"><div class="caption"><span class="dim">1920 x 502</span><strong>The Breton language, in three words<br>Landing page desktop</strong><a href="assets/images/e01-desktop.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e01-mobile.jpg" alt="The Breton language, in three words: Landing page mobile" loading="lazy"><div class="caption"><span class="dim">758 x 556</span><strong>The Breton language, in three words<br>Landing page mobile</strong><a href="assets/images/e01-mobile.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e02-email.jpg" alt="Coco Chanel and the little black dress: Email banner" loading="lazy"><div class="caption"><span class="dim">1200 x 700</span><strong>Coco Chanel and the little black dress<br>Email banner</strong><a href="assets/images/e02-email.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e02-desktop.jpg" alt="Coco Chanel and the little black dress: Landing page desktop" loading="lazy"><div class="caption"><span class="dim">1920 x 502</span><strong>Coco Chanel and the little black dress<br>Landing page desktop</strong><a href="assets/images/e02-desktop.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e02-mobile.jpg" alt="Coco Chanel and the little black dress: Landing page mobile" loading="lazy"><div class="caption"><span class="dim">758 x 556</span><strong>Coco Chanel and the little black dress<br>Landing page mobile</strong><a href="assets/images/e02-mobile.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e03-email.jpg" alt="French phrases for Charles de Gaulle Airport: Email banner" loading="lazy"><div class="caption"><span class="dim">1200 x 700</span><strong>French phrases for Charles de Gaulle Airport<br>Email banner</strong><a href="assets/images/e03-email.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e03-desktop.jpg" alt="French phrases for Charles de Gaulle Airport: Landing page desktop" loading="lazy"><div class="caption"><span class="dim">1920 x 502</span><strong>French phrases for Charles de Gaulle Airport<br>Landing page desktop</strong><a href="assets/images/e03-desktop.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e03-mobile.jpg" alt="French phrases for Charles de Gaulle Airport: Landing page mobile" loading="lazy"><div class="caption"><span class="dim">758 x 556</span><strong>French phrases for Charles de Gaulle Airport<br>Landing page mobile</strong><a href="assets/images/e03-mobile.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e04-email.jpg" alt="Seven French dishes worth trying: Email banner" loading="lazy"><div class="caption"><span class="dim">1200 x 700</span><strong>Seven French dishes worth trying<br>Email banner</strong><a href="assets/images/e04-email.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e04-desktop.jpg" alt="Seven French dishes worth trying: Landing page desktop" loading="lazy"><div class="caption"><span class="dim">1920 x 502</span><strong>Seven French dishes worth trying<br>Landing page desktop</strong><a href="assets/images/e04-desktop.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e04-mobile.jpg" alt="Seven French dishes worth trying: Landing page mobile" loading="lazy"><div class="caption"><span class="dim">758 x 556</span><strong>Seven French dishes worth trying<br>Landing page mobile</strong><a href="assets/images/e04-mobile.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e05-email.jpg" alt="Charlemagne and the history of learning: Email banner" loading="lazy"><div class="caption"><span class="dim">1200 x 700</span><strong>Charlemagne and the history of learning<br>Email banner</strong><a href="assets/images/e05-email.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e05-desktop.jpg" alt="Charlemagne and the history of learning: Landing page desktop" loading="lazy"><div class="caption"><span class="dim">1920 x 502</span><strong>Charlemagne and the history of learning<br>Landing page desktop</strong><a href="assets/images/e05-desktop.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e05-mobile.jpg" alt="Charlemagne and the history of learning: Landing page mobile" loading="lazy"><div class="caption"><span class="dim">758 x 556</span><strong>Charlemagne and the history of learning<br>Landing page mobile</strong><a href="assets/images/e05-mobile.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e06-email.jpg" alt="Christmas markets in Strasbourg: Email banner" loading="lazy"><div class="caption"><span class="dim">1200 x 700</span><strong>Christmas markets in Strasbourg<br>Email banner</strong><a href="assets/images/e06-email.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e06-desktop.jpg" alt="Christmas markets in Strasbourg: Landing page desktop" loading="lazy"><div class="caption"><span class="dim">1920 x 502</span><strong>Christmas markets in Strasbourg<br>Landing page desktop</strong><a href="assets/images/e06-desktop.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e06-mobile.jpg" alt="Christmas markets in Strasbourg: Landing page mobile" loading="lazy"><div class="caption"><span class="dim">758 x 556</span><strong>Christmas markets in Strasbourg<br>Landing page mobile</strong><a href="assets/images/e06-mobile.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e07-email.jpg" alt="Learn French with X% off: Email banner" loading="lazy"><div class="caption"><span class="dim">1200 x 700</span><strong>Learn French with X% off<br>Email banner</strong><a href="assets/images/e07-email.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e07-desktop.jpg" alt="Learn French with X% off: Landing page desktop" loading="lazy"><div class="caption"><span class="dim">1920 x 502</span><strong>Learn French with X% off<br>Landing page desktop</strong><a href="assets/images/e07-desktop.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e07-mobile.jpg" alt="Learn French with X% off: Landing page mobile" loading="lazy"><div class="caption"><span class="dim">758 x 556</span><strong>Learn French with X% off<br>Landing page mobile</strong><a href="assets/images/e07-mobile.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e08-email.jpg" alt="Claim X% off before places fill: Email banner" loading="lazy"><div class="caption"><span class="dim">1200 x 700</span><strong>Claim X% off before places fill<br>Email banner</strong><a href="assets/images/e08-email.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e08-desktop.jpg" alt="Claim X% off before places fill: Landing page desktop" loading="lazy"><div class="caption"><span class="dim">1920 x 502</span><strong>Claim X% off before places fill<br>Landing page desktop</strong><a href="assets/images/e08-desktop.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e08-mobile.jpg" alt="Claim X% off before places fill: Landing page mobile" loading="lazy"><div class="caption"><span class="dim">758 x 556</span><strong>Claim X% off before places fill<br>Landing page mobile</strong><a href="assets/images/e08-mobile.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e09-email.jpg" alt="Practise French with Julien AI: Email banner" loading="lazy"><div class="caption"><span class="dim">1200 x 700</span><strong>Practise French with Julien AI<br>Email banner</strong><a href="assets/images/e09-email.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e09-desktop.jpg" alt="Practise French with Julien AI: Landing page desktop" loading="lazy"><div class="caption"><span class="dim">1920 x 502</span><strong>Practise French with Julien AI<br>Landing page desktop</strong><a href="assets/images/e09-desktop.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e09-mobile.jpg" alt="Practise French with Julien AI: Landing page mobile" loading="lazy"><div class="caption"><span class="dim">758 x 556</span><strong>Practise French with Julien AI<br>Landing page mobile</strong><a href="assets/images/e09-mobile.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e10-email.jpg" alt="Find the French course for your level: Email banner" loading="lazy"><div class="caption"><span class="dim">1200 x 700</span><strong>Find the French course for your level<br>Email banner</strong><a href="assets/images/e10-email.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e10-desktop.jpg" alt="Find the French course for your level: Landing page desktop" loading="lazy"><div class="caption"><span class="dim">1920 x 502</span><strong>Find the French course for your level<br>Landing page desktop</strong><a href="assets/images/e10-desktop.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e10-mobile.jpg" alt="Find the French course for your level: Landing page mobile" loading="lazy"><div class="caption"><span class="dim">758 x 556</span><strong>Find the French course for your level<br>Landing page mobile</strong><a href="assets/images/e10-mobile.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e11-email.jpg" alt="Earn your Acadomia course certificate: Email banner" loading="lazy"><div class="caption"><span class="dim">1200 x 700</span><strong>Earn your Acadomia course certificate<br>Email banner</strong><a href="assets/images/e11-email.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e11-desktop.jpg" alt="Earn your Acadomia course certificate: Landing page desktop" loading="lazy"><div class="caption"><span class="dim">1920 x 502</span><strong>Earn your Acadomia course certificate<br>Landing page desktop</strong><a href="assets/images/e11-desktop.jpg" download>Download</a></div></div>
+<div class="img-tile"><img src="assets/images/e11-mobile.jpg" alt="Earn your Acadomia course certificate: Landing page mobile" loading="lazy"><div class="caption"><span class="dim">758 x 556</span><strong>Earn your Acadomia course certificate<br>Landing page mobile</strong><a href="assets/images/e11-mobile.jpg" download>Download</a></div></div></div></section>
+<section id="copy" class="section"><div class="section-header"><div class="eyebrow">&middot; Copy &middot;</div><h2>Copy Downloads</h2><div class="sub">Email subjects, preview lines, headlines, body copy and landing-page content.</div></div><div class="documents"><div class="doc-card"><h3>Stage 4 copy</h3><p>All 11 email and landing-page pairs in one document, with individual email text available from each card.</p><div class="actions"><a class="btn btn-primary" href="copy/all-copy.md" download>Download All Copy</a><a class="btn btn-secondary" href="image-files.html" >Image Library</a><a class="btn btn-secondary" href="whatsapp.html" >8 WhatsApps</a></div></div></div></section>
+<footer class="footer">
+  <div class="brand">French Atelier</div>
+  <div class="tag">Culture speaks French. What about you?</div>
+  <div class="links">
+    <a href="mailto:hello@frenchatelierlive.com">hello@frenchatelierlive.com</a> &middot;
+    <a href="https://www.frenchatelierlive.com">frenchatelierlive.com</a>
+  </div>
+</footer>
+<script src="assets/copy-controls.js"></script>
+</body>
+</html>

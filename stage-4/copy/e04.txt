@@ -1,0 +1,25 @@
+Subject Line: Seven French dishes. Which would you try first?
+Subject characters: 47
+Email Preview Line: Three tastes to tempt you, with our complete ranking waiting on the page.
+Preview characters: 73
+Header Text: Seven French dishes worth trying
+CTA Button: See the full ranking
+CTA URL: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/landing-pages/04-seven-french-dishes.html
+Body word count: 174
+
+Bonjour {{first_name}}, 🍽️
+
+If you could choose your next meal in France, would you start with something slow-cooked, crisp at the edges, or sweet enough to finish with a spoon?
+
+Bœuf bourguignon brings tender beef in a rich wine sauce, especially at home in Burgundy. We chose it because it makes a patient, unhurried meal feel worth sitting down for.
+
+A Breton galette is a savoury buckwheat pancake with an earthy flavour. In Brittany, it offers another kind of pleasure: a simple lunch, with the filling you feel like eating.
+
+For a different texture, there is crème brûlée. Tap through the thin caramelised sugar and you reach the smooth custard beneath. That contrast earns it a place on our list.
+
+A few menu words help: salé means savoury, sucré means sweet, and croustillant means crispy. Which one sounds most appealing right now?
+
+Those are only three of our seven choices, and not in ranked order. The full list includes where to try each dish and why we picked it. Our number one is waiting on the page.
+
+À bientôt,
+The French Atelier team

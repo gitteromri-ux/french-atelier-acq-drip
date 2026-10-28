@@ -1,0 +1,1522 @@
+[
+  {
+    "id": 1,
+    "slug": "01-breton-language",
+    "type": "content",
+    "subject": "Brittany has another word for goodbye",
+    "preview": "Meet the Celtic language behind kenavo, Breizh and a very buttery cake.",
+    "headline": "The Breton language, in three words",
+    "cta": "Explore Brittany",
+    "greeting": "Bonjour {{first_name}},",
+    "email_paragraphs": [
+      "In Brittany, a goodbye might sound a little different: kenavo. It is Breton, not a regional way of speaking French. And that small word introduces a part of France with a Celtic language of its own.",
+      "Bretagne is the French name for Brittany. In Breton, it is Breizh. The language belongs to the same family as Welsh and Cornish, which helps explain why some local names look unlike the French you already know.",
+      "Then there is kouign-amann. You may recognise the pastry before the word: folded dough, plenty of butter and a caramelised edge. Its Breton name means butter cake, and it has travelled well beyond its home region.",
+      "Try this simple question in French: Vous connaissez la Bretagne ? Do you know Brittany? You can follow it with J'aimerais y aller, meaning I would like to go there.",
+      "A pastry name, a greeting, a place on a sign: each offers a small introduction to Breton culture. French gives you a way to ask about the stories behind them."
+    ],
+    "lp_headline": "A small introduction to Brittany's Celtic language",
+    "lp_sections": [
+      {
+        "heading": "Two names for the same region",
+        "text": "Start with a name you can recognise twice: Bretagne in French, Breizh in Breton. Seeing both is a useful reminder that the language of a place can tell you something different from its national address. You are still in France, but another linguistic history is present. Breton belongs to the Celtic family, alongside Welsh and Cornish, rather than being a form of French."
+      },
+      {
+        "heading": "Three words to take with you",
+        "text": "Kenavo means goodbye. Keep it as a word to recognise rather than assuming everyone you meet speaks Breton. Breizh is worth remembering when you notice the abbreviation BZH on a sticker. Kouign-amann means butter cake, a remarkably direct name for a pastry made with dough, butter and sugar. The cake is associated with Douarnenez, where its preparation is a local point of pride. Here, a regional word can become familiar to French speakers through something they eat."
+      },
+      {
+        "heading": "French helps you ask about Breton",
+        "text": "You do not need to choose between being curious about Breton and practising French. Use French to ask a straightforward question: Comment dit-on bonjour en breton ? How do you say hello in Breton? Or point to a word and ask: Qu'est-ce que cela veut dire ? What does that mean? The exchange gives someone space to explain rather than asking you to perform a perfect local accent."
+      },
+      {
+        "heading": "Read a place more carefully",
+        "text": "If you see a bilingual sign, pause over the two versions. Which letters change? Can you spot a familiar place name? Do not expect the words to match one for one. This is a small exercise in noticing, not a test. The useful discovery is that French culture includes regional voices, and a little French can help you ask better questions about them."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.frenchtoday.com/blog/french-story/visiting-brittany/",
+        "title": "French Today: My A to Z of Brittany"
+      },
+      {
+        "url": "https://www.damgan-larochebernard-tourisme.com/en/mots-bretons-a-connaitre/",
+        "title": "Damgan La Roche-Bernard Tourism: Breton words"
+      }
+    ],
+    "notes": [
+      "Breton is a separate Celtic language, not a French dialect. Avoid implying all Bretons speak it or that these words are used only in Brittany.",
+      "Bilingual sign visual must be accurate; do not fabricate Breton translations.",
+      "Source mapping: language relationship, Breizh/BZH, kenavo and kouign-amann are supported by [French Today](https://www.frenchtoday.com/blog/french-story/visiting-brittany/)."
+    ],
+    "signoff": "À bientôt,\nThe French Atelier by Acadomia team",
+    "word_counts": {
+      "email_body": 168,
+      "email_visible_body_with_greeting_ctas_details_signoff": 178,
+      "landing_page_main_text": 269,
+      "subject_characters": 37,
+      "preview_characters": 71,
+      "cta_characters": 16
+    },
+    "source_map": {
+      "email": [
+        {
+          "paragraph": 1,
+          "source_urls": [
+            "https://www.frenchtoday.com/blog/french-story/visiting-brittany/",
+            "https://www.damgan-larochebernard-tourisme.com/en/mots-bretons-a-connaitre/"
+          ]
+        },
+        {
+          "paragraph": 2,
+          "source_urls": [
+            "https://www.frenchtoday.com/blog/french-story/visiting-brittany/",
+            "https://www.damgan-larochebernard-tourisme.com/en/mots-bretons-a-connaitre/"
+          ]
+        },
+        {
+          "paragraph": 3,
+          "source_urls": [
+            "https://www.frenchtoday.com/blog/french-story/visiting-brittany/",
+            "https://www.damgan-larochebernard-tourisme.com/en/mots-bretons-a-connaitre/"
+          ]
+        },
+        {
+          "paragraph": 4,
+          "source_urls": [
+            "https://www.frenchtoday.com/blog/french-story/visiting-brittany/",
+            "https://www.damgan-larochebernard-tourisme.com/en/mots-bretons-a-connaitre/"
+          ]
+        },
+        {
+          "paragraph": 5,
+          "source_urls": [
+            "https://www.frenchtoday.com/blog/french-story/visiting-brittany/",
+            "https://www.damgan-larochebernard-tourisme.com/en/mots-bretons-a-connaitre/"
+          ]
+        }
+      ],
+      "landing_page": [
+        {
+          "section": 1,
+          "heading": "Two names for the same region",
+          "source_urls": [
+            "https://www.frenchtoday.com/blog/french-story/visiting-brittany/",
+            "https://www.damgan-larochebernard-tourisme.com/en/mots-bretons-a-connaitre/"
+          ]
+        },
+        {
+          "section": 2,
+          "heading": "Three words to take with you",
+          "source_urls": [
+            "https://www.frenchtoday.com/blog/french-story/visiting-brittany/",
+            "https://www.damgan-larochebernard-tourisme.com/en/mots-bretons-a-connaitre/"
+          ]
+        },
+        {
+          "section": 3,
+          "heading": "French helps you ask about Breton",
+          "source_urls": [
+            "https://www.frenchtoday.com/blog/french-story/visiting-brittany/",
+            "https://www.damgan-larochebernard-tourisme.com/en/mots-bretons-a-connaitre/"
+          ]
+        },
+        {
+          "section": 4,
+          "heading": "Read a place more carefully",
+          "source_urls": [
+            "https://www.frenchtoday.com/blog/french-story/visiting-brittany/",
+            "https://www.damgan-larochebernard-tourisme.com/en/mots-bretons-a-connaitre/"
+          ]
+        }
+      ],
+      "note": "Maps factual context only; original practice prompts, translations and editorial preferences are authored copy, not source quotations."
+    },
+    "key": "e01"
+  },
+  {
+    "id": 2,
+    "slug": "02-coco-chanel",
+    "type": "content",
+    "subject": "What Coco Chanel changed about getting dressed",
+    "preview": "Comfort, jersey and the little black dress, with a few French words to keep.",
+    "headline": "Coco Chanel and the little black dress",
+    "cta": "Explore Chanel's style",
+    "greeting": "Bonjour {{first_name}},",
+    "email_paragraphs": [
+      "What makes a dress memorable: how it looks, or how it lets you move? Gabrielle Chanel made comfort central to her approach, using soft fabrics and practical shapes rather than treating elegance as something stiff.",
+      "One important choice was jersey, a knitted fabric associated with underwear and sportswear. She used its suppleness for clothes that could feel relaxed while still looking carefully considered.",
+      "Her little black dress offered another useful idea: one simple garment, changed by the way you wear it. Chanel was not the only designer working with black, but her versions helped make it a lasting part of the modern wardrobe.",
+      "Three French words make this easier to describe: une robe is a dress, le tissu is fabric, and confortable means comfortable. Try: Cette robe est confortable. This dress is comfortable.",
+      "Her design influence is one part of a more complicated life. Looking closely at the clothes gives you something specific to explore: how fabric, cut and movement changed the experience of getting dressed."
+    ],
+    "lp_headline": "Chanel's design choices, beyond the famous name",
+    "lp_sections": [
+      {
+        "heading": "Begin with the fabric",
+        "text": "Look at a garment before looking at its label. Does it hold a rigid shape, or fall softly around the body? Chanel's use of knitted jersey matters because the material was already practical, supple and familiar in underwear and sportswear. Applying it to fashionable clothing changed the context, not the basic nature of the fabric. A useful French phrase is un tissu souple, a supple fabric."
+      },
+      {
+        "heading": "Notice what the wearer can do",
+        "text": "Comfort is a specific design problem: can you move your arms, sit down and carry on with your day? Chanel's approach repeatedly returned to freedom of movement. Her softer, cardigan-like suit jackets are another example of that concern. When looking at a photograph, ask yourself where the garment gives the wearer room. The French word la coupe means the cut. It helps you discuss construction rather than simply saying something is beautiful."
+      },
+      {
+        "heading": "Understand the little black dress",
+        "text": "The appeal was not that nobody had worn black before. Chanel helped make a simple black dress a flexible wardrobe choice, adaptable through accessories and styling. The same colour could support very different occasions. Try describing one detail: J'aime cette robe noire, meaning I like this black dress. Then add why: Elle est simple, meaning it is simple. You have moved from recognising an icon to expressing an opinion."
+      },
+      {
+        "heading": "Keep the focus precise",
+        "text": "A designer's influence is not a complete account of their life, and this is not a biography. Nor does one designer stand for all French style. Looking closely at individual garments is a more useful starting point. Choose a photograph, identify the fabric or cut, and say what you notice in one short French sentence. You do not need fashion expertise to begin."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.vam.ac.uk/articles/what-makes-chanel-so-iconic",
+        "title": "Victoria and Albert Museum: What makes CHANEL so iconic?"
+      }
+    ],
+    "notes": [
+      "Corrected brief typo Coco Channel to Coco Chanel.",
+      "No claim that Chanel invented French style, the colour black or comfortable clothing.",
+      "Source mapping: jersey, movement, little black dress and cardigan-like suit construction are documented by the [Victoria and Albert Museum](https://www.vam.ac.uk/articles/what-makes-chanel-so-iconic)."
+    ],
+    "signoff": "À bientôt,\nThe French Atelier by Acadomia team",
+    "word_counts": {
+      "email_body": 166,
+      "email_visible_body_with_greeting_ctas_details_signoff": 177,
+      "landing_page_main_text": 270,
+      "subject_characters": 46,
+      "preview_characters": 76,
+      "cta_characters": 22
+    },
+    "source_map": {
+      "email": [
+        {
+          "paragraph": 1,
+          "source_urls": [
+            "https://www.vam.ac.uk/articles/what-makes-chanel-so-iconic"
+          ]
+        },
+        {
+          "paragraph": 2,
+          "source_urls": [
+            "https://www.vam.ac.uk/articles/what-makes-chanel-so-iconic"
+          ]
+        },
+        {
+          "paragraph": 3,
+          "source_urls": [
+            "https://www.vam.ac.uk/articles/what-makes-chanel-so-iconic"
+          ]
+        },
+        {
+          "paragraph": 4,
+          "source_urls": [
+            "https://www.vam.ac.uk/articles/what-makes-chanel-so-iconic"
+          ]
+        },
+        {
+          "paragraph": 5,
+          "source_urls": [
+            "https://www.vam.ac.uk/articles/what-makes-chanel-so-iconic"
+          ]
+        }
+      ],
+      "landing_page": [
+        {
+          "section": 1,
+          "heading": "Begin with the fabric",
+          "source_urls": [
+            "https://www.vam.ac.uk/articles/what-makes-chanel-so-iconic"
+          ]
+        },
+        {
+          "section": 2,
+          "heading": "Notice what the wearer can do",
+          "source_urls": [
+            "https://www.vam.ac.uk/articles/what-makes-chanel-so-iconic"
+          ]
+        },
+        {
+          "section": 3,
+          "heading": "Understand the little black dress",
+          "source_urls": [
+            "https://www.vam.ac.uk/articles/what-makes-chanel-so-iconic"
+          ]
+        },
+        {
+          "section": 4,
+          "heading": "Keep the focus precise",
+          "source_urls": [
+            "https://www.vam.ac.uk/articles/what-makes-chanel-so-iconic"
+          ]
+        }
+      ],
+      "note": "Maps factual context only; original practice prompts, translations and editorial preferences are authored copy, not source quotations."
+    },
+    "key": "e02"
+  },
+  {
+    "id": 3,
+    "slug": "03-arriving-at-cdg",
+    "type": "content",
+    "subject": "You've landed at CDG. Try these French words.",
+    "preview": "From passport control to the exit, a few phrases for your first arrival.",
+    "headline": "French phrases for Charles de Gaulle Airport",
+    "cta": "Read my arrival guide",
+    "greeting": "Bonjour {{first_name}},",
+    "email_paragraphs": [
+      "The plane has landed. You pick up your cabin bag, step into the terminal, and French is suddenly more than something on a page. Start with the signs: Arrivées means arrivals. Your first useful word is already there.",
+      "If your route takes you through passport control, have your documents ready and follow the staff's directions. A simple Bonjour is enough to begin an exchange. There is no need to prepare a speech.",
+      "Next, look for Bagages, meaning baggage. Need a little help? Try: Où sont les bagages, s'il vous plaît ? Where is baggage claim, please?",
+      "You may also see Correspondances, meaning connections. If Paris is your destination, look for Sortie, the exit, rather than following connecting passengers.",
+      "Bag collected, you are ready for the next question: Où sont les taxis ? Where are the taxis? Or: Où est la gare ? Where is the station?",
+      "Keep these questions handy for the terminal. You can ask someone to repeat an answer, check which way to go, and begin your first day in France with a little French."
+    ],
+    "lp_headline": "A simple French guide for arriving at CDG",
+    "lp_sections": [
+      {
+        "heading": "Before you start walking",
+        "text": "Take a moment to decide which route is yours: entering France or taking another flight. That distinction matters more than memorising every word on a sign. Arrivées means arrivals; Correspondances means connections. Follow the information for your flight and route, and use staff guidance when you need it. The phrases here are language practice, not a substitute for your travel documents or airport instructions."
+      },
+      {
+        "heading": "At passport control",
+        "text": "If passport control is part of your arrival, keep your documents accessible. You can greet the officer with Bonjour and finish with Merci. If you do not understand a question, say: Pouvez-vous répéter, s'il vous plaît ? Could you repeat, please? Another useful sentence is: Je parle un peu français. I speak a little French. You do not have to pretend you understood a longer answer."
+      },
+      {
+        "heading": "Finding your suitcase",
+        "text": "For checked luggage, look for your flight's baggage information. Paris Aéroport's arrival information includes the terminal and baggage belt number, so use the flight number rather than guessing from the crowd. At a help desk, try: Je cherche mes bagages. I am looking for my luggage. If you are travelling with only cabin baggage, this is one step you may not need."
+      },
+      {
+        "heading": "From the terminal to your next stop",
+        "text": "Sortie means exit. Before choosing transport, check the current route and destination with the relevant operator. To ask for the station, say: Où est la gare ? For the taxis: Où sont les taxis ? If someone points, you can check: Par ici ? This way? Keep the destination address handy so you can show it as well as say it. You have not mastered airport French, but you have a useful way to ask, check and continue."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.parisaeroport.fr/en/passengers/flights/information-flights-arrivals/cdg",
+        "title": "Paris Aéroport: Arriving flights at Paris-CDG"
+      },
+      {
+        "url": "https://www.parisaeroport.fr/fr/passagers/vols/correspondances",
+        "title": "Paris Aéroport: Connecting flights"
+      }
+    ],
+    "notes": [
+      "Passport control conditional because arrival route and Schengen status vary. No fixed terminal, fare, route or travel time asserted.",
+      "Source mapping: official arrival lookup provides terminal and baggage belt information according to [Paris Aéroport](https://www.parisaeroport.fr/en/passengers/flights/information-flights-arrivals/cdg)."
+    ],
+    "signoff": "À bientôt,\nThe French Atelier by Acadomia team",
+    "word_counts": {
+      "email_body": 174,
+      "email_visible_body_with_greeting_ctas_details_signoff": 186,
+      "landing_page_main_text": 266,
+      "subject_characters": 45,
+      "preview_characters": 72,
+      "cta_characters": 21
+    },
+    "source_map": {
+      "email": [
+        {
+          "paragraph": 1,
+          "source_urls": [
+            "https://www.parisaeroport.fr/en/passengers/flights/information-flights-arrivals/cdg",
+            "https://www.parisaeroport.fr/fr/passagers/vols/correspondances"
+          ]
+        },
+        {
+          "paragraph": 2,
+          "source_urls": [
+            "https://www.parisaeroport.fr/en/passengers/flights/information-flights-arrivals/cdg",
+            "https://www.parisaeroport.fr/fr/passagers/vols/correspondances"
+          ]
+        },
+        {
+          "paragraph": 3,
+          "source_urls": [
+            "https://www.parisaeroport.fr/en/passengers/flights/information-flights-arrivals/cdg",
+            "https://www.parisaeroport.fr/fr/passagers/vols/correspondances"
+          ]
+        },
+        {
+          "paragraph": 4,
+          "source_urls": [
+            "https://www.parisaeroport.fr/en/passengers/flights/information-flights-arrivals/cdg",
+            "https://www.parisaeroport.fr/fr/passagers/vols/correspondances"
+          ]
+        },
+        {
+          "paragraph": 5,
+          "source_urls": [
+            "https://www.parisaeroport.fr/en/passengers/flights/information-flights-arrivals/cdg",
+            "https://www.parisaeroport.fr/fr/passagers/vols/correspondances"
+          ]
+        },
+        {
+          "paragraph": 6,
+          "source_urls": [
+            "https://www.parisaeroport.fr/en/passengers/flights/information-flights-arrivals/cdg",
+            "https://www.parisaeroport.fr/fr/passagers/vols/correspondances"
+          ]
+        }
+      ],
+      "landing_page": [
+        {
+          "section": 1,
+          "heading": "Before you start walking",
+          "source_urls": [
+            "https://www.parisaeroport.fr/en/passengers/flights/information-flights-arrivals/cdg",
+            "https://www.parisaeroport.fr/fr/passagers/vols/correspondances"
+          ]
+        },
+        {
+          "section": 2,
+          "heading": "At passport control",
+          "source_urls": [
+            "https://www.parisaeroport.fr/en/passengers/flights/information-flights-arrivals/cdg",
+            "https://www.parisaeroport.fr/fr/passagers/vols/correspondances"
+          ]
+        },
+        {
+          "section": 3,
+          "heading": "Finding your suitcase",
+          "source_urls": [
+            "https://www.parisaeroport.fr/en/passengers/flights/information-flights-arrivals/cdg",
+            "https://www.parisaeroport.fr/fr/passagers/vols/correspondances"
+          ]
+        },
+        {
+          "section": 4,
+          "heading": "From the terminal to your next stop",
+          "source_urls": [
+            "https://www.parisaeroport.fr/en/passengers/flights/information-flights-arrivals/cdg",
+            "https://www.parisaeroport.fr/fr/passagers/vols/correspondances"
+          ]
+        }
+      ],
+      "note": "Maps factual context only; original practice prompts, translations and editorial preferences are authored copy, not source quotations."
+    },
+    "key": "e03"
+  },
+  {
+    "id": 4,
+    "slug": "04-seven-french-dishes",
+    "type": "content",
+    "subject": "Seven French dishes. Which would you try first?",
+    "preview": "Three tastes to tempt you, with our complete ranking waiting on the page.",
+    "headline": "Seven French dishes worth trying",
+    "cta": "See the full ranking",
+    "greeting": "Bonjour {{first_name}},",
+    "email_paragraphs": [
+      "If you could choose your next meal in France, would you start with something slow-cooked, crisp at the edges, or sweet enough to finish with a spoon?",
+      "Bœuf bourguignon brings tender beef in a rich wine sauce, especially at home in Burgundy. We chose it because it makes a patient, unhurried meal feel worth sitting down for.",
+      "A Breton galette is a savoury buckwheat pancake with an earthy flavour. In Brittany, it offers another kind of pleasure: a simple lunch, with the filling you feel like eating.",
+      "For a different texture, there is crème brûlée. Tap through the thin caramelised sugar and you reach the smooth custard beneath. That contrast earns it a place on our list.",
+      "A few menu words help: salé means savoury, sucré means sweet, and croustillant means crispy. Which one sounds most appealing right now?",
+      "Those are only three of our seven choices, and not in ranked order. The full list includes where to try each dish and why we picked it. Our number one is waiting on the page."
+    ],
+    "lp_headline": "Our seven French dishes, ranked for a first taste",
+    "lp_sections": [
+      {
+        "heading": "A personal ranking, not a national verdict",
+        "text": "This is our editorial shortlist for a curious first visit. We chose dishes for contrasting textures, regional character and the pleasure of eating them. Start wherever your appetite takes you."
+      },
+      {
+        "heading": "1. Bœuf bourguignon",
+        "text": "Our first choice is Burgundy's slow-cooked beef in red wine. Tender meat and a deep, savoury sauce make it a meal to linger over. Look for it around Dijon or Beaune."
+      },
+      {
+        "heading": "2. Breton galette",
+        "text": "Try a savoury buckwheat galette in Brittany. Its earthy flavour makes a satisfying base for fillings such as ham, egg and cheese. We like the contrast between a simple format and a distinctive regional flour."
+      },
+      {
+        "heading": "3. Bouillabaisse",
+        "text": "Marseille's fish dish brings the Mediterranean to the table through fish and a fragrant broth, often served with rouille and bread. Choose it for a seafood meal whose setting is part of the pleasure."
+      },
+      {
+        "heading": "4. Cassoulet",
+        "text": "Head towards Castelnaudary, Carcassonne or Toulouse for this substantial combination of white beans and meat. Recipes vary, but slow cooking is central. We chose it for the soft beans that absorb the surrounding flavours."
+      },
+      {
+        "heading": "5. Ratatouille",
+        "text": "In Provence, seek out this vegetable dish with tomatoes, aubergines, courgettes and peppers. It earns its place by giving vegetables the attention. Tender textures and bright tomato flavours offer a change from richer dishes."
+      },
+      {
+        "heading": "6. Quiche Lorraine",
+        "text": "Lorraine's savoury tart pairs pastry with a soft egg-and-cream filling and smoky pork. It is a good choice when you want something familiar with a clear regional identity. Try it warm with a salad."
+      },
+      {
+        "heading": "7. Crème brûlée",
+        "text": "Finish in a bistro with smooth custard under a thin, crisp sugar crust. We picked it for that first spoonful through the top. Croustillant describes the crispness; sucré describes the sweetness. Which dish moves to first place on your list?"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try",
+        "title": "Grand European Travel: Traditional French dishes"
+      }
+    ],
+    "notes": [
+      "Email mentions exactly three dishes and contains no dish ranking. LP has seven numbered dishes and labels ranking subjective.",
+      "Source mapping: dish descriptions, regional associations and serving characteristics are supported by [Grand European Travel](https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try)."
+    ],
+    "signoff": "À bientôt,\nThe French Atelier by Acadomia team",
+    "word_counts": {
+      "email_body": 174,
+      "email_visible_body_with_greeting_ctas_details_signoff": 186,
+      "landing_page_main_text": 272,
+      "subject_characters": 47,
+      "preview_characters": 73,
+      "cta_characters": 20
+    },
+    "source_map": {
+      "email": [
+        {
+          "paragraph": 1,
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        },
+        {
+          "paragraph": 2,
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        },
+        {
+          "paragraph": 3,
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        },
+        {
+          "paragraph": 4,
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        },
+        {
+          "paragraph": 5,
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        },
+        {
+          "paragraph": 6,
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        }
+      ],
+      "landing_page": [
+        {
+          "section": 1,
+          "heading": "A personal ranking, not a national verdict",
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        },
+        {
+          "section": 2,
+          "heading": "1. Bœuf bourguignon",
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        },
+        {
+          "section": 3,
+          "heading": "2. Breton galette",
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        },
+        {
+          "section": 4,
+          "heading": "3. Bouillabaisse",
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        },
+        {
+          "section": 5,
+          "heading": "4. Cassoulet",
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        },
+        {
+          "section": 6,
+          "heading": "5. Ratatouille",
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        },
+        {
+          "section": 7,
+          "heading": "6. Quiche Lorraine",
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        },
+        {
+          "section": 8,
+          "heading": "7. Crème brûlée",
+          "source_urls": [
+            "https://www.getours.com/expert-travel-advice/food-drink/traditional-french-food-dishes-to-try"
+          ]
+        }
+      ],
+      "note": "Maps factual context only; original practice prompts, translations and editorial preferences are authored copy, not source quotations."
+    },
+    "key": "e04"
+  },
+  {
+    "id": 5,
+    "slug": "05-charlemagne",
+    "type": "content",
+    "subject": "Charlemagne's story includes more than an empire",
+    "preview": "Schools, manuscripts and the language behind a medieval revival of learning.",
+    "headline": "Charlemagne and the history of learning",
+    "cta": "Explore the history",
+    "greeting": "Bonjour {{first_name}},",
+    "email_paragraphs": [
+      "A crown is the obvious place to begin with Charlemagne. A book is a more revealing one. Alongside his rule, he supported an effort to improve learning, train clergy and make written texts more reliable.",
+      "People across a large realm needed to read, teach and interpret religious texts. Better Latin and carefully corrected books were part of the answer. Across a fragmented medieval landscape, shared texts and teaching helped connect the regions of his realm. Learning was connected to both faith and authority.",
+      "Scholars came to his court from different regions, bringing knowledge that did not begin with him. The cultural revival associated with his reign built on older traditions rather than creating education from nothing.",
+      "A few French words bring the setting into focus: un manuscrit is a handwritten document, un monastère is a monastery, and un empereur is an emperor.",
+      "Charlemagne is not simply the founder of France. He belongs to a wider medieval history, where language, religion and power meet. Learning French offers another way to approach that history, from a manuscript's description to the questions you ask in a museum."
+    ],
+    "lp_headline": "Charlemagne, manuscripts and a medieval renewal",
+    "lp_sections": [
+      {
+        "heading": "A shared problem of understanding",
+        "text": "Errors in a handwritten book could make a passage harder to teach; unfamiliar Latin could make it harder to understand. For Charlemagne, improving education was closely connected to improving religious life. Clergy needed stronger Latin to read and interpret scripture. Corrected texts and teaching were therefore practical concerns, not simply signs of a cultivated court."
+      },
+      {
+        "heading": "An exchange of knowledge",
+        "text": "The scholars who gathered around him brought traditions from elsewhere. Alcuin came from York; other teachers and writers arrived from Italy, Ireland and beyond. Their presence matters because it prevents the story becoming a tale of one man inventing learning. The court drew on knowledge that other communities had preserved and developed. Charlemagne's support helped bring that work together and give it institutional backing."
+      },
+      {
+        "heading": "Schools, books and authority",
+        "text": "Teaching in monasteries and bishoprics included grammar, calculation and religious material. Books had to be copied by hand, making the care taken over a text especially important. The educational effort was also tied to governing a large realm through shared religious and learned practices. This was not universal schooling in the modern sense. It served particular institutions and groups, even as its influence extended beyond the court."
+      },
+      {
+        "heading": "Read the history in French",
+        "text": "Three words can help you begin with a museum label: un manuscrit, a manuscript; un monastère, a monastery; and un empereur, an emperor. Try this question: À quoi servait ce manuscrit ? What was this manuscript used for? It directs attention to the people who read, copied and used an object. Learning French gives you another way to approach those questions, without reducing centuries of history to a single ruler or a single origin story."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.britannica.com/topic/education/The-Carolingian-renaissance-and-its-aftermath",
+        "title": "Encyclopaedia Britannica: The Carolingian renaissance"
+      },
+      {
+        "url": "https://books.openedition.org/pur/235311?lang=en",
+        "title": "Presses universitaires de Rennes: Charlemagne and language reform"
+      }
+    ],
+    "notes": [
+      "Noncommercial bridge to learning French resolves brief tension between course transition and no selling. No product pitch or modern-founder claim.",
+      "Source mapping: educational reform, scholarly origins, Latin and earlier traditions are documented by [Britannica](https://www.britannica.com/topic/education/The-Carolingian-renaissance-and-its-aftermath)."
+    ],
+    "signoff": "À bientôt,\nThe French Atelier by Acadomia team",
+    "word_counts": {
+      "email_body": 184,
+      "email_visible_body_with_greeting_ctas_details_signoff": 195,
+      "landing_page_main_text": 260,
+      "subject_characters": 48,
+      "preview_characters": 76,
+      "cta_characters": 19
+    },
+    "source_map": {
+      "email": [
+        {
+          "paragraph": 1,
+          "source_urls": [
+            "https://www.britannica.com/topic/education/The-Carolingian-renaissance-and-its-aftermath",
+            "https://books.openedition.org/pur/235311?lang=en"
+          ]
+        },
+        {
+          "paragraph": 2,
+          "source_urls": [
+            "https://www.britannica.com/topic/education/The-Carolingian-renaissance-and-its-aftermath",
+            "https://books.openedition.org/pur/235311?lang=en"
+          ]
+        },
+        {
+          "paragraph": 3,
+          "source_urls": [
+            "https://www.britannica.com/topic/education/The-Carolingian-renaissance-and-its-aftermath",
+            "https://books.openedition.org/pur/235311?lang=en"
+          ]
+        },
+        {
+          "paragraph": 4,
+          "source_urls": [
+            "https://www.britannica.com/topic/education/The-Carolingian-renaissance-and-its-aftermath",
+            "https://books.openedition.org/pur/235311?lang=en"
+          ]
+        },
+        {
+          "paragraph": 5,
+          "source_urls": [
+            "https://www.britannica.com/topic/education/The-Carolingian-renaissance-and-its-aftermath",
+            "https://books.openedition.org/pur/235311?lang=en"
+          ]
+        }
+      ],
+      "landing_page": [
+        {
+          "section": 1,
+          "heading": "A shared problem of understanding",
+          "source_urls": [
+            "https://www.britannica.com/topic/education/The-Carolingian-renaissance-and-its-aftermath",
+            "https://books.openedition.org/pur/235311?lang=en"
+          ]
+        },
+        {
+          "section": 2,
+          "heading": "An exchange of knowledge",
+          "source_urls": [
+            "https://www.britannica.com/topic/education/The-Carolingian-renaissance-and-its-aftermath",
+            "https://books.openedition.org/pur/235311?lang=en"
+          ]
+        },
+        {
+          "section": 3,
+          "heading": "Schools, books and authority",
+          "source_urls": [
+            "https://www.britannica.com/topic/education/The-Carolingian-renaissance-and-its-aftermath",
+            "https://books.openedition.org/pur/235311?lang=en"
+          ]
+        },
+        {
+          "section": 4,
+          "heading": "Read the history in French",
+          "source_urls": [
+            "https://www.britannica.com/topic/education/The-Carolingian-renaissance-and-its-aftermath",
+            "https://books.openedition.org/pur/235311?lang=en"
+          ]
+        }
+      ],
+      "note": "Maps factual context only; original practice prompts, translations and editorial preferences are authored copy, not source quotations."
+    },
+    "key": "e05"
+  },
+  {
+    "id": 6,
+    "slug": "06-strasbourg-christmas",
+    "type": "content",
+    "subject": "Christmas in Strasbourg, one French word at a time",
+    "preview": "Wooden chalets, spiced biscuits and a few words for an Alsatian winter walk.",
+    "headline": "Christmas markets in Strasbourg",
+    "image_headline": "Christmas, à la française.",
+    "cta": "Explore Strasbourg",
+    "greeting": "Bonjour {{first_name}},",
+    "email_paragraphs": [
+      "In Strasbourg, lights hang above winter streets and timber-framed buildings, with the cathedral rising beyond the market stalls. Wooden chalets and the scent of cinnamon give Christmas here a distinctly Alsatian setting.",
+      "Pause at the food rather than rushing to the next square. Bredele are small Christmas biscuits; pain d'épices is spiced gingerbread. You might choose a bretzel, the local pretzel, when you want something savoury instead.",
+      "The French words fit easily into the scene. Les lumières are the lights, un marché de Noël is a Christmas market, and les épices are spices. You can practise simply by naming what catches your attention.",
+      "If you want to ask about a biscuit, try: Qu'est-ce que c'est ? What is it? To order one, say: Un, s'il vous plaît. One, please.",
+      "A greeting at a stall, a question about a pastry, a thank you before you leave: small exchanges let you experience Christmas in French. Keep walking towards the cathedral, with a few new words to recognise along the way."
+    ],
+    "lp_headline": "A Christmas walk through Strasbourg",
+    "lp_sections": [
+      {
+        "heading": "Look up before you look at the stalls",
+        "text": "Begin with the city around the market. Strasbourg's cathedral, the timber-framed buildings of Petite France and the illuminated streets give the celebrations their setting. The official market programme connects several squares and neighbourhoods, rather than one isolated site. Let that shape your imagined walk: notice a façade, a bridge or a view before choosing where to pause. Les lumières means the lights."
+      },
+      {
+        "heading": "Taste something Alsatian",
+        "text": "Bredele are small Christmas biscuits, and pain d'épices brings the flavour of spices into gingerbread. A bretzel offers a savoury alternative. These names help you recognise local food without memorising a whole menu. At a stall, you can ask: C'est sucré ? Is it sweet? Or: Qu'est-ce que vous conseillez ? What do you recommend? Ask about ingredients directly if you have an allergy or dietary requirement; a name alone cannot tell you everything."
+      },
+      {
+        "heading": "Make room for the makers",
+        "text": "Strasbourg's celebrations include local craftspeople and independent producers as well as food. Rather than treating every stall as a shopping stop, notice a material, a shape or how something is made. Try: C'est fait ici ? Is it made here? It is a simple question that gives the person behind the counter room to explain. You can listen for a familiar word without needing to understand every detail."
+      },
+      {
+        "heading": "Keep three phrases for the walk",
+        "text": "Où est la cathédrale ? means Where is the cathedral? Je regarde, merci means I am just looking, thank you. Joyeux Noël means Merry Christmas. Choose the phrase that suits the moment rather than trying to use all three. If you plan an actual visit, consult the city's current market information for opening arrangements. The language can stay in your notebook even when the season changes."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://noel.strasbourg.eu/en/",
+        "title": "City of Strasbourg: Christmas market"
+      },
+      {
+        "url": "https://www.eurostar.com/be-en/destinations/strasbourg/christmas-market",
+        "title": "Eurostar: Strasbourg Christmas market and food"
+      }
+    ],
+    "notes": [
+      "Evergreen seasonal cultural content: no dates, current availability or opening promises. Exact requested image headline retained in image_headline; literal email headline identifies Strasbourg.",
+      "Source mapping: setting, crafts and local foods are supported by the [City of Strasbourg](https://noel.strasbourg.eu/en/); bretzels and biscuit descriptions are supported by [Eurostar](https://www.eurostar.com/be-en/destinations/strasbourg/christmas-market)."
+    ],
+    "signoff": "À bientôt,\nThe French Atelier by Acadomia team",
+    "word_counts": {
+      "email_body": 167,
+      "email_visible_body_with_greeting_ctas_details_signoff": 177,
+      "landing_page_main_text": 266,
+      "subject_characters": 50,
+      "preview_characters": 76,
+      "cta_characters": 18
+    },
+    "source_map": {
+      "email": [
+        {
+          "paragraph": 1,
+          "source_urls": [
+            "https://noel.strasbourg.eu/en/",
+            "https://www.eurostar.com/be-en/destinations/strasbourg/christmas-market"
+          ]
+        },
+        {
+          "paragraph": 2,
+          "source_urls": [
+            "https://noel.strasbourg.eu/en/",
+            "https://www.eurostar.com/be-en/destinations/strasbourg/christmas-market"
+          ]
+        },
+        {
+          "paragraph": 3,
+          "source_urls": [
+            "https://noel.strasbourg.eu/en/",
+            "https://www.eurostar.com/be-en/destinations/strasbourg/christmas-market"
+          ]
+        },
+        {
+          "paragraph": 4,
+          "source_urls": [
+            "https://noel.strasbourg.eu/en/",
+            "https://www.eurostar.com/be-en/destinations/strasbourg/christmas-market"
+          ]
+        },
+        {
+          "paragraph": 5,
+          "source_urls": [
+            "https://noel.strasbourg.eu/en/",
+            "https://www.eurostar.com/be-en/destinations/strasbourg/christmas-market"
+          ]
+        }
+      ],
+      "landing_page": [
+        {
+          "section": 1,
+          "heading": "Look up before you look at the stalls",
+          "source_urls": [
+            "https://noel.strasbourg.eu/en/",
+            "https://www.eurostar.com/be-en/destinations/strasbourg/christmas-market"
+          ]
+        },
+        {
+          "section": 2,
+          "heading": "Taste something Alsatian",
+          "source_urls": [
+            "https://noel.strasbourg.eu/en/",
+            "https://www.eurostar.com/be-en/destinations/strasbourg/christmas-market"
+          ]
+        },
+        {
+          "section": 3,
+          "heading": "Make room for the makers",
+          "source_urls": [
+            "https://noel.strasbourg.eu/en/",
+            "https://www.eurostar.com/be-en/destinations/strasbourg/christmas-market"
+          ]
+        },
+        {
+          "section": 4,
+          "heading": "Keep three phrases for the walk",
+          "source_urls": [
+            "https://noel.strasbourg.eu/en/",
+            "https://www.eurostar.com/be-en/destinations/strasbourg/christmas-market"
+          ]
+        }
+      ],
+      "note": "Maps factual context only; original practice prompts, translations and editorial preferences are authored copy, not source quotations."
+    },
+    "key": "e06"
+  },
+  {
+    "id": 7,
+    "slug": "07-french-cafe-challenge",
+    "type": "promo",
+    "subject": "Your French café challenge starts with one order",
+    "preview": "Try your first café order, then claim your limited-time French course discount.",
+    "headline": "Learn French with X% off",
+    "cta": "Claim my discount",
+    "greeting": "Bonjour {{first_name}},",
+    "email_paragraphs": [
+      "At the café counter, your turn arrives. Try one short sentence: Bonjour, un café, s'il vous plaît. Hello, a coffee, please. ☕",
+      "That is your challenge. Say it once slowly, then again without looking. Add Merci when your order arrives. You have practised a greeting, a request and a thank you.",
+      "Ready to keep going? French Atelier by Acadomia brings everyday French into live classes with native, certified teachers based in France. Practise words in the situations where you want to use them.",
+      "Your X% course discount is waiting, but this is a limited-time offer. Take the next step now and start turning short phrases into French you can use.",
+      "Claim your discount and get started with French Atelier. Your next café order could be a good first goal."
+    ],
+    "email_detail_rows": [
+      {
+        "label": "Offer",
+        "value": "X% off"
+      },
+      {
+        "label": "Applies to",
+        "value": "French language classes"
+      },
+      {
+        "label": "Class size",
+        "value": "10 to 12"
+      },
+      {
+        "label": "Reserved for",
+        "value": "{{first_name}}"
+      },
+      {
+        "label": "Status",
+        "value": "Limited-time offer"
+      }
+    ],
+    "lp_headline": "Take the café challenge and claim your discount",
+    "lp_sections": [
+      {
+        "heading": "Start with one complete order",
+        "text": "Say this aloud: Bonjour, un café, s'il vous plaît. Hello, a coffee, please. Take your time with the whole sentence, including the greeting. Repeat it without looking, then check what you remembered. The point is not to sound flawless. It is to have a short request ready when somebody is waiting for your answer."
+      },
+      {
+        "heading": "Change one part",
+        "text": "Now ask for a tea instead: Bonjour, un thé, s'il vous plaît. You have kept the useful structure and changed only the drink. Finish either order with Merci, thank you. If the answer comes too quickly, try: Pouvez-vous répéter, s'il vous plaît ? Could you repeat, please? Practise that sentence too. Being able to ask again is part of managing the exchange, not a sign that it went wrong."
+      },
+      {
+        "heading": "Take the practice into a live class",
+        "text": "French Atelier by Acadomia teaches live with native, certified teachers based in France. Practical situations and cultural settings connect the language with the places and people you want to understand. A café order is a useful beginning: you greet someone, make a request and listen for their response. In class, you can keep building the language you need beyond that first sentence, with a teacher there to guide your practice."
+      },
+      {
+        "heading": "Claim your limited-time discount",
+        "text": "Your X% discount is waiting when you take the next step with French Atelier. This is a limited-time offer, so claim it now rather than putting your French aside again. Choose a course suited to your starting level and begin with a practical goal you care about. You do not need a long list of phrases before you start. Bring your curiosity, your first café order and a willingness to practise."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.frenchatelierlive.com",
+        "title": "French Atelier by Acadomia: Programme and enrollment consultation"
+      }
+    ],
+    "notes": [
+      "UNRESOLVED SOURCE VALUE: Promo 1 brief supplies a waiting discount and limited-time offer; X% is the campaign variable explicitly supplied in Promo 2 and requested for both promo detail boxes. No numerical rate, code, eligibility or expiry is approved. Confirm commercial terms before public use. Reserved for {{first_name}} personalises the offer; it does not claim an actual seat reservation.",
+      "Five optional detail rows included; count them in promo visible-body audit.",
+      "Source mapping: teaching model, practical situations and advisor consultation appear on [French Atelier](https://www.frenchatelierlive.com)."
+    ],
+    "signoff": "À bientôt,\nThe French Atelier by Acadomia team",
+    "word_counts": {
+      "email_body": 128,
+      "email_visible_body_with_greeting_ctas_details_signoff": 164,
+      "landing_page_main_text": 263,
+      "subject_characters": 48,
+      "preview_characters": 79,
+      "cta_characters": 17
+    },
+    "source_map": {
+      "email": [
+        {
+          "paragraph": 1,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 2,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 3,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 4,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 5,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        }
+      ],
+      "landing_page": [
+        {
+          "section": 1,
+          "heading": "Start with one complete order",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "section": 2,
+          "heading": "Change one part",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "section": 3,
+          "heading": "Take the practice into a live class",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "section": 4,
+          "heading": "Claim your limited-time discount",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        }
+      ],
+      "note": "Maps factual context only; original practice prompts, translations and editorial preferences are authored copy, not source quotations."
+    },
+    "key": "e07"
+  },
+  {
+    "id": 8,
+    "slug": "08-french-class-invitation",
+    "type": "promo",
+    "subject": "Final chance to claim X% off your French course",
+    "preview": "Only a few places remain in the next class. Claim your discount and start French.",
+    "headline": "Claim X% off before places fill",
+    "cta": "Claim my discount",
+    "greeting": "Bonjour {{first_name}},",
+    "email_paragraphs": [
+      "This is your final chance to claim X% off your French Atelier course. Only a few places remain in the next class, so take the next step before they fill.",
+      "Learn with real teachers, live from France. French Atelier by Acadomia's native, certified teachers help you practise the language through everyday situations and cultural settings, not just isolated words.",
+      "From a first introduction to a conversation about France, the aim is French you can put to use. Small groups of 10 to 12 learners make the classroom a place to speak and listen.",
+      "Your interest in French can become a class you actually attend. Claim your discount now and get started with French Atelier.",
+      "Hurry before the remaining places are taken. Your French class is waiting."
+    ],
+    "email_detail_rows": [
+      {
+        "label": "Offer",
+        "value": "X% off"
+      },
+      {
+        "label": "Applies to",
+        "value": "French language classes"
+      },
+      {
+        "label": "Class size",
+        "value": "10 to 12"
+      },
+      {
+        "label": "Reserved for",
+        "value": "{{first_name}}"
+      },
+      {
+        "label": "Status",
+        "value": "Few places in next class"
+      }
+    ],
+    "lp_headline": "Final chance: claim X% off your French course",
+    "lp_sections": [
+      {
+        "heading": "Claim your discount before places fill",
+        "text": "Only a few places remain in the next French Atelier class. This is your final chance to claim X% off your course, so act now before the remaining places are taken. If you have been wanting to learn French, make this the moment you begin. Choose a practical goal, bring your curiosity about France and take the next step towards a live class."
+      },
+      {
+        "heading": "Real teachers, live from France",
+        "text": "French Atelier by Acadomia offers live learning with native, certified teachers based in France. You can hear the language spoken, practise your own responses and ask questions when you need an explanation. Groups of 10 to 12 learners provide a small-class setting. Your teacher is a real person guiding the lesson, with the language and culture of France at the centre of the experience."
+      },
+      {
+        "heading": "Learn the French behind everyday moments",
+        "text": "Culture gives the words a setting: introducing yourself, ordering something to eat or asking a question while travelling. French Atelier connects language practice with places and situations in France, so your learning has a purpose beyond memorising vocabulary. Think about the exchange you would most like to manage. That goal can help you choose what to work towards as you begin."
+      },
+      {
+        "heading": "Take your next step now",
+        "text": "You do not have to guess your starting level. The programme offers a level assessment and advisor guidance to help you find a suitable course. Use that support, then take the opportunity to begin rather than waiting for a perfect moment. Claim your X% discount now and get started with French Atelier. There are only a few places left in the next class."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.frenchatelierlive.com",
+        "title": "French Atelier by Acadomia: Class format, placement and consultation"
+      }
+    ],
+    "notes": [
+      "UNRESOLVED SOURCE VALUE: X% is the literal discount variable supplied in Promo 2 of the client brief, not an approved numerical rate. Final chance and few places in the next class are client-brief campaign claims, not website-verified live inventory. Confirm actual discount and live availability before public use; no code, expiry or numerical inventory invented.",
+      "Five optional detail rows included; count them in promo visible-body audit.",
+      "Source mapping: class size, live teachers, placement and advisor consultation appear on [French Atelier](https://www.frenchatelierlive.com)."
+    ],
+    "signoff": "À bientôt,\nThe French Atelier by Acadomia team",
+    "word_counts": {
+      "email_body": 126,
+      "email_visible_body_with_greeting_ctas_details_signoff": 165,
+      "landing_page_main_text": 251,
+      "subject_characters": 47,
+      "preview_characters": 81,
+      "cta_characters": 17
+    },
+    "source_map": {
+      "email": [
+        {
+          "paragraph": 1,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 2,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 3,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 4,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 5,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        }
+      ],
+      "landing_page": [
+        {
+          "section": 1,
+          "heading": "Claim your discount before places fill",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "section": 2,
+          "heading": "Real teachers, live from France",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "section": 3,
+          "heading": "Learn the French behind everyday moments",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "section": 4,
+          "heading": "Take your next step now",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        }
+      ],
+      "note": "Maps factual context only; original practice prompts, translations and editorial preferences are authored copy, not source quotations."
+    },
+    "key": "e08"
+  },
+  {
+    "id": 9,
+    "slug": "09-julien-ai",
+    "type": "product",
+    "subject": "Meet Julien, your between-class French practice",
+    "preview": "A closer look at the AI tutor for pronunciation and conversation practice.",
+    "headline": "Practise French with Julien AI",
+    "cta": "Meet Julien",
+    "greeting": "Bonjour {{first_name}},",
+    "email_paragraphs": [
+      "Sometimes the word you want arrives after class has finished. You remember the question you meant to ask, or want another attempt at a phrase you found difficult.",
+      "Julien is French Atelier by Acadomia's AI tutor for practice between live lessons. Available around the clock, it offers pronunciation coaching, corrections and conversation practice in French.",
+      "Keep the task small. You might practise introducing yourself, repeat a sentence from class or rehearse one question you want to ask on a trip. Choose something you can return to rather than a whole topic at once.",
+      "Julien is an AI practice companion, not your human teacher. Use the extra practice to identify what you want to work on, then bring any unresolved questions to class.",
+      "A short café exchange is one place to begin: familiar words, a cultural setting and another chance to speak."
+    ],
+    "lp_headline": "Practise French between classes with Julien AI",
+    "lp_sections": [
+      {
+        "heading": "Choose a task you can finish",
+        "text": "Before opening a practice session, decide what you want to say. Keep it specific: introduce yourself in two sentences, ask for a table or describe where you live. A small task makes it easier to notice what needs attention. You do not have to cover everything from a lesson in one sitting, and you can return to the same task more than once."
+      },
+      {
+        "heading": "Use the AI tutor for repetition",
+        "text": "Julien is the AI tutor available within French Atelier by Acadomia's learning platform. It offers pronunciation coaching, corrections and conversation practice, with access around the clock. That gives you a place to work between scheduled classes. Try a phrase, pay attention to the feedback and repeat the part you want to improve. Keep your own goal in view rather than treating every correction as a reason to begin an entirely new topic."
+      },
+      {
+        "heading": "Connect the words to a situation",
+        "text": "Give your practice a simple setting you care about. For a café exchange, begin with a greeting and a short order. For an introduction, start with your name and where you come from. These are suggested exercises, not a promise of a particular built-in activity. The aim is to use words together for a purpose, so your practice remains connected to a conversation you might actually want to have."
+      },
+      {
+        "heading": "Bring a useful question back to class",
+        "text": "At the end, write down one phrase you want to keep and one point you are unsure about. Ask your live teacher about the uncertain point. AI feedback can be imperfect, so you do not need to accept an explanation that seems unclear or inconsistent. Julien provides another opportunity to practise; your human teacher remains the person to consult about the questions that need a closer explanation."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.frenchatelierlive.com",
+        "title": "French Atelier by Acadomia: Julien AI tutor"
+      }
+    ],
+    "notes": [
+      "No invented UI, named mode, integrations or personalised memory features. Exercises explicitly suggestions, not product-feature claims.",
+      "Source mapping: Julien availability, pronunciation, corrections and conversation capabilities appear on [French Atelier](https://www.frenchatelierlive.com)."
+    ],
+    "signoff": "À bientôt,\nThe French Atelier by Acadomia team",
+    "word_counts": {
+      "email_body": 141,
+      "email_visible_body_with_greeting_ctas_details_signoff": 151,
+      "landing_page_main_text": 271,
+      "subject_characters": 47,
+      "preview_characters": 74,
+      "cta_characters": 11
+    },
+    "source_map": {
+      "email": [
+        {
+          "paragraph": 1,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 2,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 3,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 4,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 5,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        }
+      ],
+      "landing_page": [
+        {
+          "section": 1,
+          "heading": "Choose a task you can finish",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "section": 2,
+          "heading": "Use the AI tutor for repetition",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "section": 3,
+          "heading": "Connect the words to a situation",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "section": 4,
+          "heading": "Bring a useful question back to class",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        }
+      ],
+      "note": "Maps factual context only; original practice prompts, translations and editorial preferences are authored copy, not source quotations."
+    },
+    "key": "e09"
+  },
+  {
+    "id": 10,
+    "slug": "10-choose-your-course",
+    "type": "product",
+    "subject": "Which French Atelier course fits your level?",
+    "preview": "Two collections, seven courses and a practical way to choose where to begin.",
+    "headline": "Find the French course for your level",
+    "cta": "Explore my courses",
+    "greeting": "Bonjour {{first_name}},",
+    "email_paragraphs": [
+      "Choosing a French course starts with two questions: what can you already do, and how would you like to practise?",
+      "French Atelier by Acadomia offers two collections. The French Atelier collection combines structured language learning with cultural settings across France. Its four courses run from Foundation through Intermediate, with 20 live lessons in each.",
+      "Let's Speak French puts the emphasis on spoken practice. It offers Foundation, Beginner and Elementary courses, with 10 live lessons in each. Sessions in both collections last 85 minutes.",
+      "You do not need to judge your level from a course title. The programme offers a level assessment and an advisor conversation to help you choose a starting point.",
+      "Compare the starting levels, lesson counts and kinds of practice in each collection. The right choice should fit the French you have now, not the French you think you ought to have."
+    ],
+    "lp_headline": "Compare the two French Atelier course collections",
+    "lp_sections": [
+      {
+        "heading": "The French Atelier collection",
+        "text": "Choose this collection if you want structured language and cultural learning organised around places in France. Each course has 20 live lessons of 85 minutes. Foundation moves from A0 to A1.1 through a Paris setting. Beginner moves from A1.1 to A1.2 through Normandy, Paris and Versailles. Elementary moves from A1.2 to A2.1 through the Loire, Bordeaux and the Basque Country. Intermediate moves from A2.1 to A2.2, with settings including Marseille, Chamonix and Alsace."
+      },
+      {
+        "heading": "Let's Speak French",
+        "text": "This collection concentrates on spoken practice in everyday situations. Each course has 10 live lessons of 85 minutes. Foundation runs from A0 to A1.1 and focuses on first practical exchanges. Beginner runs from A1.1 to A1.2, building everyday conversation. Elementary runs from A1.2 to A2.1, with situations that include opinions, appointments and cultural conventions. The shorter lesson count is a format difference, not a reason to skip an appropriate starting level."
+      },
+      {
+        "heading": "Read the levels as a starting guide",
+        "text": "The labels show each course's stated entry and target levels. A0 identifies the starting point for someone new to French; the numbered subdivisions are the programme's way of organising progression within the wider framework. A course name alone cannot tell you whether the class will fit. Tell the advisor what you can already understand and say, including any French you studied some time ago."
+      },
+      {
+        "heading": "Choose with your goal in mind",
+        "text": "Use the level assessment and advisor conversation to discuss both your current ability and the kind of practice you want. Ask how the collection, lesson count and schedule fit that goal. You can prefer a particular format without guessing your own placement. Begin with the course that gives you useful work at the right level, rather than the one with the most advanced title."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.frenchatelierlive.com",
+        "title": "French Atelier by Acadomia: Seven current courses"
+      }
+    ],
+    "notes": [
+      "Current site lists seven ACQ courses in two collections. All seven named with entry/target labels and correct collection lesson counts.",
+      "A1.1/A1.2/A2.1/A2.2 treated as programme subdivisions, not additional official CEFR global levels.",
+      "Source mapping: names, entry and target levels, lesson counts and cultural settings appear on [French Atelier](https://www.frenchatelierlive.com)."
+    ],
+    "signoff": "À bientôt,\nThe French Atelier by Acadomia team",
+    "word_counts": {
+      "email_body": 144,
+      "email_visible_body_with_greeting_ctas_details_signoff": 155,
+      "landing_page_main_text": 272,
+      "subject_characters": 44,
+      "preview_characters": 76,
+      "cta_characters": 18
+    },
+    "source_map": {
+      "email": [
+        {
+          "paragraph": 1,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 2,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 3,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 4,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "paragraph": 5,
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        }
+      ],
+      "landing_page": [
+        {
+          "section": 1,
+          "heading": "The French Atelier collection",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "section": 2,
+          "heading": "Let's Speak French",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "section": 3,
+          "heading": "Read the levels as a starting guide",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        },
+        {
+          "section": 4,
+          "heading": "Choose with your goal in mind",
+          "source_urls": [
+            "https://www.frenchatelierlive.com"
+          ]
+        }
+      ],
+      "note": "Maps factual context only; original practice prompts, translations and editorial preferences are authored copy, not source quotations."
+    },
+    "key": "e10"
+  },
+  {
+    "id": 11,
+    "slug": "11-cefr-certificate",
+    "type": "product",
+    "subject": "What your French Atelier certificate means",
+    "preview": "A certificate from Acadomia and a clearer way to recognise your French progress.",
+    "headline": "Earn your Acadomia course certificate",
+    "cta": "Understand my certificate",
+    "greeting": "Bonjour {{first_name}},",
+    "email_paragraphs": [
+      "Introducing yourself, understanding a familiar question or explaining what you would like: these are achievements worth noticing as you learn French.",
+      "French Atelier by Acadomia marks course completion with a CEFR-aligned certificate issued by Acadomia. Both The French Atelier and Let's Speak French collections connect language practice with cultural settings.",
+      "CEFR stands for Common European Framework of Reference for Languages. It describes language proficiency through what people can do, helping you put your progress into clearer terms.",
+      "Keep your own examples alongside that milestone. Which conversation feels easier? What can you understand that once needed a translation? Your answers make the learning personal.",
+      "Your certificate marks a completed course. Use it as a moment to recognise the work and choose what you want to learn next."
+    ],
+    "lp_headline": "Recognise your progress with a CEFR-aligned certificate",
+    "lp_sections": [
+      {
+        "heading": "A milestone at course completion",
+        "text": "French Atelier by Acadomia provides a CEFR-aligned certificate issued by Acadomia when you complete your course. The French Atelier collection combines structured language and culture; Let's Speak French emphasises spoken practice in everyday settings. Each offers different course levels. Think of your milestone alongside the time you have spent listening, speaking and practising. It is a moment to recognise the work, then decide what you want to do next."
+      },
+      {
+        "heading": "A clearer way to describe progress",
+        "text": "The Common European Framework of Reference for Languages describes proficiency through practical capabilities. Its main levels are A1, A2, B1, B2, C1 and C2, with descriptions covering activities such as listening, reading, speaking and writing. French Atelier uses the framework to organise its course progression. That gives your learning a shared vocabulary beyond simply calling yourself a beginner or saying you have studied for a certain length of time."
+      },
+      {
+        "heading": "Keep your own examples",
+        "text": "Pair the framework with moments you can recognise. Perhaps you can introduce yourself without reading, understand a familiar question or write a short message more independently. These are examples to reflect on, not promises about a particular course outcome. Ask yourself what you can do comfortably, what still takes preparation and what you would like to practise again. Your answers can make a conversation about progress much more useful."
+      },
+      {
+        "heading": "Use the milestone to choose what follows",
+        "text": "Ask your advisor how completion and assessment work for your chosen course and which level appears on its certificate. Then choose a practical goal for your next stage. If you need a certificate for a formal purpose, check the receiving organisation's requirements. For your own learning, keep the focus on the French you are becoming able to use."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.frenchatelierlive.com",
+        "title": "French Atelier by Acadomia: CEFR-aligned completion certificate"
+      },
+      {
+        "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/introduction-and-context",
+        "title": "Council of Europe: The CEFR framework"
+      },
+      {
+        "url": "https://www.coe.int/en/web/portfolio/self-assessment-grid",
+        "title": "Council of Europe: CEFR self-assessment grids"
+      }
+    ],
+    "notes": [
+      "Corrected brief CERF to CEFR. No claim of automatic DELF/DALF equivalence, European recognition, government acceptance or university accreditation.",
+      "Completion threshold, exact assessment, certificate wording and issuance timing not publicly specified; framed as advisor questions, never invented.",
+      "INTERNAL QUALIFICATION: CEFR alignment is not Council of Europe accreditation; the Council does not validate individual examinations' or diplomas' alignment with the framework. One neutral formal-use sentence retained in LP.",
+      "Source mapping: certificate issuer and completion statement appear on [French Atelier](https://www.frenchatelierlive.com); CEFR levels and non-accreditation are explained by the [Council of Europe](https://www.coe.int/en/web/common-european-framework-reference-languages/introduction-and-context)."
+    ],
+    "signoff": "À bientôt,\nThe French Atelier by Acadomia team",
+    "word_counts": {
+      "email_body": 126,
+      "email_visible_body_with_greeting_ctas_details_signoff": 137,
+      "landing_page_main_text": 265,
+      "subject_characters": 42,
+      "preview_characters": 80,
+      "cta_characters": 25
+    },
+    "source_map": {
+      "email": [
+        {
+          "paragraph": 1,
+          "source_urls": [
+            "https://www.frenchatelierlive.com",
+            "https://www.coe.int/en/web/common-european-framework-reference-languages/introduction-and-context",
+            "https://www.coe.int/en/web/portfolio/self-assessment-grid"
+          ]
+        },
+        {
+          "paragraph": 2,
+          "source_urls": [
+            "https://www.frenchatelierlive.com",
+            "https://www.coe.int/en/web/common-european-framework-reference-languages/introduction-and-context",
+            "https://www.coe.int/en/web/portfolio/self-assessment-grid"
+          ]
+        },
+        {
+          "paragraph": 3,
+          "source_urls": [
+            "https://www.frenchatelierlive.com",
+            "https://www.coe.int/en/web/common-european-framework-reference-languages/introduction-and-context",
+            "https://www.coe.int/en/web/portfolio/self-assessment-grid"
+          ]
+        },
+        {
+          "paragraph": 4,
+          "source_urls": [
+            "https://www.frenchatelierlive.com",
+            "https://www.coe.int/en/web/common-european-framework-reference-languages/introduction-and-context",
+            "https://www.coe.int/en/web/portfolio/self-assessment-grid"
+          ]
+        },
+        {
+          "paragraph": 5,
+          "source_urls": [
+            "https://www.frenchatelierlive.com",
+            "https://www.coe.int/en/web/common-european-framework-reference-languages/introduction-and-context",
+            "https://www.coe.int/en/web/portfolio/self-assessment-grid"
+          ]
+        }
+      ],
+      "landing_page": [
+        {
+          "section": 1,
+          "heading": "A milestone at course completion",
+          "source_urls": [
+            "https://www.frenchatelierlive.com",
+            "https://www.coe.int/en/web/common-european-framework-reference-languages/introduction-and-context",
+            "https://www.coe.int/en/web/portfolio/self-assessment-grid"
+          ]
+        },
+        {
+          "section": 2,
+          "heading": "A clearer way to describe progress",
+          "source_urls": [
+            "https://www.frenchatelierlive.com",
+            "https://www.coe.int/en/web/common-european-framework-reference-languages/introduction-and-context",
+            "https://www.coe.int/en/web/portfolio/self-assessment-grid"
+          ]
+        },
+        {
+          "section": 3,
+          "heading": "Keep your own examples",
+          "source_urls": [
+            "https://www.frenchatelierlive.com",
+            "https://www.coe.int/en/web/common-european-framework-reference-languages/introduction-and-context",
+            "https://www.coe.int/en/web/portfolio/self-assessment-grid"
+          ]
+        },
+        {
+          "section": 4,
+          "heading": "Use the milestone to choose what follows",
+          "source_urls": [
+            "https://www.frenchatelierlive.com",
+            "https://www.coe.int/en/web/common-european-framework-reference-languages/introduction-and-context",
+            "https://www.coe.int/en/web/portfolio/self-assessment-grid"
+          ]
+        }
+      ],
+      "note": "Maps factual context only; original practice prompts, translations and editorial preferences are authored copy, not source quotations."
+    },
+    "key": "e11"
+  }
+]

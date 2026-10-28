@@ -1,0 +1,25 @@
+Subject Line: You've landed at CDG. Try these French words.
+Subject characters: 45
+Email Preview Line: From passport control to the exit, a few phrases for your first arrival.
+Preview characters: 72
+Header Text: French phrases for Charles de Gaulle Airport
+CTA Button: Read my arrival guide
+CTA URL: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/landing-pages/03-arriving-at-cdg.html
+Body word count: 174
+
+Bonjour {{first_name}}, ✈️
+
+The plane has landed. You pick up your cabin bag, step into the terminal, and French is suddenly more than something on a page. Start with the signs: Arrivées means arrivals. Your first useful word is already there.
+
+If your route takes you through passport control, have your documents ready and follow the staff's directions. A simple Bonjour is enough to begin an exchange. There is no need to prepare a speech.
+
+Next, look for Bagages, meaning baggage. Need a little help? Try: Où sont les bagages, s'il vous plaît ? Where is baggage claim, please?
+
+You may also see Correspondances, meaning connections. If Paris is your destination, look for Sortie, the exit, rather than following connecting passengers.
+
+Bag collected, you are ready for the next question: Où sont les taxis ? Where are the taxis? Or: Où est la gare ? Where is the station?
+
+Keep these questions handy for the terminal. You can ask someone to repeat an answer, check which way to go, and begin your first day in France with a little French.
+
+À bientôt,
+The French Atelier team

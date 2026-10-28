@@ -1,0 +1,23 @@
+Subject Line: What your French Atelier certificate means
+Subject characters: 42
+Email Preview Line: A certificate from Acadomia and a clearer way to recognise your French progress.
+Preview characters: 80
+Header Text: Earn your Acadomia course certificate
+CTA Button: Understand my certificate
+CTA URL: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/landing-pages/11-cefr-certificate.html
+Body word count: 126
+
+Bonjour {{first_name}}, 🎓
+
+Introducing yourself, understanding a familiar question or explaining what you would like: these are achievements worth noticing as you learn French.
+
+French Atelier by Acadomia marks course completion with a CEFR-aligned certificate issued by Acadomia. Both The French Atelier and Let's Speak French collections connect language practice with cultural settings.
+
+CEFR stands for Common European Framework of Reference for Languages. It describes language proficiency through what people can do, helping you put your progress into clearer terms.
+
+Keep your own examples alongside that milestone. Which conversation feels easier? What can you understand that once needed a translation? Your answers make the learning personal.
+
+Your certificate marks a completed course. Use it as a moment to recognise the work and choose what you want to learn next.
+
+À bientôt,
+The French Atelier team

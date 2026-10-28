@@ -1,0 +1,207 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Take the café challenge and claim your discount | French Atelier</title><link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16.png"><link rel="shortcut icon" href="../assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png"><style>@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300 700;font-display:swap;src:url('../assets/fonts/cormorant-normal.woff2') format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:300 700;font-display:swap;src:url('../assets/fonts/cormorant-italic.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/inter.woff2') format('woff2')}</style><style>
+  :root {
+    --navy:        #0B1340;
+    --navy-deep:   #080E33;
+    --gold:        #C8A560;
+    --gold-soft:   #D4B16A;
+    --gold-muted:  #AA8C55;
+    --burgundy:    #6B1E2C;
+    --ivory:       #F5EFE5;
+    --cream:       #E4DAC4;
+    --paper:       #FAF6EE;
+    --ink:         #1F2138;
+    --ink-soft:    #4A4D6A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); line-height: 1.78; -webkit-font-smoothing: antialiased; }
+  .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+  .site-header {
+    background: var(--navy);
+    padding: 28px 24px;
+    text-align: center;
+    border-bottom: 1px solid rgba(200, 165, 96, 0.2);
+  }
+  .site-header .brand {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .site-header .brand-sub {
+    color: var(--ivory);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 4px;
+    letter-spacing: 0.04em;
+  }
+  .flourish { width: 120px; height: 14px; margin: 6px auto 0; color: var(--gold); display: block; }
+
+  /* HERO */
+  .hero { position: relative; width: 100%; height: 70vh; min-height: 420px; overflow: hidden; background: var(--navy); }
+  .hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(90deg,
+      rgba(11,19,64,0.62) 0%,
+      rgba(11,19,64,0.40) 38%,
+      rgba(11,19,64,0.12) 70%,
+      rgba(11,19,64,0.00) 100%);
+    display: flex; align-items: center; padding: 0 8% 0 6%;
+  }
+  .hero-content { color: var(--ivory); max-width: 620px; }
+  .eyebrow { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 19px; color: var(--ivory); letter-spacing: 0.04em; margin-bottom: 16px; text-shadow: 0 1px 3px rgba(11,19,64,1), 0 0 12px rgba(11,19,64,0.95), 0 2px 26px rgba(11,19,64,0.8); }
+  .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 5vw, 64px); font-weight: 600; line-height: 1.1; letter-spacing: -0.01em; text-align: center; text-shadow: 0 1px 4px rgba(11,19,64,0.85), 0 2px 22px rgba(11,19,64,0.55); }
+  .hero-title em { font-style: italic; color: var(--gold-soft); }
+
+  /* MAIN */
+  main { max-width: 760px; margin: 0 auto; padding: 72px 32px 96px; }
+  .section-head { display: flex; align-items: center; gap: 14px; margin: 52px 0 20px; }
+  .section-head h2 { font-family: 'Cormorant Garamond', serif; font-size: 30px; color: var(--navy); font-weight: 600; letter-spacing: -0.005em; line-height: 1.2; }
+  .section-head .mini-flourish { width: 56px; height: 10px; color: var(--gold); flex-shrink: 0; }
+
+  p.body { font-size: 17px; line-height: 1.78; color: var(--ink); margin-bottom: 22px; }
+  p.body em { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 19px; color: var(--burgundy); }
+  p.body strong { font-weight: 600; color: var(--navy); }
+
+  /* DETAILS BOX (claim / promo variant) */
+  .details-box {
+    margin: 32px 0;
+    padding: 32px 34px;
+    background: var(--cream);
+    border-radius: 6px;
+    border: 1px solid rgba(200, 165, 96, 0.35);
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .details-box .details-header {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold-muted);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .details-box .details-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(11, 19, 64, 0.08);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+  }
+  .details-box .details-row:first-of-type { border-top: none; }
+  .details-box .details-label { color: var(--ink-soft); letter-spacing: 0.05em; text-transform: uppercase; font-size: 12px; }
+  .details-box .details-value { color: var(--navy); font-weight: 600; text-align: right; }
+
+  /* PROMO CODE BOX */
+  .code-box {
+    margin: 40px auto;
+    max-width: 420px;
+    text-align: center;
+    background: var(--navy);
+    border: 2px solid var(--gold);
+    border-radius: 8px;
+    padding: 36px 28px;
+  }
+  .code-box .code-label {
+    font-family: 'Inter', sans-serif;
+    color: var(--gold-soft);
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .code-box .code-value {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--ivory);
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  .code-box .code-discount {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold-soft);
+    font-size: 20px;
+  }
+
+  /* CTA */
+  .cta-block { margin: 52px 0 16px; text-align: center; padding: 44px 28px; background: var(--navy); border-radius: 4px; }
+  .cta-block .cta-eyebrow { font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--gold-soft); font-size: 17px; letter-spacing: 0.04em; margin-bottom: 12px; }
+  .cta-block .cta-title { font-family: 'Cormorant Garamond', serif; color: var(--ivory); font-size: 28px; margin-bottom: 26px; line-height: 1.3; }
+  .cta { display: inline-block; background: var(--navy); color: var(--ivory) !important; text-decoration: none; padding: 18px 46px; font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid var(--gold); transition: all 0.3s ease; box-shadow: 0 2px 12px rgba(11, 19, 64, 0.12); }
+  .cta:hover { background: var(--gold); color: var(--navy) !important; border-color: var(--navy); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(200, 165, 96, 0.3); }
+  .cta-sub { margin-top: 16px; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: rgba(245,239,229,0.75); }
+
+  /* SIGNOFF */
+  .signoff { text-align: center; margin-top: 52px; font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--ink); }
+  .signoff em { color: var(--navy); font-style: italic; }
+  .signoff .small { display: block; margin-top: 6px; font-size: 16px; color: var(--ink-soft); font-style: normal; }
+
+  .site-footer { background: var(--navy); color: var(--ivory); padding: 40px 24px 36px; text-align: center; }
+  .site-footer .footer-brand { font-family: 'Cormorant Garamond', serif; color: var(--gold); font-size: 22px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+  .site-footer .footer-tag { font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--ivory); font-size: 15px; margin-top: 8px; opacity: 0.8; }
+  .site-footer .footer-links { margin-top: 22px; font-size: 13px; color: rgba(245, 239, 229, 0.6); letter-spacing: 0.04em; }
+  .site-footer .footer-links a { color: rgba(245, 239, 229, 0.7); text-decoration: none; margin: 0 12px; }
+  .site-footer .footer-links a:hover { color: var(--gold-soft); }
+  .site-footer .footer-legal { margin-top: 18px; font-size: 11.5px; color: rgba(245, 239, 229, 0.45); letter-spacing: 0.04em; line-height: 1.7; }
+  .site-footer .footer-legal a { color: rgba(245, 239, 229, 0.55); text-decoration: underline; margin: 0 6px; }
+
+  @media (max-width: 767px) {
+    .hero { height: 60vh; min-height: 340px; }
+    .hero-overlay { padding: 0 24px; align-items: center; }
+    .hero-content { max-width: 100%; }
+    main { padding: 52px 22px 72px; }
+    p.body { font-size: 16px; }
+    .section-head h2 { font-size: 25px; }
+    .code-box .code-value { font-size: 34px; }
+  }
+
+img{max-width:100%}.reviewbar{padding:18px 24px;background:#E4DAC4;color:#0B1340;font:15px/1.6 Inter,sans-serif}.reviewbar a{color:inherit}.reviewbar strong{font-weight:600}
+.reviewmeta{max-width:1100px;margin:auto}.reviewmeta p{margin:4px 0}
+.scope-note{background:#F5EFE5;border-left:3px solid #C8A560;padding:20px;margin:24px 0;color:#0B1340;font:16px/1.7 Inter,sans-serif}
+.hero-title{overflow-wrap:normal}.back{display:inline-block;margin-bottom:18px;color:#0B1340}
+.reviewbar button{font:inherit;border:1px solid #0B1340;padding:5px 12px;background:#0B1340;color:#F5EFE5;cursor:pointer}
+.actions button{display:inline-block;padding:11px 18px;background:#0B1340;color:#F5EFE5;border:1px solid #C8A560;font:16px Inter,sans-serif;cursor:pointer}
+</style></head><body><header class="site-header">
+  <div class="brand">French Atelier</div>
+  <div class="brand-sub">by Acadomia</div>
+  <svg class="flourish" viewBox="0 0 120 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="3" cy="8" r="1.5" fill="currentColor"/>
+    <path d="M 8 8 C 28 14, 50 2, 70 6 S 100 12, 116 5" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+    <path d="M 116 5 q 4 -4 -1 -7" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+  </svg>
+</header><section class="hero"><picture><source media="(max-width:767px)" srcset="../assets/images/e07-mobile.jpg"><img src="../assets/images/e07-desktop.jpg" alt="Learn French with X% off"></picture><div class="hero-overlay" style="justify-content:center;"><div class="hero-content" style="margin:auto;"><h1 class="hero-title">Take the café challenge and claim your discount</h1></div></div></section><main><div class="section-head"><h2>Start with one complete order</h2><svg class="mini-flourish" viewBox="0 0 60 10" fill="none" aria-hidden="true">
+      <circle cx="2" cy="5" r="1.2" fill="currentColor"/>
+      <path d="M 5 5 C 20 10, 35 0, 58 4" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+    </svg></div><p class="body">Say this aloud: Bonjour, un café, s'il vous plaît. Hello, a coffee, please. Take your time with the whole sentence, including the greeting. Repeat it without looking, then check what you remembered. The point is not to sound flawless. It is to have a short request ready when somebody is waiting for your answer.</p><div class="section-head"><h2>Change one part</h2><svg class="mini-flourish" viewBox="0 0 60 10" fill="none" aria-hidden="true">
+      <circle cx="2" cy="5" r="1.2" fill="currentColor"/>
+      <path d="M 5 5 C 20 10, 35 0, 58 4" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+    </svg></div><p class="body">Now ask for a tea instead: Bonjour, un thé, s'il vous plaît. You have kept the useful structure and changed only the drink. Finish either order with Merci, thank you. If the answer comes too quickly, try: Pouvez-vous répéter, s'il vous plaît ? Could you repeat, please? Practise that sentence too. Being able to ask again is part of managing the exchange, not a sign that it went wrong.</p><div class="section-head"><h2>Take the practice into a live class</h2><svg class="mini-flourish" viewBox="0 0 60 10" fill="none" aria-hidden="true">
+      <circle cx="2" cy="5" r="1.2" fill="currentColor"/>
+      <path d="M 5 5 C 20 10, 35 0, 58 4" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+    </svg></div><p class="body">French Atelier by Acadomia teaches live with native, certified teachers based in France. Practical situations and cultural settings connect the language with the places and people you want to understand. A café order is a useful beginning: you greet someone, make a request and listen for their response. In class, you can keep building the language you need beyond that first sentence, with a teacher there to guide your practice.</p><div class="section-head"><h2>Claim your limited-time discount</h2><svg class="mini-flourish" viewBox="0 0 60 10" fill="none" aria-hidden="true">
+      <circle cx="2" cy="5" r="1.2" fill="currentColor"/>
+      <path d="M 5 5 C 20 10, 35 0, 58 4" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+    </svg></div><p class="body">Your X% discount is waiting when you take the next step with French Atelier. This is a limited-time offer, so claim it now rather than putting your French aside again. Choose a course suited to your starting level and begin with a practical goal you care about. You do not need a long list of phrases before you start. Bring your curiosity, your first café order and a willingness to practise.</p><div class="cta-block"><a class="cta" href="https://www.frenchatelierlive.com/#lead-form">Claim my discount</a><div class="cta-sub">Live French classes with French Atelier by Acadomia.</div></div><div class="signoff"><em>&Agrave; bient&ocirc;t,</em><br><span class="small">The French Atelier team</span></div></main><footer class="site-footer">
+  <div class="footer-brand">French Atelier</div>
+  <div class="footer-tag">Culture speaks French. What about you?</div>
+  <div class="footer-links">
+    <a href="https://www.frenchatelierlive.com">frenchatelierlive.com</a>
+    <span style="opacity:0.4;">&middot;</span>
+    <a href="mailto:hello@frenchatelierlive.com">hello@frenchatelierlive.com</a>
+  </div>
+  <div class="footer-legal">
+    You're receiving this because you requested information from French Atelier by Acadomia.<br/>
+    <a href="{{unsubscribe_url}}">Unsubscribe</a> &middot; <a href="{{preferences_url}}">Email preferences</a> &middot; <a href="https://www.frenchatelierlive.com/privacy">Privacy</a>
+  </div>
+</footer><script src="../assets/copy-controls.js"></script></body></html>

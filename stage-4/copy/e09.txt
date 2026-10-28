@@ -1,0 +1,23 @@
+Subject Line: Meet Julien, your between-class French practice
+Subject characters: 47
+Email Preview Line: A closer look at the AI tutor for pronunciation and conversation practice.
+Preview characters: 74
+Header Text: Practise French with Julien AI
+CTA Button: Meet Julien
+CTA URL: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/landing-pages/09-julien-ai.html
+Body word count: 141
+
+Bonjour {{first_name}}, 💬
+
+Sometimes the word you want arrives after class has finished. You remember the question you meant to ask, or want another attempt at a phrase you found difficult.
+
+Julien is French Atelier by Acadomia's AI tutor for practice between live lessons. Available around the clock, it offers pronunciation coaching, corrections and conversation practice in French.
+
+Keep the task small. You might practise introducing yourself, repeat a sentence from class or rehearse one question you want to ask on a trip. Choose something you can return to rather than a whole topic at once.
+
+Julien is an AI practice companion, not your human teacher. Use the extra practice to identify what you want to work on, then bring any unresolved questions to class.
+
+A short café exchange is one place to begin: familiar words, a cultural setting and another chance to speak.
+
+À bientôt,
+The French Atelier team

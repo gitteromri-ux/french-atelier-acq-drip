@@ -1,0 +1,30 @@
+Subject Line: Your French café challenge starts with one order
+Subject characters: 48
+Email Preview Line: Try your first café order, then claim your limited-time French course discount.
+Preview characters: 79
+Header Text: Learn French with X% off
+CTA Button: Claim my discount
+CTA URL: https://gitteromri-ux.github.io/french-atelier-acq-drip/stage-4/landing-pages/07-french-cafe-challenge.html
+Body word count: 128
+
+Bonjour {{first_name}}, ☕
+
+At the café counter, your turn arrives. Try one short sentence: Bonjour, un café, s'il vous plaît. Hello, a coffee, please. ☕
+
+That is your challenge. Say it once slowly, then again without looking. Add Merci when your order arrives. You have practised a greeting, a request and a thank you.
+
+Ready to keep going? French Atelier by Acadomia brings everyday French into live classes with native, certified teachers based in France. Practise words in the situations where you want to use them.
+
+Your X% course discount is waiting, but this is a limited-time offer. Take the next step now and start turning short phrases into French you can use.
+
+Claim your discount and get started with French Atelier. Your next café order could be a good first goal.
+
+Your French class
+Offer: X% off
+Applies to: French language classes
+Class size: 10 to 12
+Reserved for: {{first_name}}
+Status: Limited-time offer
+
+À bientôt,
+The French Atelier team
