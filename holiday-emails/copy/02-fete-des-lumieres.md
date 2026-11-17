@@ -1,0 +1,55 @@
+# La Fête des Lumières
+
+## Email
+
+- **Subject:** Learn the French words behind Lyon’s lights
+- **Preview text:** French Atelier explains the festival and a French sentence to describe it.
+- **Headline:** Describe Lyon’s Festival of Lights in French
+- **CTA:** Practise the French
+- **Destination:** corresponding La Fête des Lumières landing page; map to Sandra’s published URL before send.
+- **Body word count:** 108 (required 100–130).
+
+Bonjour,
+
+Learn to describe a French celebration with French Atelier. At Lyon’s Fête des Lumières, colourful projections transform buildings while residents place small candles in their windows.
+
+In 1852, residents lit candles in honour of the Virgin Mary. The modern light-art festival developed much later.
+
+Un lumignon is a small candle in a glass holder. La lumière means light, la ville means the city, and illuminer means to illuminate.
+
+Put the words into a sentence: « La ville s’illumine. » It means “The city lights up.” Say it aloud as you picture Lyon after dark.
+
+Read our short guide to understand the tradition and practise describing what you see in French.
+
+[Practise the French]
+
+À bientôt,
+The French Atelier team
+
+## Landing page
+
+# Learn to describe Lyon’s lights in French
+
+Use Lyon’s Festival of Lights to practise French with French Atelier. Learn what the candles mean, how the modern festival differs from the older tradition, and how to turn a few useful words into sentences about the city.
+
+## The tradition that began in 1852
+
+The celebration’s roots lie in the inauguration of a statue of the Virgin Mary on Fourvière hill. In 1852, residents placed candles in their windows in her honour. These small lights became a lasting local tradition. Today’s light-art festival developed much later. The candles belong to an older community custom that continues alongside it.
+
+## What is a lumignon?
+
+Un lumignon is a small candle, traditionally set in a glass holder on a windowsill. Together, rows of these lights make residents’ homes part of the celebration. This is a simple, personal contribution alongside the larger public displays. It helps explain why the festival is more than a spectacle viewed from the pavement.
+
+## Historic buildings, contemporary art
+
+In public squares, artists use colour, movement and projected images to change how familiar architecture appears. At Place des Terreaux, the façades around the square can become the setting for large light works. Installations change between editions, so a photograph records a particular artistic interpretation rather than a permanent decoration.
+
+## Practise describing what you see
+
+La lumière means light; la ville means the city; illuminer means to illuminate. Read « La ville s’illumine » aloud: “The city lights up.” Now try « Je vois un lumignon »: “I see a small candle.” Je vois means “I see”, so it helps you name something in front of you. Look at the photograph, choose one of these sentences and say it without reading the English.
+
+Landing-page word count: 278, including section headings; excluding title, branding and references (required 250–350).
+
+## Editorial fact-check references
+
+- [The official history of Lyon’s Fête des Lumières](https://www.fetedeslumieres.lyon.fr/en/page/story-behind-festival)
