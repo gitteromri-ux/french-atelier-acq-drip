@@ -1,0 +1,30 @@
+[
+  {
+    "topic": "Les Papillotes",
+    "email": 108,
+    "emailRange": "100–150",
+    "lp": 275,
+    "lpRange": "200–300"
+  },
+  {
+    "topic": "La Fête des Lumières",
+    "email": 108,
+    "emailRange": "100–130",
+    "lp": 278,
+    "lpRange": "250–350"
+  },
+  {
+    "topic": "Saint Nicolas",
+    "email": 112,
+    "emailRange": "100–130",
+    "lp": 299,
+    "lpRange": "250–350"
+  },
+  {
+    "topic": "Le Réveillon du Nouvel An",
+    "email": 119,
+    "emailRange": "100–150",
+    "lp": 299,
+    "lpRange": "250–350"
+  }
+]

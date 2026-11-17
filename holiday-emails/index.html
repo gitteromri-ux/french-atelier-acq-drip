@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>French Atelier &middot; Christmas Holidays</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png" />
+<link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+<style>
+  :root {
+    --navy:        #0B1340;
+    --navy-deep:   #080E33;
+    --gold:        #C8A560;
+    --gold-soft:   #D4B16A;
+    --gold-muted:  #AA8C55;
+    --burgundy:    #6B1E2C;
+    --ivory:       #F5EFE5;
+    --cream:       #E4DAC4;
+    --paper:       #FAF6EE;
+    --ink:         #1F2138;
+    --ink-soft:    #4A4D6A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+  .site-header { background: var(--navy); padding: 40px 28px 56px; text-align: center; border-bottom: 3px solid var(--gold); }
+  .site-header h1 { font-family: 'Cormorant Garamond', serif; color: var(--gold); font-size: 40px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; margin-bottom: 6px; }
+  .site-header .by { color: var(--ivory); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; letter-spacing: 0.08em; opacity: 0.85; }
+  .site-header .flourish { margin: 20px auto 22px; display: block; }
+  .site-header .tagline { color: var(--ivory); font-family: 'Cormorant Garamond', serif; font-size: 20px; font-style: italic; max-width: 640px; margin: 0 auto; opacity: 0.92; }
+  .site-header .meta { margin-top: 16px; color: var(--gold-soft); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-family: 'Inter', sans-serif; opacity: 0.75; }
+
+  .nav { background: var(--navy); padding: 16px 28px; position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 12px rgba(11,19,64,0.18); }
+  .nav-inner { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; }
+  .nav a { color: var(--ivory); text-decoration: none; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; font-family: 'Inter', sans-serif; }
+  .nav a:hover { color: var(--gold); }
+
+  .section { max-width: 1180px; margin: 0 auto; padding: 70px 28px 30px; }
+  .section-header { text-align: center; margin-bottom: 44px; }
+  .section-header .eyebrow { color: var(--gold); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; letter-spacing: 0.1em; margin-bottom: 8px; }
+  .section-header h2 { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 36px; font-weight: 500; letter-spacing: 0.01em; }
+  .section-header .sub { margin-top: 10px; color: var(--ink-soft); font-size: 14.5px; max-width: 640px; margin-left: auto; margin-right: auto; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; }
+  .card { background: #fff; border: 1px solid var(--cream); border-radius: 6px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 14px 36px -16px rgba(11,19,64,0.22); }
+  .card .thumb { position: relative; background: var(--ivory); overflow: hidden; aspect-ratio: 12 / 7; border-bottom: 1px solid var(--cream); }
+  .card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card .thumb .overlay { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 65%, rgba(11,19,64,0.5) 100%); pointer-events: none; }
+  .card .body { padding: 20px 20px 22px; flex: 1; display: flex; flex-direction: column; }
+  .card .eyebrow { color: var(--gold); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 6px; font-weight: 600; }
+  .card h3 { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 22px; line-height: 1.25; font-weight: 500; margin-bottom: 12px; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 14px; padding: 9px 16px; border-radius: 3px; letter-spacing: 0.05em; text-transform: uppercase; transition: all 0.18s; border: 1px solid var(--navy); cursor: pointer; flex: 1; min-width: 110px; text-align: center; }
+  .btn-primary { background: var(--navy); color: var(--ivory); border-color: var(--gold); }
+  .btn-primary:hover { background: var(--gold); color: var(--navy); }
+  .btn-secondary { background: transparent; color: var(--navy); border-color: var(--navy); }
+  .btn-secondary:hover { background: var(--navy); color: var(--ivory); }
+
+  .img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+  .img-tile { background: #fff; border: 1px solid var(--cream); border-radius: 4px; overflow: hidden; text-align: center; }
+  .img-tile img { width: 100%; height: 130px; object-fit: cover; display: block; }
+  .img-tile .caption { padding: 10px 12px 12px; }
+  .img-tile .caption strong { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 13.5px; display: block; margin-bottom: 6px; }
+  .img-tile .caption span.dim { display: block; color: var(--ink-soft); font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 6px; }
+  .img-tile .caption a { font-size: 10.5px; color: var(--gold); text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; }
+  .img-tile .caption a:hover { color: var(--navy); }
+
+  .doc-card { background: #fff; border: 1px solid var(--cream); border-radius: 6px; padding: 30px; margin-bottom: 22px; }
+  .doc-card h3 { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 26px; margin-bottom: 10px; }
+  .doc-card p { color: var(--ink-soft); margin-bottom: 16px; }
+
+  .footer { background: var(--navy); color: var(--ivory); padding: 50px 28px 36px; text-align: center; margin-top: 50px; }
+  .footer .brand { font-family: 'Cormorant Garamond', serif; color: var(--gold); font-size: 22px; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 8px; }
+  .footer .tag { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; color: var(--ivory); opacity: 0.86; margin-bottom: 22px; }
+  .footer .links { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.72; }
+  .footer .links a { color: var(--ivory); text-decoration: none; margin: 0 10px; }
+  .footer .legal { margin-top: 16px; font-size: 11px; opacity: 0.55; max-width: 640px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+
+  @media (max-width: 720px) {
+    .site-header h1 { font-size: 30px; }
+    .section { padding: 54px 18px 26px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+<style>
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300 700;font-display:swap;src:url('assets/fonts/cormorant-normal.woff2') format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:300 700;font-display:swap;src:url('assets/fonts/cormorant-italic.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/fonts/inter.woff2') format('woff2')}
+</style><meta name="robots" content="noindex,nofollow"><script defer src="assets/download.js"></script><style>.nav a,.img-tile .caption a{display:inline-flex;align-items:center;min-height:44px}.img-tile .caption a{color:var(--navy)}.card .eyebrow,.section-header .eyebrow{color:#806631}.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #C8A560;outline-offset:3px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mockup-thumb img{object-fit:contain!important;object-position:top}.mockup-thumb{height:280px;background:#E4DAC4!important}.note{max-width:1124px;margin:30px auto 0;padding:20px 24px;border-left:3px solid #C8A560;background:#EDE3D2;font-size:14px}.note a{color:#0B1340}.field-display{display:none;padding:20px;background:#F5EFE5;margin-top:16px}.field-display textarea{width:100%;min-height:320px;padding:14px;font:14px/1.6 Inter,sans-serif;border:1px solid #C8A560;color:#1F2138;background:#fff}.field-display.open{display:block}@media(max-width:720px){.grid{grid-template-columns:1fr}.nav-inner{gap:4px 16px}.nav{padding:8px 16px}.nav a{font-size:10px}.note{margin:24px 18px 0}.section{scroll-margin-top:110px}}</style></head>
+<body><header class="site-header">
+  <h1>French Atelier</h1>
+  <div class="by">by Acadomia</div>
+  <svg class="flourish" width="200" height="20" viewBox="0 0 220 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 11 C 50 2, 90 20, 110 11 S 170 2, 218 11" stroke="#C8A560" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <circle cx="110" cy="11" r="2" fill="#C8A560"/>
+  </svg>
+  <div class="tagline">French Atelier &middot; Christmas Holidays</div>
+  <div class="meta">4 emails &middot; 4 landing pages &middot; 12 images</div>
+</header><nav class="nav"><div class="nav-inner"><a href="#content-emails">Content Emails</a><a href="#landing-pages">Landing Pages</a><a href="#imagery">Imagery</a><a href="#mockups">Full Mockups</a><a href="#copy">Copy Downloads</a><a href="handoff.html">Brief Audit</a></div></nav><aside class="note">Four standalone French-learning emails and four matching cultural reads, with no sales offers or videos. All images now use masters above 4K width. Papillotes and Saint Nicolas were generated in Artlist. Lyon uses actual festival photography; its projected-artwork rights require clearance before campaign use. See the <a href="handoff.html">brief audit and implementation notes</a>.</aside><section id="content-emails" class="section"><div class="section-header"><div class="eyebrow">&middot; Content &middot;</div><h2>Content Emails</h2><div class="sub">Four standalone holiday emails, each with its own subject line, preview line and matching landing page.</div></div><div class="grid"><div class="card"><div class="thumb"><a href="emails/01-papillotes.html"><img src="assets/images/e01-email.jpg" alt="Fringed metallic papillote wrappers, one unwrapped chocolate and a small paper message on a warm festive table." loading="lazy"><div class="overlay"></div></a></div><div class="body"><div class="eyebrow">Email 01</div><h3>Les Papillotes: Learn four French words at a Christmas table</h3><div class="actions"><a class="btn btn-primary" href="emails/01-papillotes.html">Open Email</a><a class="btn btn-secondary" href="landing-pages/01-papillotes.html">Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e01.txt" aria-controls="fields-e01">Copy fields</button><a class="btn btn-secondary" href="copy/e01.txt" download>Download Text</a></div><div class="field-display" id="fields-e01"><label for="text-e01">Subject, preview, headline, CTA and complete copy</label><textarea readonly id="text-e01">Subject Line: Learn French with a Christmas tradition from Lyon
+Subject characters: 49
+Email Preview Line: French Atelier explains les papillotes and four words to use at the table.
+Preview characters: 74
+Header Text: Learn four French words at a Christmas table
+CTA Button: Learn the words
+CTA destination: landing-pages/01-papillotes.html (map to Sandra’s published LP URL before send)
+Body word count: 108
+
+Bonjour,
+
+Learn a little French with French Atelier through a Christmas tradition from Lyon: les papillotes. These individually wrapped chocolates contain a printed joke, quotation or riddle, often read aloud when people share them.
+
+Picture someone opening one at the table. Une papillote names the wrapped chocolate; un emballage means a wrapper. The paper inside carries un petit mot, a little message, or perhaps une devinette, a riddle.
+
+Now try asking, « Qu’est-ce qui est écrit ? » It means “What does it say?” You have a question to use, not just a list to memorise.
+
+Explore the custom and practise the words with their English meanings in our short French-learning guide.
+
+À bientôt,
+The French Atelier team
+
+LANDING PAGE
+
+French words to use around a Christmas table
+
+Learn French through a Lyon Christmas custom with French Atelier. Les papillotes give you a simple situation to talk about: someone unwraps a chocolate, finds a message and reads it aloud. Here is how to understand the custom and join the conversation.
+
+A sweet with a local connection
+
+Papillotes are especially linked to Lyon and the surrounding region. Chocolate is the familiar filling, although some contain pâte de fruits, a fruit confection. The festive wrapper and printed message are what make the sweet recognisable. This is a regional tradition, not a rule for every French Christmas table.
+
+Unwrap, read, share
+
+Imagine a small bowl passed around after a meal. Someone opens the metallic paper and finds a quotation; someone else reads a joke. A riddle can give the whole table something to guess before anyone reveals the answer. You do not need a long conversation to join in: simply reading the little note aloud is part of the pleasure.
+
+A story to treat as a legend
+
+One popular Lyon legend connects the papillote to a young confectioner who wrapped sweets in love notes. It is a charming explanation, but it should be enjoyed as a legend rather than treated as a proven account of the sweet’s invention.
+
+Practise a question and an answer
+
+Ask, « Qu’est-ce qui est écrit ? » That means, “What does it say?” If the message is a riddle, answer, « C’est une devinette. » That means, “It’s a riddle.” Say both sentences aloud, then try the answer without looking at the English. Un petit mot names the message; un emballage names the wrapper. You can now ask about the note and describe what you find.
+
+Landing-page word count including subheads: 275
+</textarea><p class="copy-status" aria-live="polite"></p></div></div></div><div class="card"><div class="thumb"><a href="emails/02-fete-des-lumieres.html"><img src="assets/images/e02-email.jpg" alt="Actual Fête des Lumières photograph showing colourful projections on the Musée des Beaux-Arts at Place des Terreaux in Lyon." loading="lazy"><div class="overlay"></div></a></div><div class="body"><div class="eyebrow">Email 02</div><h3>La Fête des Lumières: Describe Lyon’s Festival of Lights in French</h3><div class="actions"><a class="btn btn-primary" href="emails/02-fete-des-lumieres.html">Open Email</a><a class="btn btn-secondary" href="landing-pages/02-fete-des-lumieres.html">Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e02.txt" aria-controls="fields-e02">Copy fields</button><a class="btn btn-secondary" href="copy/e02.txt" download>Download Text</a></div><div class="field-display" id="fields-e02"><label for="text-e02">Subject, preview, headline, CTA and complete copy</label><textarea readonly id="text-e02">Subject Line: Learn the French words behind Lyon’s lights
+Subject characters: 43
+Email Preview Line: French Atelier explains the festival and a French sentence to describe it.
+Preview characters: 74
+Header Text: Describe Lyon’s Festival of Lights in French
+CTA Button: Practise the French
+CTA destination: landing-pages/02-fete-des-lumieres.html (map to Sandra’s published LP URL before send)
+Body word count: 108
+
+Bonjour,
+
+Learn to describe a French celebration with French Atelier. At Lyon’s Fête des Lumières, colourful projections transform buildings while residents place small candles in their windows.
+
+In 1852, residents lit candles in honour of the Virgin Mary. The modern light-art festival developed much later.
+
+Un lumignon is a small candle in a glass holder. La lumière means light, la ville means the city, and illuminer means to illuminate.
+
+Put the words into a sentence: « La ville s’illumine. » It means “The city lights up.” Say it aloud as you picture Lyon after dark.
+
+Read our short guide to understand the tradition and practise describing what you see in French.
+
+À bientôt,
+The French Atelier team
+
+LANDING PAGE
+
+Learn to describe Lyon’s lights in French
+
+Use Lyon’s Festival of Lights to practise French with French Atelier. Learn what the candles mean, how the modern festival differs from the older tradition, and how to turn a few useful words into sentences about the city.
+
+The tradition that began in 1852
+
+The celebration’s roots lie in the inauguration of a statue of the Virgin Mary on Fourvière hill. In 1852, residents placed candles in their windows in her honour. These small lights became a lasting local tradition. Today’s light-art festival developed much later. The candles belong to an older community custom that continues alongside it.
+
+What is a lumignon?
+
+Un lumignon is a small candle, traditionally set in a glass holder on a windowsill. Together, rows of these lights make residents’ homes part of the celebration. This is a simple, personal contribution alongside the larger public displays. It helps explain why the festival is more than a spectacle viewed from the pavement.
+
+Historic buildings, contemporary art
+
+In public squares, artists use colour, movement and projected images to change how familiar architecture appears. At Place des Terreaux, the façades around the square can become the setting for large light works. Installations change between editions, so a photograph records a particular artistic interpretation rather than a permanent decoration.
+
+Practise describing what you see
+
+La lumière means light; la ville means the city; illuminer means to illuminate. Read « La ville s’illumine » aloud: “The city lights up.” Now try « Je vois un lumignon »: “I see a small candle.” Je vois means “I see”, so it helps you name something in front of you. Look at the photograph, choose one of these sentences and say it without reading the English.
+
+Landing-page word count including subheads: 278
+</textarea><p class="copy-status" aria-live="polite"></p></div></div></div><div class="card"><div class="thumb"><a href="emails/03-saint-nicolas.html"><img src="assets/images/e03-email.jpg" alt="Saint Nicolas depicted as a bishop in mitre and ceremonial robes, offering a gingerbread figure to children in an eastern French street." loading="lazy"><div class="overlay"></div></a></div><div class="body"><div class="eyebrow">Email 03</div><h3>Saint Nicolas: Join a Saint Nicolas celebration in French</h3><div class="actions"><a class="btn btn-primary" href="emails/03-saint-nicolas.html">Open Email</a><a class="btn btn-secondary" href="landing-pages/03-saint-nicolas.html">Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e03.txt" aria-controls="fields-e03">Copy fields</button><a class="btn btn-secondary" href="copy/e03.txt" download>Download Text</a></div><div class="field-display" id="fields-e03"><label for="text-e03">Subject, preview, headline, CTA and complete copy</label><textarea readonly id="text-e03">Subject Line: Learn a French greeting for Saint Nicolas
+Subject characters: 41
+Email Preview Line: French Atelier introduces an eastern French tradition and the words to join in.
+Preview characters: 79
+Header Text: Join a Saint Nicolas celebration in French
+CTA Button: Learn the greeting
+CTA destination: landing-pages/03-saint-nicolas.html (map to Sandra’s published LP URL before send)
+Body word count: 112
+
+Bonjour,
+
+Practise a seasonal French greeting with French Atelier: « Bonne fête de Saint-Nicolas ! » It means “Happy Saint Nicholas Day!”
+
+In Lorraine, Alsace and other parts of eastern France, this Christian bishop is celebrated for generosity. Nancy is known for its processions, where families gather and children look forward to treats.
+
+Look for a bishop’s mitre and curved staff, not Santa’s costume. Pain d’épices shaped like Saint Nicolas is a recognisable gingerbread treat.
+
+Three words help you follow the celebration: un défilé means a parade, les friandises means sweets, and un cadeau means a gift.
+
+Read our guide to understand this regional custom, practise the greeting and use the vocabulary in a French sentence.
+
+À bientôt,
+The French Atelier team
+
+LANDING PAGE
+
+French greetings and words for Saint Nicolas
+
+Learn how to greet someone and describe a celebration with French Atelier. Saint Nicolas traditions in Lorraine and Alsace give these French words a context: a procession, gifts and a bishop known for generosity. This is a regional custom, not a celebration shared identically across France.
+
+The person behind the celebration
+
+Saint Nicholas was a Christian bishop of Myra, in what is now Turkey. He became known through stories of generosity and protection, especially towards children. Those stories helped inspire gift-giving customs. In French celebrations, his bishop’s clothing recalls that religious origin: the tall hat is a mitre, and the curved pastoral staff is a crosse.
+
+A tradition with regional character
+
+Nancy, in Lorraine, is a well-known centre of the festivities. Processions bring Saint Nicolas into the streets, with families watching and children waiting for treats. Customs differ between towns and households. Sweets, small gifts and pain d’épices, or spiced gingerbread, are among the familiar pleasures. Gingerbread figures shaped like the saint make an especially recognisable detail.
+
+Who is le Père Fouettard?
+
+In some local traditions, Saint Nicolas is accompanied by le Père Fouettard. He is the stern character who contrasts with the generous saint and reminds children about good behaviour. Their contrasting roles are part of the local folklore. Saint Nicolas remains the kindly figure children look forward to meeting, especially when he arrives with treats.
+
+Practise a greeting and a sentence
+
+Say « Bonne fête de Saint-Nicolas ! » aloud: “Happy Saint Nicholas Day!” Then try « Je regarde le défilé »: “I’m watching the parade.” Un défilé means “a parade”; le défilé means “the parade”. Les friandises means sweets, and un cadeau means a gift. Cover the English meanings and see which words you remember. You now have a greeting to offer and a sentence to describe what you are doing.
+
+Landing-page word count including subheads: 299
+</textarea><p class="copy-status" aria-live="polite"></p></div></div></div><div class="card"><div class="thumb"><a href="emails/04-reveillon.html"><img src="assets/images/e04-email.jpg" alt="Adult friends sharing a warm toast around an elegantly set dinner table in a French interior." loading="lazy"><div class="overlay"></div></a></div><div class="body"><div class="eyebrow">Email 04</div><h3>Le Réveillon du Nouvel An: Wish someone a happy New Year in French</h3><div class="actions"><a class="btn btn-primary" href="emails/04-reveillon.html">Open Email</a><a class="btn btn-secondary" href="landing-pages/04-reveillon.html">Landing Page</a><button class="btn btn-secondary" type="button" data-copy-path="copy/e04.txt" aria-controls="fields-e04">Copy fields</button><a class="btn btn-secondary" href="copy/e04.txt" download>Download Text</a></div><div class="field-display" id="fields-e04"><label for="text-e04">Subject, preview, headline, CTA and complete copy</label><textarea readonly id="text-e04">Subject Line: Three French expressions for the New Year
+Subject characters: 41
+Email Preview Line: French Atelier explains what to say, what it means and when to use it.
+Preview characters: 70
+Header Text: Wish someone a happy New Year in French
+CTA Button: Learn New Year French
+CTA destination: landing-pages/04-reveillon.html (map to Sandra’s published LP URL before send)
+Body word count: 119
+
+Bonjour,
+
+Learn three French expressions you can use at New Year with French Atelier, and understand the celebration behind them.
+
+Around a candlelit table, friends share le réveillon du Nouvel An, a late festive meal or gathering. Réveillon is connected to réveiller, “to wake up”. New Year’s Eve is also called la Saint-Sylvestre.
+
+Greet someone with « Bonne année ! »: “Happy New Year!” Write « Meilleurs vœux ! » for “Best wishes!” Raise a glass with « À votre santé ! »: “Cheers!”
+
+Some families kiss beneath le gui, mistletoe, but customs vary between households. Réveillon can also refer to Christmas Eve, so the full phrase matters.
+
+Practise each expression aloud. Our guide explains when to use it, so you can join a New Year conversation in French.
+
+À bientôt,
+The French Atelier team
+
+LANDING PAGE
+
+What to say in French at New Year
+
+Practise French you can use in a greeting, a message or a toast with French Atelier. Learn which expression fits each situation, and understand le réveillon du Nouvel An: a late festive meal whose name is connected to réveiller, “to wake up”.
+
+Two celebrations called réveillon
+
+French uses réveillon for both the Christmas Eve celebration, le réveillon de Noël, and the New Year’s Eve celebration, le réveillon du Nouvel An. The rest of the phrase tells you which one is meant. La Saint-Sylvestre is another name for New Year’s Eve, while réveillon describes the late festive meal or gathering.
+
+A table, but not one fixed menu
+
+Some people prepare dinner at home; others choose a restaurant or a larger party. A quiet gathering can be just as much a réveillon as a lively evening with many guests. There is no universal menu, and the details depend on the people around the table. Conversation and the anticipation of midnight are often as important as the food.
+
+Wishes that continue after midnight
+
+Bonne année ! means “Happy New Year!” and Meilleurs vœux ! means “Best wishes!” You can say these to friends, relatives or neighbours, or write them in a short message. In France, New Year wishes often continue through January, rather than belonging only to the first moments of the year. For a toast, À votre santé ! means “Cheers!” or, more literally, “To your health!”
+
+Recognise the custom, choose your words
+
+Le gui means mistletoe. Some families or couples kiss beneath it at New Year, but not everyone follows this custom. For a little French practice, imagine three situations: greeting a neighbour, writing a card and raising a glass. Choose Bonne année !, Meilleurs vœux ! or À votre santé ! for each. Say your choices aloud, then check their meanings in the section above.
+
+Landing-page word count including subheads: 299
+</textarea><p class="copy-status" aria-live="polite"></p></div></div></div></div></section><section id="landing-pages" class="section"><div class="section-header"><div class="eyebrow">&middot; Landing Pages &middot;</div><h2>Landing Pages</h2><div class="sub">Four longer cultural reads, each building on its matching email without repeating it.</div></div><div class="grid"><div class="card"><div class="thumb"><a href="landing-pages/01-papillotes.html"><img src="assets/images/e01-desktop.jpg" alt="Fringed metallic papillote wrappers, one unwrapped chocolate and a small paper message on a warm festive table." loading="lazy"><div class="overlay"></div></a></div><div class="body"><div class="eyebrow">Landing Page 01</div><h3>French words to use around a Christmas table</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/01-papillotes.html">Open Landing Page</a><a class="btn btn-secondary" href="copy/01-papillotes.html">Copy & assets</a></div></div></div><div class="card"><div class="thumb"><a href="landing-pages/02-fete-des-lumieres.html"><img src="assets/images/e02-desktop.jpg" alt="Actual Fête des Lumières photograph showing colourful projections on the Musée des Beaux-Arts at Place des Terreaux in Lyon." loading="lazy"><div class="overlay"></div></a></div><div class="body"><div class="eyebrow">Landing Page 02</div><h3>Learn to describe Lyon’s lights in French</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/02-fete-des-lumieres.html">Open Landing Page</a><a class="btn btn-secondary" href="copy/02-fete-des-lumieres.html">Copy & assets</a></div></div></div><div class="card"><div class="thumb"><a href="landing-pages/03-saint-nicolas.html"><img src="assets/images/e03-desktop.jpg" alt="Saint Nicolas depicted as a bishop in mitre and ceremonial robes, offering a gingerbread figure to children in an eastern French street." loading="lazy"><div class="overlay"></div></a></div><div class="body"><div class="eyebrow">Landing Page 03</div><h3>French greetings and words for Saint Nicolas</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/03-saint-nicolas.html">Open Landing Page</a><a class="btn btn-secondary" href="copy/03-saint-nicolas.html">Copy & assets</a></div></div></div><div class="card"><div class="thumb"><a href="landing-pages/04-reveillon.html"><img src="assets/images/e04-desktop.jpg" alt="Adult friends sharing a warm toast around an elegantly set dinner table in a French interior." loading="lazy"><div class="overlay"></div></a></div><div class="body"><div class="eyebrow">Landing Page 04</div><h3>What to say in French at New Year</h3><div class="actions"><a class="btn btn-primary" href="landing-pages/04-reveillon.html">Open Landing Page</a><a class="btn btn-secondary" href="copy/04-reveillon.html">Copy & assets</a></div></div></div></div></section><section id="imagery" class="section"><div class="section-header"><div class="eyebrow">&middot; Imagery &middot;</div><h2>Image Downloads</h2><div class="sub">12 JPEG images: one email banner, one desktop image and one mobile image for each topic.</div></div><div class="img-grid"><div class="img-tile"><img src="assets/images/e01-email.jpg" alt="Fringed metallic papillote wrappers, one unwrapped chocolate and a small paper message on a warm festive table." loading="lazy"><div class="caption"><span class="dim">1200 × 700 · JPEG</span><strong>Les Papillotes<br>Email banner</strong><a href="assets/images/e01-email.jpg" download="e01-email.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e01-desktop.jpg" alt="Fringed metallic papillote wrappers, one unwrapped chocolate and a small paper message on a warm festive table." loading="lazy"><div class="caption"><span class="dim">1920 × 502 · JPEG</span><strong>Les Papillotes<br>Landing page desktop</strong><a href="assets/images/e01-desktop.jpg" download="e01-desktop.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e01-mobile.jpg" alt="Fringed metallic papillote wrappers, one unwrapped chocolate and a small paper message on a warm festive table." loading="lazy"><div class="caption"><span class="dim">758 × 556 · JPEG</span><strong>Les Papillotes<br>Landing page mobile</strong><a href="assets/images/e01-mobile.jpg" download="e01-mobile.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e02-email.jpg" alt="Actual Fête des Lumières photograph showing colourful projections on the Musée des Beaux-Arts at Place des Terreaux in Lyon." loading="lazy"><div class="caption"><span class="dim">1200 × 700 · JPEG</span><strong>La Fête des Lumières<br>Email banner</strong><a href="assets/images/e02-email.jpg" download="e02-email.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e02-desktop.jpg" alt="Actual Fête des Lumières photograph showing colourful projections on the Musée des Beaux-Arts at Place des Terreaux in Lyon." loading="lazy"><div class="caption"><span class="dim">1920 × 502 · JPEG</span><strong>La Fête des Lumières<br>Landing page desktop</strong><a href="assets/images/e02-desktop.jpg" download="e02-desktop.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e02-mobile.jpg" alt="Actual Fête des Lumières photograph showing colourful projections on the Musée des Beaux-Arts at Place des Terreaux in Lyon." loading="lazy"><div class="caption"><span class="dim">758 × 556 · JPEG</span><strong>La Fête des Lumières<br>Landing page mobile</strong><a href="assets/images/e02-mobile.jpg" download="e02-mobile.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e03-email.jpg" alt="Saint Nicolas depicted as a bishop in mitre and ceremonial robes, offering a gingerbread figure to children in an eastern French street." loading="lazy"><div class="caption"><span class="dim">1200 × 700 · JPEG</span><strong>Saint Nicolas<br>Email banner</strong><a href="assets/images/e03-email.jpg" download="e03-email.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e03-desktop.jpg" alt="Saint Nicolas depicted as a bishop in mitre and ceremonial robes, offering a gingerbread figure to children in an eastern French street." loading="lazy"><div class="caption"><span class="dim">1920 × 502 · JPEG</span><strong>Saint Nicolas<br>Landing page desktop</strong><a href="assets/images/e03-desktop.jpg" download="e03-desktop.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e03-mobile.jpg" alt="Saint Nicolas depicted as a bishop in mitre and ceremonial robes, offering a gingerbread figure to children in an eastern French street." loading="lazy"><div class="caption"><span class="dim">758 × 556 · JPEG</span><strong>Saint Nicolas<br>Landing page mobile</strong><a href="assets/images/e03-mobile.jpg" download="e03-mobile.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e04-email.jpg" alt="Adult friends sharing a warm toast around an elegantly set dinner table in a French interior." loading="lazy"><div class="caption"><span class="dim">1200 × 700 · JPEG</span><strong>Le Réveillon du Nouvel An<br>Email banner</strong><a href="assets/images/e04-email.jpg" download="e04-email.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e04-desktop.jpg" alt="Adult friends sharing a warm toast around an elegantly set dinner table in a French interior." loading="lazy"><div class="caption"><span class="dim">1920 × 502 · JPEG</span><strong>Le Réveillon du Nouvel An<br>Landing page desktop</strong><a href="assets/images/e04-desktop.jpg" download="e04-desktop.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e04-mobile.jpg" alt="Adult friends sharing a warm toast around an elegantly set dinner table in a French interior." loading="lazy"><div class="caption"><span class="dim">758 × 556 · JPEG</span><strong>Le Réveillon du Nouvel An<br>Landing page mobile</strong><a href="assets/images/e04-mobile.jpg" download="e04-mobile.jpg">Download</a></div></div></div></section><section id="mockups" class="section"><div class="section-header"><div class="eyebrow">&middot; Full Layouts &middot;</div><h2>Desktop & Mobile Mockups</h2><div class="sub">Sixteen full-layout exports, not just image banners.</div></div><div class="doc-card"><h3>Les Papillotes</h3><p>Full email and landing-page layouts, exported separately for desktop and mobile.</p><div class="actions"><a class="btn btn-secondary" href="mockups/01-papillotes-email-desktop.png" download>Email desktop</a><a class="btn btn-secondary" href="mockups/01-papillotes-email-mobile.png" download>Email mobile</a><a class="btn btn-secondary" href="mockups/01-papillotes-lp-desktop.png" download>LP desktop</a><a class="btn btn-secondary" href="mockups/01-papillotes-lp-mobile.png" download>LP mobile</a></div></div><div class="doc-card"><h3>La Fête des Lumières</h3><p>Full email and landing-page layouts, exported separately for desktop and mobile.</p><div class="actions"><a class="btn btn-secondary" href="mockups/02-fete-des-lumieres-email-desktop.png" download>Email desktop</a><a class="btn btn-secondary" href="mockups/02-fete-des-lumieres-email-mobile.png" download>Email mobile</a><a class="btn btn-secondary" href="mockups/02-fete-des-lumieres-lp-desktop.png" download>LP desktop</a><a class="btn btn-secondary" href="mockups/02-fete-des-lumieres-lp-mobile.png" download>LP mobile</a></div></div><div class="doc-card"><h3>Saint Nicolas</h3><p>Full email and landing-page layouts, exported separately for desktop and mobile.</p><div class="actions"><a class="btn btn-secondary" href="mockups/03-saint-nicolas-email-desktop.png" download>Email desktop</a><a class="btn btn-secondary" href="mockups/03-saint-nicolas-email-mobile.png" download>Email mobile</a><a class="btn btn-secondary" href="mockups/03-saint-nicolas-lp-desktop.png" download>LP desktop</a><a class="btn btn-secondary" href="mockups/03-saint-nicolas-lp-mobile.png" download>LP mobile</a></div></div><div class="doc-card"><h3>Le Réveillon du Nouvel An</h3><p>Full email and landing-page layouts, exported separately for desktop and mobile.</p><div class="actions"><a class="btn btn-secondary" href="mockups/04-reveillon-email-desktop.png" download>Email desktop</a><a class="btn btn-secondary" href="mockups/04-reveillon-email-mobile.png" download>Email mobile</a><a class="btn btn-secondary" href="mockups/04-reveillon-lp-desktop.png" download>LP desktop</a><a class="btn btn-secondary" href="mockups/04-reveillon-lp-mobile.png" download>LP mobile</a></div></div></section><section id="copy" class="section"><div class="section-header"><div class="eyebrow">&middot; Copy &middot;</div><h2>Copy Downloads</h2><div class="sub">Email subjects, preview lines, headlines, body copy and landing-page content.</div></div><div class="documents"><div class="doc-card"><h3>Christmas Holidays copy</h3><p>All four email and landing-page pairs in one file, with individual text and copy controls available from each email card.</p><div class="actions"><a class="btn btn-primary" href="copy/all-copy.txt" download>Download All Copy</a><a class="btn btn-secondary" href="French-Atelier-Holiday-Handoff.zip" download>Download HTML, TXT & JPEG package</a><a class="btn btn-secondary" href="masters/01-papillotes.png" download>Les Papillotes 4K+ master</a><a class="btn btn-secondary" href="masters/02-fete-des-lumieres.jpg" download>La Fête des Lumières 4K+ master</a><a class="btn btn-secondary" href="masters/03-saint-nicolas.png" download>Saint Nicolas 4K+ master</a><a class="btn btn-secondary" href="masters/04-reveillon.png" download>Le Réveillon du Nouvel An 4K+ master</a><a class="btn btn-secondary" href="image-files.html">Image Library</a><a class="btn btn-secondary" href="handoff.html">Brief Audit</a><a class="btn btn-secondary" href="copy/email-data.json" download>Structured Copy</a></div></div></div></section><footer class="footer">
+  <div class="brand">French Atelier</div>
+  <div class="tag">Culture speaks French. What about you?</div>
+  <div class="links">
+    <a href="mailto:hello@frenchatelierlive.com">hello@frenchatelierlive.com</a> &middot;
+    <a href="https://www.frenchatelierlive.com">frenchatelierlive.com</a>
+  </div>
+</footer><script src="assets/copy-controls.js"></script></body></html>

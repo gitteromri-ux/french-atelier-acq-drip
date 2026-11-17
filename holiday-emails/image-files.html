@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Library · French Atelier &middot; Christmas Holidays</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png" />
+<link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+<style>
+  :root {
+    --navy:        #0B1340;
+    --navy-deep:   #080E33;
+    --gold:        #C8A560;
+    --gold-soft:   #D4B16A;
+    --gold-muted:  #AA8C55;
+    --burgundy:    #6B1E2C;
+    --ivory:       #F5EFE5;
+    --cream:       #E4DAC4;
+    --paper:       #FAF6EE;
+    --ink:         #1F2138;
+    --ink-soft:    #4A4D6A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+  .site-header { background: var(--navy); padding: 40px 28px 56px; text-align: center; border-bottom: 3px solid var(--gold); }
+  .site-header h1 { font-family: 'Cormorant Garamond', serif; color: var(--gold); font-size: 40px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; margin-bottom: 6px; }
+  .site-header .by { color: var(--ivory); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; letter-spacing: 0.08em; opacity: 0.85; }
+  .site-header .flourish { margin: 20px auto 22px; display: block; }
+  .site-header .tagline { color: var(--ivory); font-family: 'Cormorant Garamond', serif; font-size: 20px; font-style: italic; max-width: 640px; margin: 0 auto; opacity: 0.92; }
+  .site-header .meta { margin-top: 16px; color: var(--gold-soft); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-family: 'Inter', sans-serif; opacity: 0.75; }
+
+  .nav { background: var(--navy); padding: 16px 28px; position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 12px rgba(11,19,64,0.18); }
+  .nav-inner { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; }
+  .nav a { color: var(--ivory); text-decoration: none; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; font-family: 'Inter', sans-serif; }
+  .nav a:hover { color: var(--gold); }
+
+  .section { max-width: 1180px; margin: 0 auto; padding: 70px 28px 30px; }
+  .section-header { text-align: center; margin-bottom: 44px; }
+  .section-header .eyebrow { color: var(--gold); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; letter-spacing: 0.1em; margin-bottom: 8px; }
+  .section-header h2 { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 36px; font-weight: 500; letter-spacing: 0.01em; }
+  .section-header .sub { margin-top: 10px; color: var(--ink-soft); font-size: 14.5px; max-width: 640px; margin-left: auto; margin-right: auto; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; }
+  .card { background: #fff; border: 1px solid var(--cream); border-radius: 6px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 14px 36px -16px rgba(11,19,64,0.22); }
+  .card .thumb { position: relative; background: var(--ivory); overflow: hidden; aspect-ratio: 12 / 7; border-bottom: 1px solid var(--cream); }
+  .card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card .thumb .overlay { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 65%, rgba(11,19,64,0.5) 100%); pointer-events: none; }
+  .card .body { padding: 20px 20px 22px; flex: 1; display: flex; flex-direction: column; }
+  .card .eyebrow { color: var(--gold); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 6px; font-weight: 600; }
+  .card h3 { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 22px; line-height: 1.25; font-weight: 500; margin-bottom: 12px; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 14px; padding: 9px 16px; border-radius: 3px; letter-spacing: 0.05em; text-transform: uppercase; transition: all 0.18s; border: 1px solid var(--navy); cursor: pointer; flex: 1; min-width: 110px; text-align: center; }
+  .btn-primary { background: var(--navy); color: var(--ivory); border-color: var(--gold); }
+  .btn-primary:hover { background: var(--gold); color: var(--navy); }
+  .btn-secondary { background: transparent; color: var(--navy); border-color: var(--navy); }
+  .btn-secondary:hover { background: var(--navy); color: var(--ivory); }
+
+  .img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+  .img-tile { background: #fff; border: 1px solid var(--cream); border-radius: 4px; overflow: hidden; text-align: center; }
+  .img-tile img { width: 100%; height: 130px; object-fit: cover; display: block; }
+  .img-tile .caption { padding: 10px 12px 12px; }
+  .img-tile .caption strong { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 13.5px; display: block; margin-bottom: 6px; }
+  .img-tile .caption span.dim { display: block; color: var(--ink-soft); font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 6px; }
+  .img-tile .caption a { font-size: 10.5px; color: var(--gold); text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; }
+  .img-tile .caption a:hover { color: var(--navy); }
+
+  .doc-card { background: #fff; border: 1px solid var(--cream); border-radius: 6px; padding: 30px; margin-bottom: 22px; }
+  .doc-card h3 { font-family: 'Cormorant Garamond', serif; color: var(--navy); font-size: 26px; margin-bottom: 10px; }
+  .doc-card p { color: var(--ink-soft); margin-bottom: 16px; }
+
+  .footer { background: var(--navy); color: var(--ivory); padding: 50px 28px 36px; text-align: center; margin-top: 50px; }
+  .footer .brand { font-family: 'Cormorant Garamond', serif; color: var(--gold); font-size: 22px; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 8px; }
+  .footer .tag { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; color: var(--ivory); opacity: 0.86; margin-bottom: 22px; }
+  .footer .links { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.72; }
+  .footer .links a { color: var(--ivory); text-decoration: none; margin: 0 10px; }
+  .footer .legal { margin-top: 16px; font-size: 11px; opacity: 0.55; max-width: 640px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+
+  @media (max-width: 720px) {
+    .site-header h1 { font-size: 30px; }
+    .section { padding: 54px 18px 26px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+<style>
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300 700;font-display:swap;src:url('assets/fonts/cormorant-normal.woff2') format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:300 700;font-display:swap;src:url('assets/fonts/cormorant-italic.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/fonts/inter.woff2') format('woff2')}
+</style><meta name="robots" content="noindex,nofollow"><script defer src="assets/download.js"></script><style>.nav a,.img-tile .caption a{display:inline-flex;align-items:center;min-height:44px}.img-tile .caption a{color:var(--navy)}.card .eyebrow,.section-header .eyebrow{color:#806631}.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #C8A560;outline-offset:3px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mockup-thumb img{object-fit:contain!important;object-position:top}.mockup-thumb{height:280px;background:#E4DAC4!important}.note{max-width:1124px;margin:30px auto 0;padding:20px 24px;border-left:3px solid #C8A560;background:#EDE3D2;font-size:14px}.note a{color:#0B1340}.field-display{display:none;padding:20px;background:#F5EFE5;margin-top:16px}.field-display textarea{width:100%;min-height:320px;padding:14px;font:14px/1.6 Inter,sans-serif;border:1px solid #C8A560;color:#1F2138;background:#fff}.field-display.open{display:block}@media(max-width:720px){.grid{grid-template-columns:1fr}.nav-inner{gap:4px 16px}.nav{padding:8px 16px}.nav a{font-size:10px}.note{margin:24px 18px 0}.section{scroll-margin-top:110px}}</style></head>
+<body><header class="site-header">
+  <h1>French Atelier</h1>
+  <div class="by">by Acadomia</div>
+  <svg class="flourish" width="200" height="20" viewBox="0 0 220 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 11 C 50 2, 90 20, 110 11 S 170 2, 218 11" stroke="#C8A560" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <circle cx="110" cy="11" r="2" fill="#C8A560"/>
+  </svg>
+  <div class="tagline">French Atelier &middot; Christmas Holidays</div>
+  <div class="meta">4 emails &middot; 4 landing pages &middot; 12 images</div>
+</header><nav class="nav"><div class="nav-inner"><a href="index.html">Return to delivery hub</a><a download href="image-manifest.csv">Image Manifest</a><a href="handoff.html">Rights & attribution</a></div></nav><section id="imagery" class="section"><div class="section-header"><div class="eyebrow">&middot; Imagery &middot;</div><h2>Image Downloads</h2><div class="sub">12 JPEG images: one email banner, one desktop image and one mobile image for each topic.</div></div><div class="img-grid"><div class="img-tile"><img src="assets/images/e01-email.jpg" alt="Fringed metallic papillote wrappers, one unwrapped chocolate and a small paper message on a warm festive table." loading="lazy"><div class="caption"><span class="dim">1200 × 700 · JPEG</span><strong>Les Papillotes<br>Email banner</strong><a href="assets/images/e01-email.jpg" download="e01-email.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e01-desktop.jpg" alt="Fringed metallic papillote wrappers, one unwrapped chocolate and a small paper message on a warm festive table." loading="lazy"><div class="caption"><span class="dim">1920 × 502 · JPEG</span><strong>Les Papillotes<br>Landing page desktop</strong><a href="assets/images/e01-desktop.jpg" download="e01-desktop.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e01-mobile.jpg" alt="Fringed metallic papillote wrappers, one unwrapped chocolate and a small paper message on a warm festive table." loading="lazy"><div class="caption"><span class="dim">758 × 556 · JPEG</span><strong>Les Papillotes<br>Landing page mobile</strong><a href="assets/images/e01-mobile.jpg" download="e01-mobile.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e02-email.jpg" alt="Actual Fête des Lumières photograph showing colourful projections on the Musée des Beaux-Arts at Place des Terreaux in Lyon." loading="lazy"><div class="caption"><span class="dim">1200 × 700 · JPEG</span><strong>La Fête des Lumières<br>Email banner</strong><a href="assets/images/e02-email.jpg" download="e02-email.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e02-desktop.jpg" alt="Actual Fête des Lumières photograph showing colourful projections on the Musée des Beaux-Arts at Place des Terreaux in Lyon." loading="lazy"><div class="caption"><span class="dim">1920 × 502 · JPEG</span><strong>La Fête des Lumières<br>Landing page desktop</strong><a href="assets/images/e02-desktop.jpg" download="e02-desktop.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e02-mobile.jpg" alt="Actual Fête des Lumières photograph showing colourful projections on the Musée des Beaux-Arts at Place des Terreaux in Lyon." loading="lazy"><div class="caption"><span class="dim">758 × 556 · JPEG</span><strong>La Fête des Lumières<br>Landing page mobile</strong><a href="assets/images/e02-mobile.jpg" download="e02-mobile.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e03-email.jpg" alt="Saint Nicolas depicted as a bishop in mitre and ceremonial robes, offering a gingerbread figure to children in an eastern French street." loading="lazy"><div class="caption"><span class="dim">1200 × 700 · JPEG</span><strong>Saint Nicolas<br>Email banner</strong><a href="assets/images/e03-email.jpg" download="e03-email.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e03-desktop.jpg" alt="Saint Nicolas depicted as a bishop in mitre and ceremonial robes, offering a gingerbread figure to children in an eastern French street." loading="lazy"><div class="caption"><span class="dim">1920 × 502 · JPEG</span><strong>Saint Nicolas<br>Landing page desktop</strong><a href="assets/images/e03-desktop.jpg" download="e03-desktop.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e03-mobile.jpg" alt="Saint Nicolas depicted as a bishop in mitre and ceremonial robes, offering a gingerbread figure to children in an eastern French street." loading="lazy"><div class="caption"><span class="dim">758 × 556 · JPEG</span><strong>Saint Nicolas<br>Landing page mobile</strong><a href="assets/images/e03-mobile.jpg" download="e03-mobile.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e04-email.jpg" alt="Adult friends sharing a warm toast around an elegantly set dinner table in a French interior." loading="lazy"><div class="caption"><span class="dim">1200 × 700 · JPEG</span><strong>Le Réveillon du Nouvel An<br>Email banner</strong><a href="assets/images/e04-email.jpg" download="e04-email.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e04-desktop.jpg" alt="Adult friends sharing a warm toast around an elegantly set dinner table in a French interior." loading="lazy"><div class="caption"><span class="dim">1920 × 502 · JPEG</span><strong>Le Réveillon du Nouvel An<br>Landing page desktop</strong><a href="assets/images/e04-desktop.jpg" download="e04-desktop.jpg">Download</a></div></div><div class="img-tile"><img src="assets/images/e04-mobile.jpg" alt="Adult friends sharing a warm toast around an elegantly set dinner table in a French interior." loading="lazy"><div class="caption"><span class="dim">758 × 556 · JPEG</span><strong>Le Réveillon du Nouvel An<br>Landing page mobile</strong><a href="assets/images/e04-mobile.jpg" download="e04-mobile.jpg">Download</a></div></div></div></section><footer class="footer">
+  <div class="brand">French Atelier</div>
+  <div class="tag">Culture speaks French. What about you?</div>
+  <div class="links">
+    <a href="mailto:hello@frenchatelierlive.com">hello@frenchatelierlive.com</a> &middot;
+    <a href="https://www.frenchatelierlive.com">frenchatelierlive.com</a>
+  </div>
+</footer><script src="assets/copy-controls.js"></script></body></html>
